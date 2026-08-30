@@ -6,11 +6,20 @@ LeetCode で解いた問題のコードと考えを記録するリポジトリ�
 
 - Python。仮想環境は `.venv`（`./.venv/bin/python -m pytest` で実行する）
 - 問題は `problems/<category>/<4桁番号>-<スラッグ>/` に 1 問 1 ディレクトリ
+- `solution.py` は常に最新の解答。過去の解答は `attempts/<日付>.py` に残す
+- 同じ問題を何度も解き直して記録するのが前提。**過去の解答とメモを消さないこと**
 - カテゴリは以下の 7 つのみ。これ以外は使わず、必要なら先にユーザーへ確認する
   `arrays-hashing` / `two-pointers` / `stack` / `binary-search` /
   `sliding-window` / `linked-list` / `trees`
 
-## 問題を記録するとき
+## 解き直し（既に同じ番号のディレクトリがある場合）
+
+`new_problem.py` ではなく `scripts/new_attempt.py <番号>` を使う。
+前回のコードが `attempts/` に退避され、README の復習ログに行が追加される。
+その後 `solution.py` を今回の解答で上書きし、前回との差分を報告する。
+README の考察は上書きせず追記する。詳細は `/leetcode-log` スキルを見ること。
+
+## 問題を記録するとき（初回）
 
 必ず `/leetcode-log` スキルの手順に従うこと。要点だけ再掲すると:
 

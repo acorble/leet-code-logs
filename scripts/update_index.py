@@ -19,11 +19,19 @@ END = "<!-- INDEX:END -->"
 def meta(readme: Path) -> dict:
     text = readme.read_text(encoding="utf-8") if readme.exists() else ""
     out = {}
-    for key, label in (("url", "URL"), ("difficulty", "難易度"), ("date", "解いた日")):
+    for key, label in (("url", "URL"), ("difficulty", "難易度"), ("date", "初回")):
         m = re.search(rf"^- {label}: (.*)$", text, re.MULTILINE)
         out[key] = m.group(1).strip() if m else ""
     m = re.search(r"^# (.*)$", text, re.MULTILINE)
     out["title"] = m.group(1).strip() if m else ""
+
+    # 復習ログのテーブルから、解いた回数と最後に解いた日を取る
+    rows = []
+    block = re.search(r"<!-- ATTEMPTS:START -->(.*?)<!-- ATTEMPTS:END -->", text, re.DOTALL)
+    if block:
+        rows = re.findall(r"^\|\s*\d+\s*\|\s*([^|]*?)\s*\|", block.group(1), re.MULTILINE)
+    out["count"] = len(rows) or 1
+    out["last"] = rows[-1] if rows else out["date"]
     return out
 
 
@@ -37,14 +45,19 @@ def main() -> int:
             link = f"[{title}]({problem_dir.relative_to(ROOT)})"
             rows.append(
                 f"| {number.lstrip('0') or '0'} | {link} | {info['difficulty'] or '-'} "
-                f"| {category_dir.name} | {info['date'] or '-'} |"
+                f"| {category_dir.name} | {info['count']} | {info['last'] or '-'} |"
             )
 
+    total_attempts = sum(
+        meta(p / "README.md")["count"]
+        for c in PROBLEMS.iterdir() if c.is_dir()
+        for p in c.iterdir() if p.is_dir()
+    )
     table = [
-        f"合計 {len(rows)} 問",
+        f"合計 {len(rows)} 問 / のべ {total_attempts} 回",
         "",
-        "| # | 問題 | 難易度 | カテゴリ | 解いた日 |",
-        "| --- | --- | --- | --- | --- |",
+        "| # | 問題 | 難易度 | カテゴリ | 回数 | 最後に解いた日 |",
+        "| --- | --- | --- | --- | --- | --- |",
         *rows,
     ] if rows else ["まだ問題がありません。"]
 

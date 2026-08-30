@@ -3,7 +3,17 @@
 - URL: {url}
 - 難易度: {difficulty}
 - カテゴリ: {category}
-- 解いた日: {date}
+- 初回: {date}
+
+## 復習ログ
+
+<!-- ATTEMPTS:START -->
+
+| 回 | 日付 | 結果 | 所要時間 | コード | メモ |
+| --- | --- | --- | --- | --- | --- |
+| 1 | {date} | - | - | [solution.py](solution.py) | |
+
+<!-- ATTEMPTS:END -->
 
 ## 問題の要約
 

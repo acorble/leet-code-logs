@@ -3,7 +3,17 @@
 - URL: https://leetcode.com/problems/two-sum/
 - 難易度: easy
 - カテゴリ: arrays-hashing
-- 解いた日: 2026-08-30
+- 初回: 2026-08-30
+
+## 復習ログ
+
+<!-- ATTEMPTS:START -->
+
+| 回 | 日付 | 結果 | 所要時間 | コード | メモ |
+| --- | --- | --- | --- | --- | --- |
+| 1 | 2026-08-30 | - | - | [solution.py](solution.py) | 初回 |
+
+<!-- ATTEMPTS:END -->
 
 ## 問題の要約
 

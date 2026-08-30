@@ -19,10 +19,11 @@ LeetCode で解いた問題のコードと考えを記録するリポジトリ�
 2. `solution.py` にユーザーのコードを入れる
 3. テストファイルに問題文の Example を写す。テストは `solution` フィクスチャを引数に取る
    （`def test_example_1(solution):` → `solution.Solution().xxx(...)`）。import は書かない
-4. `./.venv/bin/python -m pytest problems/<category>/<dir>` で通す
+4. `./.venv/bin/python -m pytest problems/<category>/<dir>` で確認する
+   （**任意**。落ちても記録は止めない。未完成・不正解のコードもそのまま保存する）
 5. 問題ディレクトリの `README.md` を埋める
 6. `python scripts/update_index.py` でルート README の一覧を更新
-7. `<番号>. <タイトル>` というメッセージでコミット
+7. `<番号>. <タイトル>` というメッセージでコミット（テストの成否は問わない）
 
 ## テストについて
 

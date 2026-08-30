@@ -52,12 +52,15 @@ python scripts/new_problem.py 1 "Two Sum" --category arrays-hashing --difficulty
 `problems/arrays-hashing/0001-two-sum/` に README・solution.py・テストが作られる。
 カテゴリを増やしたいときは `mkdir problems/<category>` してから指定する。
 
-### 2. 解いてテストする
+### 2. 解いてテストする（任意）
 
 ```bash
 pytest                                  # 全部
 pytest problems/arrays-hashing/0001-two-sum   # 1 問だけ
 ```
+
+テストは正解を保証するためではなく、後で解き直したときに壊れていないか気づくためのもの。
+未完成のコードや通らないコードもそのまま記録してよい。
 
 テストは `solution` フィクスチャで同じディレクトリの `solution.py` を受け取る。
 

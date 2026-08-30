@@ -21,6 +21,8 @@ scripts/
   update_index.py   # 下の一覧テーブルを再生成する
 templates/          # 雛形の元ファイル
 conftest.py         # solution.py を読み込む pytest フィクスチャ
+CLAUDE.md           # Claude 向けのリポジトリ規約
+.claude/skills/leetcode-log/   # 「解いた問題を記録する」手順
 ```
 
 ## セットアップ
@@ -31,6 +33,15 @@ pip install -r requirements.txt
 ```
 
 ## 使い方
+
+### Claude に任せる場合（普段はこちら）
+
+Claude Code でこのリポジトリを開き、解いたコードを貼って
+「242 Valid Anagram 解いた」のように伝えるだけでよい。
+`/leetcode-log` スキルが、雛形作成・テスト作成と実行・メモの下書き・
+一覧更新・コミットまでを行う。メモは後から自分の言葉に直せばよい。
+
+以下は手動でやる場合の手順。
 
 ### 1. 新しい問題を始める
 

@@ -28,6 +28,7 @@ def main() -> int:
     parser.add_argument("-c", "--category", default="misc", help="カテゴリ (problems/ 配下のディレクトリ名)")
     parser.add_argument("-d", "--difficulty", default="", choices=["", "easy", "medium", "hard"], help="難易度")
     parser.add_argument("-u", "--url", default="", help="問題 URL (省略時はスラッグから生成)")
+    parser.add_argument("--date", default="", help="解いた日 (省略時は今日。例: 2026-08-16)")
     args = parser.parse_args()
 
     slug = slugify(args.title)
@@ -51,7 +52,7 @@ def main() -> int:
         "url": args.url or f"https://leetcode.com/problems/{slug}/",
         "difficulty": args.difficulty or "?",
         "category": args.category,
-        "date": date.today().isoformat(),
+        "date": args.date or date.today().isoformat(),
     }
 
     target.mkdir(parents=True)

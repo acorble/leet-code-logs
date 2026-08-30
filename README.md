@@ -129,10 +129,11 @@ python scripts/update_index.py
 
 <!-- INDEX:START -->
 
-合計 1 問 / のべ 2 回
+合計 2 問 / のべ 3 回
 
 | # | 問題 | 難易度 | カテゴリ | 回数 | 最後に解いた日 |
 | --- | --- | --- | --- | --- | --- |
 | 1 | [1. Two Sum](problems/arrays-hashing/0001-two-sum) | easy | arrays-hashing | 2 | 2026-07-11 |
+| 217 | [217. Contains Duplicate](problems/arrays-hashing/0217-contains-duplicate) | easy | arrays-hashing | 1 | 2026-08-16 |
 
 <!-- INDEX:END -->

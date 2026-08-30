@@ -120,6 +120,6 @@ python scripts/update_index.py
 
 | # | 問題 | 難易度 | カテゴリ | 回数 | 最後に解いた日 |
 | --- | --- | --- | --- | --- | --- |
-| 1 | [1. Two Sum](problems/arrays-hashing/0001-two-sum) | easy | arrays-hashing | 1 | 2026-08-30 |
+| 1 | [1. Two Sum](problems/arrays-hashing/0001-two-sum) | easy | arrays-hashing | 1 | 2026-07-11 |
 
 <!-- INDEX:END -->

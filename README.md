@@ -9,12 +9,12 @@ LeetCode で解いた問題のコードと、解いたときの考えを記録�
 
 ```
 problems/
-  array/
+  arrays-hashing/
     0001-two-sum/
       README.md              # 問題メモ (アプローチ・計算量・学び)
       solution.py            # 提出したコード
       test_0001_two_sum.py   # サンプルケースのテスト
-  dynamic-programming/
+  two-pointers/
   ...
 scripts/
   new_problem.py    # 問題ディレクトリの雛形を作る
@@ -35,17 +35,17 @@ pip install -r requirements.txt
 ### 1. 新しい問題を始める
 
 ```bash
-python scripts/new_problem.py 1 "Two Sum" --category array --difficulty easy
+python scripts/new_problem.py 1 "Two Sum" --category arrays-hashing --difficulty easy
 ```
 
-`problems/array/0001-two-sum/` に README・solution.py・テストが作られる。
+`problems/arrays-hashing/0001-two-sum/` に README・solution.py・テストが作られる。
 カテゴリを増やしたいときは `mkdir problems/<category>` してから指定する。
 
 ### 2. 解いてテストする
 
 ```bash
 pytest                                  # 全部
-pytest problems/array/0001-two-sum      # 1 問だけ
+pytest problems/arrays-hashing/0001-two-sum   # 1 問だけ
 ```
 
 テストは `solution` フィクスチャで同じディレクトリの `solution.py` を受け取る。
@@ -63,9 +63,18 @@ python scripts/update_index.py
 
 ## カテゴリ
 
-array / string / hash-table / two-pointers / sliding-window / binary-search /
-stack / linked-list / tree / graph / heap / greedy / dynamic-programming /
-backtracking / math / bit-manipulation / design / misc
+| ディレクトリ | 分類 |
+| --- | --- |
+| `arrays-hashing` | Arrays & Hashing |
+| `two-pointers` | Two Pointers |
+| `stack` | Stack |
+| `binary-search` | Binary Search |
+| `sliding-window` | Sliding Window |
+| `linked-list` | Linked List |
+| `trees` | Trees |
+
+学習範囲を広げたくなったら `mkdir problems/<category>` でディレクトリを足すだけでよい
+（スクリプト側の変更は不要）。
 
 ## 解いた問題一覧
 
@@ -75,6 +84,6 @@ backtracking / math / bit-manipulation / design / misc
 
 | # | 問題 | 難易度 | カテゴリ | 解いた日 |
 | --- | --- | --- | --- | --- |
-| 1 | [1. Two Sum](problems/array/0001-two-sum) | easy | array | 2026-08-30 |
+| 1 | [1. Two Sum](problems/arrays-hashing/0001-two-sum) | easy | arrays-hashing | 2026-08-30 |
 
 <!-- INDEX:END -->

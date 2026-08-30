@@ -2,7 +2,7 @@
 
 - URL: https://leetcode.com/problems/two-sum/
 - 難易度: easy
-- カテゴリ: array
+- カテゴリ: arrays-hashing
 - 解いた日: 2026-08-30
 
 ## 問題の要約

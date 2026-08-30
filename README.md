@@ -12,7 +12,7 @@ LeetCode で解いた問題のコードと、解いたときの考えを記録�
 problems/
   arrays-hashing/
     0001-two-sum/
-      README.md              # 問題メモ + 復習ログ (アプローチ・計算量・学び)
+      README.md              # 問題メモ + 復習ログ
       solution.py            # 最新の解答
       attempts/              # 過去の解答 (2026-08-30.py ...)
       test_0001_two_sum.py   # サンプルケースのテスト
@@ -97,8 +97,9 @@ diff problems/arrays-hashing/0001-two-sum/attempts/2026-08-30.py \
      problems/arrays-hashing/0001-two-sum/solution.py
 ```
 
-README の「考えたこと」「学び」は上書きせず追記していく。同じ問題を 3 回、5 回と
-解いたときの記録の差が、そのまま上達の記録になる。
+解き直すたびに、README の「考えたこと / アプローチ」に `### N 回目` の空見出しが
+自動で追加される。**この節は自分の手で書く欄で、Claude は中身を書かない。**
+同じ問題を 3 回、5 回と解いたときの記述の差が、そのまま上達の記録になる。
 
 ### 4. 一覧と進捗を更新する
 

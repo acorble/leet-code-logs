@@ -99,6 +99,28 @@ def update_log(readme: Path, archived_rel: str, day: str, result: str, minutes: 
     return attempt_no
 
 
+def add_thoughts_heading(readme: Path, attempt_no: int) -> None:
+    """「考えたこと / アプローチ」に空の「### N 回目」見出しだけを足す。
+
+    中身は本人が手で書く欄なので、見出し以外は一切触らない。
+    """
+    text = readme.read_text(encoding="utf-8")
+    heading = "## 考えたこと / アプローチ"
+    start = text.find(heading)
+    if start == -1:
+        return
+
+    end = text.find("\n## ", start + len(heading))
+    end = len(text) if end == -1 else end
+
+    section = text[start:end].rstrip()
+    if re.search(rf"^### {attempt_no} 回目\s*$", section, re.MULTILINE):
+        return
+
+    section += f"\n\n### {attempt_no} 回目\n"
+    readme.write_text(text[:start] + section + text[end:], encoding="utf-8")
+
+
 def main() -> int:
     parser = argparse.ArgumentParser(description="解き直しの記録を始める")
     parser.add_argument("problem", help="問題番号 (例: 1)、スラッグの一部、または問題ディレクトリのパス")
@@ -124,10 +146,12 @@ def main() -> int:
 
     rel = dest.relative_to(problem).as_posix()
     no = update_log(readme, rel, day, args.result, args.minutes, args.note)
+    add_thoughts_heading(readme, no)
 
     print(f"{problem.relative_to(ROOT)} — {no} 回目の記録を開始しました")
     print(f"  前回のコードを退避: {rel}")
     print(f"  今回の解答は solution.py を上書きして書く")
+    print(f"  README に「### {no} 回目」の見出しを用意しました（中身は自分で書く）")
     return 0
 
 

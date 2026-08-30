@@ -39,6 +39,8 @@ First try.
 
 ## 学び・再利用できるパターン
 
+- 深さを測る部分は [104. Maximum Depth](../0104-maximum-depth-of-binary-tree) と同じ。
+  違いは「測り直すか、持ち上げるか」だけ
 - **深さを下から持ち上げる後順走査**。「高さ」と「判定結果」を同時に返すのが要点。
   各ノードで高さを測り直すと同じ計算を何度も繰り返すことになる。
   [543. Diameter of Binary Tree](../0543-diameter-of-binary-tree) も同じ形

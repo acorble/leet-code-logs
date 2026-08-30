@@ -3,9 +3,9 @@
 このファイルは `python scripts/update_progress.py` で自動生成される。**手で編集しない。**
 `problems/` に問題ディレクトリがあるものを「解いた」として集計している。
 
-## 全体: 2 / 150
+## 全体: 3 / 150
 
-`█░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░` 1.3%
+`█░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░` 2.0%
 
 | セクション | 進捗 | | 学習対象 |
 | --- | --- | --- | --- |
@@ -15,7 +15,7 @@
 | Stack | 0 / 7 | `░░░░░░░░░░░░` | ◯ |
 | Binary Search | 0 / 7 | `░░░░░░░░░░░░` | ◯ |
 | Linked List | 0 / 11 | `░░░░░░░░░░░░` | ◯ |
-| Trees | 0 / 15 | `░░░░░░░░░░░░` | ◯ |
+| Trees | 1 / 15 | `█░░░░░░░░░░░` | ◯ |
 | Tries | 0 / 3 | `░░░░░░░░░░░░` |  |
 | Heap / Priority Queue | 0 / 7 | `░░░░░░░░░░░░` |  |
 | Backtracking | 0 / 9 | `░░░░░░░░░░░░` |  |
@@ -107,7 +107,7 @@
 | ⬜ | 23 | Merge k Sorted Lists | Hard | - | - |
 | ⬜ | 25 | Reverse Nodes in k-Group | Hard | - | - |
 
-## Trees — 0 / 15
+## Trees — 1 / 15
 
 | | # | 問題 | 難易度 | 回数 | 最後に解いた日 |
 | --- | --- | --- | --- | --- | --- |
@@ -118,7 +118,7 @@
 | ⬜ | 100 | Same Tree | Easy | - | - |
 | ⬜ | 572 | Subtree of Another Tree | Easy | - | - |
 | ⬜ | 235 | Lowest Common Ancestor of a Binary Search Tree | Medium | - | - |
-| ⬜ | 102 | Binary Tree Level Order Traversal | Medium | - | - |
+| ✅ | 102 | [Binary Tree Level Order Traversal](problems/trees/0102-binary-tree-level-order-traversal) | Medium | 1 | 2026-08-30 |
 | ⬜ | 199 | Binary Tree Right Side View | Medium | - | - |
 | ⬜ | 1448 | Count Good Nodes in Binary Tree | Medium | - | - |
 | ⬜ | 98 | Validate Binary Search Tree | Medium | - | - |

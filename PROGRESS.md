@@ -111,7 +111,7 @@
 
 | | # | 問題 | 難易度 | 回数 | 最後に解いた日 |
 | --- | --- | --- | --- | --- | --- |
-| ✅ | 226 | [Invert Binary Tree](problems/trees/0226-invert-binary-tree) | Easy | 1 | 2026-07-21 |
+| ✅ | 226 | [Invert Binary Tree](problems/trees/0226-invert-binary-tree) | Easy | 2 | 2026-07-21 |
 | ✅ | 104 | [Maximum Depth of Binary Tree](problems/trees/0104-maximum-depth-of-binary-tree) | Easy | 1 | 2026-07-23 |
 | ✅ | 543 | [Diameter of Binary Tree](problems/trees/0543-diameter-of-binary-tree) | Easy | 1 | 2026-07-28 |
 | ✅ | 110 | [Balanced Binary Tree](problems/trees/0110-balanced-binary-tree) | Easy | 1 | 2026-08-22 |

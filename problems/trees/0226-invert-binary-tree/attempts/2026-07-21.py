@@ -3,7 +3,6 @@
 https://leetcode.com/problems/invert-binary-tree/
 """
 
-from collections import deque
 from typing import Optional
 
 
@@ -20,16 +19,11 @@ class Solution:
         if not root:
             return root
 
-        queue = deque([root])
+        tmpright = self.invertTree(root.right)
 
-        while queue:
-            node = queue.popleft()
+        tmpleft = self.invertTree(root.left)
 
-            node.left, node.right = node.right, node.left
-
-            if node.left:
-                queue.append(node.left)
-            if node.right:
-                queue.append(node.right)
+        root.right = tmpleft
+        root.left = tmpright
 
         return root

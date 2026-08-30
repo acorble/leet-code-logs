@@ -130,7 +130,7 @@ python scripts/update_index.py
 
 <!-- INDEX:START -->
 
-合計 4 問 / のべ 6 回
+合計 5 問 / のべ 7 回
 
 | # | 問題 | 難易度 | カテゴリ | 回数 | 最後に解いた日 |
 | --- | --- | --- | --- | --- | --- |
@@ -138,5 +138,6 @@ python scripts/update_index.py
 | 217 | [217. Contains Duplicate](problems/arrays-hashing/0217-contains-duplicate) | easy | arrays-hashing | 1 | 2026-08-16 |
 | 102 | [102. Binary Tree Level Order Traversal](problems/trees/0102-binary-tree-level-order-traversal) | medium | trees | 2 | 2026-08-30 |
 | 235 | [235. Lowest Common Ancestor of a Binary Search Tree](problems/trees/0235-lowest-common-ancestor-of-a-binary-search-tree) | medium | trees | 1 | 2026-08-29 |
+| 572 | [572. Subtree of Another Tree](problems/trees/0572-subtree-of-another-tree) | easy | trees | 1 | 2026-08-28 |
 
 <!-- INDEX:END -->

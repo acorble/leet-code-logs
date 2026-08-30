@@ -31,8 +31,16 @@ README の考察は上書きせず追記する。詳細は `/leetcode-log` ス�
 4. `./.venv/bin/python -m pytest problems/<category>/<dir>` で確認する
    （**任意**。落ちても記録は止めない。未完成・不正解のコードもそのまま保存する）
 5. 問題ディレクトリの `README.md` を埋める
-6. `python scripts/update_index.py` でルート README の一覧を更新
+6. `python scripts/update_index.py` でルート README の一覧と PROGRESS.md を更新
+   （PROGRESS.md は NeetCode 150 の進捗。自動生成なので手で編集しないこと）
 7. `<番号>. <タイトル>` というメッセージでコミット（テストの成否は問わない）
+
+## NeetCode 150
+
+ユーザーは NeetCode 150 に沿って進めている。リストは `data/neetcode150.tsv`、
+進捗は `PROGRESS.md`（`problems/` から自動生成）。
+「次に何を解けばいい?」と聞かれたら PROGRESS.md の未着手 (⬜) から、
+学習対象セクション（`problems/` にカテゴリがあるもの）を優先して提案する。
 
 ## テストについて
 

@@ -9,6 +9,8 @@ import re
 import sys
 from pathlib import Path
 
+sys.path.insert(0, str(Path(__file__).resolve().parent))
+
 ROOT = Path(__file__).resolve().parent.parent
 PROBLEMS = ROOT / "problems"
 README = ROOT / "README.md"
@@ -73,6 +75,11 @@ def main() -> int:
     )
     README.write_text(new, encoding="utf-8")
     print(f"README.md を更新しました ({len(rows)} 問)")
+
+    # NeetCode 150 の進捗も同時に更新する（片方だけ古くなるのを防ぐ）
+    import update_progress
+
+    update_progress.main()
     return 0
 
 

@@ -90,9 +90,12 @@ def test_example_1(solution):
 ## 6. 一覧を更新してコミット
 
 ```bash
-python scripts/update_index.py
+python scripts/update_index.py   # ルート README の一覧 + PROGRESS.md
 git add -A && git commit -m "<番号>. <タイトル>"
 ```
+
+`PROGRESS.md` は NeetCode 150 の進捗表で、`problems/` から自動生成される。
+**手で ✅ を付けたり編集したりしないこと。**
 
 テストの成否にかかわらずコミットする。未完成なら
 `git commit -m "<番号>. <タイトル> (WIP)"` のように印を付ける。

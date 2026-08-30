@@ -4,6 +4,7 @@ LeetCode で解いた問題のコードと、解いたときの考えを記録�
 
 - 言語: Python
 - 分類: アルゴリズムのカテゴリ別 (`problems/<category>/<番号>-<スラッグ>/`)
+- 進め方: [NeetCode 150](https://neetcode.io/practice) に沿って進める → **[進捗はこちら](PROGRESS.md)**
 
 ## ディレクトリ構成
 
@@ -17,10 +18,14 @@ problems/
       test_0001_two_sum.py   # サンプルケースのテスト
   two-pointers/
   ...
+PROGRESS.md         # NeetCode 150 の進捗 (自動生成。手で編集しない)
+data/
+  neetcode150.tsv   # NeetCode 150 の問題リスト
 scripts/
   new_problem.py    # 問題ディレクトリの雛形を作る
   new_attempt.py    # 解き直し。前回のコードを attempts/ に退避する
-  update_index.py   # 下の一覧テーブルを再生成する
+  update_index.py   # 下の一覧テーブルと PROGRESS.md を再生成する
+  update_progress.py # PROGRESS.md だけを再生成する
 templates/          # 雛形の元ファイル
 conftest.py         # solution.py を読み込む pytest フィクスチャ
 CLAUDE.md           # Claude 向けのリポジトリ規約
@@ -95,11 +100,15 @@ diff problems/arrays-hashing/0001-two-sum/attempts/2026-08-30.py \
 README の「考えたこと」「学び」は上書きせず追記していく。同じ問題を 3 回、5 回と
 解いたときの記録の差が、そのまま上達の記録になる。
 
-### 4. 一覧を更新する
+### 4. 一覧と進捗を更新する
 
 ```bash
 python scripts/update_index.py
 ```
+
+この README の一覧と [PROGRESS.md](PROGRESS.md) の両方が更新される。
+進捗のチェックは手で付けない。`problems/` に問題ディレクトリがあれば
+自動で ✅ になる仕組みなので、記録とチェックがズレることがない。
 
 ## カテゴリ
 

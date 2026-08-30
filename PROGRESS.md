@@ -3,9 +3,9 @@
 このファイルは `python scripts/update_progress.py` で自動生成される。**手で編集しない。**
 `problems/` に問題ディレクトリがあるものを「解いた」として集計している。
 
-## 全体: 9 / 150
+## 全体: 10 / 150
 
-`██░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░` 6.0%
+`███░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░` 6.7%
 
 | セクション | 進捗 | | 学習対象 |
 | --- | --- | --- | --- |
@@ -15,7 +15,7 @@
 | Stack | 0 / 7 | `░░░░░░░░░░░░` | ◯ |
 | Binary Search | 0 / 7 | `░░░░░░░░░░░░` | ◯ |
 | Linked List | 0 / 11 | `░░░░░░░░░░░░` | ◯ |
-| Trees | 7 / 15 | `██████░░░░░░` | ◯ |
+| Trees | 8 / 15 | `██████░░░░░░` | ◯ |
 | Tries | 0 / 3 | `░░░░░░░░░░░░` |  |
 | Heap / Priority Queue | 0 / 7 | `░░░░░░░░░░░░` |  |
 | Backtracking | 0 / 9 | `░░░░░░░░░░░░` |  |
@@ -107,11 +107,11 @@
 | ⬜ | 23 | Merge k Sorted Lists | Hard | - | - |
 | ⬜ | 25 | Reverse Nodes in k-Group | Hard | - | - |
 
-## Trees — 7 / 15
+## Trees — 8 / 15
 
 | | # | 問題 | 難易度 | 回数 | 最後に解いた日 |
 | --- | --- | --- | --- | --- | --- |
-| ⬜ | 226 | Invert Binary Tree | Easy | - | - |
+| ✅ | 226 | [Invert Binary Tree](problems/trees/0226-invert-binary-tree) | Easy | 1 | 2026-07-21 |
 | ✅ | 104 | [Maximum Depth of Binary Tree](problems/trees/0104-maximum-depth-of-binary-tree) | Easy | 1 | 2026-07-23 |
 | ✅ | 543 | [Diameter of Binary Tree](problems/trees/0543-diameter-of-binary-tree) | Easy | 1 | 2026-07-28 |
 | ✅ | 110 | [Balanced Binary Tree](problems/trees/0110-balanced-binary-tree) | Easy | 1 | 2026-08-22 |

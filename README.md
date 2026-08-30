@@ -130,7 +130,7 @@ python scripts/update_index.py
 
 <!-- INDEX:START -->
 
-合計 9 問 / のべ 11 回
+合計 10 問 / のべ 12 回
 
 | # | 問題 | 難易度 | カテゴリ | 回数 | 最後に解いた日 |
 | --- | --- | --- | --- | --- | --- |
@@ -140,6 +140,7 @@ python scripts/update_index.py
 | 102 | [102. Binary Tree Level Order Traversal](problems/trees/0102-binary-tree-level-order-traversal) | medium | trees | 2 | 2026-08-30 |
 | 104 | [104. Maximum Depth of Binary Tree](problems/trees/0104-maximum-depth-of-binary-tree) | easy | trees | 1 | 2026-07-23 |
 | 110 | [110. Balanced Binary Tree](problems/trees/0110-balanced-binary-tree) | easy | trees | 1 | 2026-08-22 |
+| 226 | [226. Invert Binary Tree](problems/trees/0226-invert-binary-tree) | easy | trees | 1 | 2026-07-21 |
 | 235 | [235. Lowest Common Ancestor of a Binary Search Tree](problems/trees/0235-lowest-common-ancestor-of-a-binary-search-tree) | medium | trees | 1 | 2026-08-29 |
 | 543 | [543. Diameter of Binary Tree](problems/trees/0543-diameter-of-binary-tree) | easy | trees | 1 | 2026-07-28 |
 | 572 | [572. Subtree of Another Tree](problems/trees/0572-subtree-of-another-tree) | easy | trees | 1 | 2026-08-28 |

@@ -81,6 +81,10 @@ python scripts/new_attempt.py 1 --result AC --minutes 6分 --note "今回はヒ�
 前回の `solution.py` が `attempts/<日付>.py` にコピーされ、問題の README の
 復習ログに新しい行が追加される。あとは `solution.py` を今回の解答で上書きする。
 
+退避先のファイル名は「そのコードを書いた日」。同じ日に複数回解いた場合は
+`2026-07-11.py`, `2026-07-11-2.py` と連番になる。
+過去の日付で記録したいときは `--date 2026-07-11` を付ける。
+
 `solution.py` は常に最新、`attempts/` に過去が積み上がる。前回との比較は:
 
 ```bash

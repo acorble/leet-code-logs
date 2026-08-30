@@ -42,6 +42,26 @@ def find_problem(target: str) -> Path:
     return hits[0]
 
 
+def previous_day(readme: Path, fallback: str) -> str:
+    """退避しようとしている solution.py が、いつ書かれたものかを復習ログから取る。
+
+    退避先のファイル名は「そのコードを書いた日」でなければ意味がないので、
+    今回の日付ではなく、solution.py を指している行の日付を使う。
+    """
+    text = readme.read_text(encoding="utf-8") if readme.exists() else ""
+    block = re.search(r"<!-- ATTEMPTS:START -->(.*?)<!-- ATTEMPTS:END -->", text, re.DOTALL)
+    if block:
+        rows = re.findall(
+            r"^\|\s*\d+\s*\|\s*([^|]*?)\s*\|.*?\[solution\.py\]",
+            block.group(1),
+            re.MULTILINE,
+        )
+        if rows and rows[-1]:
+            return rows[-1]
+    m = re.search(r"^- 初回: (.*)$", text, re.MULTILINE)
+    return m.group(1).strip() if m else fallback
+
+
 def archive_path(attempts_dir: Path, day: str) -> Path:
     """同じ日に複数回解いた場合は -2, -3 と連番を付ける。"""
     candidate = attempts_dir / f"{day}.py"
@@ -93,14 +113,17 @@ def main() -> int:
     if not solution.exists():
         sys.exit(f"solution.py がありません: {problem.relative_to(ROOT)}")
 
+    readme = problem / "README.md"
     attempts = problem / "attempts"
     attempts.mkdir(exist_ok=True)
     day = args.date or date.today().isoformat()
-    dest = archive_path(attempts, day)
+
+    # 退避先の名前は「今回の日付」ではなく「退避するコードを書いた日」
+    dest = archive_path(attempts, previous_day(readme, day))
     shutil.copy2(solution, dest)
 
     rel = dest.relative_to(problem).as_posix()
-    no = update_log(problem / "README.md", rel, day, args.result, args.minutes, args.note)
+    no = update_log(readme, rel, day, args.result, args.minutes, args.note)
 
     print(f"{problem.relative_to(ROOT)} — {no} 回目の記録を開始しました")
     print(f"  前回のコードを退避: {rel}")

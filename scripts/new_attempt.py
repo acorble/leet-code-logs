@@ -85,6 +85,7 @@ def main() -> int:
     parser.add_argument("-r", "--result", default="", help="結果 (AC / WA / TLE / giveup など)")
     parser.add_argument("-m", "--minutes", default="", help="かかった時間 (例: 12分)")
     parser.add_argument("-n", "--note", default="", help="今回のひとことメモ")
+    parser.add_argument("--date", default="", help="解いた日 (省略時は今日。例: 2026-07-11)")
     args = parser.parse_args()
 
     problem = find_problem(args.problem)
@@ -94,7 +95,7 @@ def main() -> int:
 
     attempts = problem / "attempts"
     attempts.mkdir(exist_ok=True)
-    day = date.today().isoformat()
+    day = args.date or date.today().isoformat()
     dest = archive_path(attempts, day)
     shutil.copy2(solution, dest)
 

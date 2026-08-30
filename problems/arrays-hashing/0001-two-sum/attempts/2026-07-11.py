@@ -11,9 +11,7 @@ class Solution:
         seen = {}
 
         for i, num in enumerate(nums):
-            seen[num] = i
-
-        for i, num in enumerate(nums):
             complement = target - num
-            if complement in seen and seen[complement] != i:
+            if complement in seen:
                 return [seen[complement], i]
+            seen[num] = i

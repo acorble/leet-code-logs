@@ -118,7 +118,7 @@
 | ⬜ | 100 | Same Tree | Easy | - | - |
 | ⬜ | 572 | Subtree of Another Tree | Easy | - | - |
 | ⬜ | 235 | Lowest Common Ancestor of a Binary Search Tree | Medium | - | - |
-| ✅ | 102 | [Binary Tree Level Order Traversal](problems/trees/0102-binary-tree-level-order-traversal) | Medium | 1 | 2026-08-30 |
+| ✅ | 102 | [Binary Tree Level Order Traversal](problems/trees/0102-binary-tree-level-order-traversal) | Medium | 2 | 2026-08-30 |
 | ⬜ | 199 | Binary Tree Right Side View | Medium | - | - |
 | ⬜ | 1448 | Count Good Nodes in Binary Tree | Medium | - | - |
 | ⬜ | 98 | Validate Binary Search Tree | Medium | - | - |

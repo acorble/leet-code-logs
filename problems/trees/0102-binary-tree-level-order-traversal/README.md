@@ -52,8 +52,8 @@
 
 - **レベルごとに区切る BFS**: ループの先頭で `len(queue)` を控えておき、その回数だけ
   取り出す。これで「今の階層のノードだけ」を処理できる。
-  階層を意識する木の問題（199. Right Side View, 103. Zigzag Level Order など）は
-  すべてこの形に乗る
+  階層を意識する木の問題（[199. Right Side View](../0199-binary-tree-right-side-view),
+  103. Zigzag Level Order など）はすべてこの形に乗る
 - 先頭から取り出すなら `list.pop(0)` ではなく `collections.deque` の `popleft()`。
   list の pop(0) は残り全体をずらすので O(n) かかり、BFS 全体では O(n × 最大幅) になる
 

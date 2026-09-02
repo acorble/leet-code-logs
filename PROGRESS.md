@@ -3,9 +3,9 @@
 このファイルは `python scripts/update_progress.py` で自動生成される。**手で編集しない。**
 `problems/` に問題ディレクトリがあるものを「解いた」として集計している。
 
-## 全体: 12 / 150
+## 全体: 13 / 150
 
-`███░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░` 8.0%
+`███░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░` 8.7%
 
 | セクション | 進捗 | | 学習対象 |
 | --- | --- | --- | --- |
@@ -14,7 +14,7 @@
 | Sliding Window | 0 / 6 | `░░░░░░░░░░░░` | ◯ |
 | Stack | 0 / 7 | `░░░░░░░░░░░░` | ◯ |
 | Binary Search | 0 / 7 | `░░░░░░░░░░░░` | ◯ |
-| Linked List | 1 / 11 | `█░░░░░░░░░░░` | ◯ |
+| Linked List | 2 / 11 | `██░░░░░░░░░░` | ◯ |
 | Trees | 9 / 15 | `███████░░░░░` | ◯ |
 | Tries | 0 / 3 | `░░░░░░░░░░░░` |  |
 | Heap / Priority Queue | 0 / 7 | `░░░░░░░░░░░░` |  |
@@ -91,7 +91,7 @@
 | ⬜ | 981 | Time Based Key-Value Store | Medium | - | - |
 | ⬜ | 4 | Median of Two Sorted Arrays | Hard | - | - |
 
-## Linked List — 1 / 11
+## Linked List — 2 / 11
 
 | | # | 問題 | 難易度 | 回数 | 最後に解いた日 |
 | --- | --- | --- | --- | --- | --- |
@@ -101,7 +101,7 @@
 | ⬜ | 19 | Remove Nth Node From End of List | Medium | - | - |
 | ⬜ | 138 | Copy List with Random Pointer | Medium | - | - |
 | ⬜ | 2 | Add Two Numbers | Medium | - | - |
-| ⬜ | 141 | Linked List Cycle | Easy | - | - |
+| ✅ | 141 | [Linked List Cycle](problems/linked-list/0141-linked-list-cycle) | Easy | 1 | 2026-07-05 |
 | ⬜ | 287 | Find the Duplicate Number | Medium | - | - |
 | ⬜ | 146 | LRU Cache | Medium | - | - |
 | ⬜ | 23 | Merge k Sorted Lists | Hard | - | - |

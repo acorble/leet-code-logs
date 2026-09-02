@@ -133,12 +133,13 @@ python scripts/update_index.py
 
 <!-- INDEX:START -->
 
-合計 13 問 / のべ 19 回
+合計 14 問 / のべ 20 回
 
 | # | 問題 | 難易度 | カテゴリ | 回数 | 最後に解いた日 |
 | --- | --- | --- | --- | --- | --- |
 | 1 | [1. Two Sum](problems/arrays-hashing/0001-two-sum) | easy | arrays-hashing | 2 | 2026-07-11 |
 | 217 | [217. Contains Duplicate](problems/arrays-hashing/0217-contains-duplicate) | easy | arrays-hashing | 1 | 2026-08-16 |
+| 21 | [21. Merge Two Sorted Lists](problems/linked-list/0021-merge-two-sorted-lists) | easy | linked-list | 1 | 2026-07-04 |
 | 141 | [141. Linked List Cycle](problems/linked-list/0141-linked-list-cycle) | easy | linked-list | 2 | 2026-07-10 |
 | 143 | [143. Reorder List](problems/linked-list/0143-reorder-list) | medium | linked-list | 2 | 2026-07-11 |
 | 100 | [100. Same Tree](problems/trees/0100-same-tree) | easy | trees | 1 | 2026-08-26 |

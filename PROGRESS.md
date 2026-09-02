@@ -97,7 +97,7 @@
 | --- | --- | --- | --- | --- | --- |
 | ⬜ | 206 | Reverse Linked List | Easy | - | - |
 | ⬜ | 21 | Merge Two Sorted Lists | Easy | - | - |
-| ✅ | 143 | [Reorder List](problems/linked-list/0143-reorder-list) | Medium | 1 | 2026-07-06 |
+| ✅ | 143 | [Reorder List](problems/linked-list/0143-reorder-list) | Medium | 2 | 2026-07-11 |
 | ⬜ | 19 | Remove Nth Node From End of List | Medium | - | - |
 | ⬜ | 138 | Copy List with Random Pointer | Medium | - | - |
 | ⬜ | 2 | Add Two Numbers | Medium | - | - |

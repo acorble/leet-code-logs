@@ -18,19 +18,33 @@ class Solution:
         """
         Do not return anything, modify head in-place instead.
         """
-        nodeList = []
-        curr = head
+        slow, fast = head, head.next
 
-        while curr:
-            nodeList.append(curr)
-            curr = curr.next
+        while fast and fast.next:
+            slow = slow.next
+            fast = fast.next.next
 
-        i = 0
-        e = len(nodeList) - 1
-        while i < e - i:
-            nodeList[i].next = nodeList[e - i]
-            nodeList[e - i].next = None
-            if (e - i) - i > 1:
-                nodeList[e - i].next = nodeList[i + 1]
-                nodeList[i + 1].next = None
-            i += 1
+        # now fast reached the end, slow is in middle of linked-list
+        # cut connection between slow and slow.next
+        headSecond = slow.next
+        slow.next = None
+
+        # reverse second half of linked list
+        prev = None
+        while headSecond:
+            tmp = headSecond.next
+            headSecond.next = prev
+            prev = headSecond
+            headSecond = tmp
+
+        # first half :head, second half: prev
+        while head and prev:
+            headNext = head.next
+            prevNext = prev.next
+
+            # update link
+            head.next = prev
+            prev.next = headNext
+
+            head = headNext
+            prev = prevNext

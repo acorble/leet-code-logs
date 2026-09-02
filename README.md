@@ -133,7 +133,7 @@ python scripts/update_index.py
 
 <!-- INDEX:START -->
 
-合計 15 問 / のべ 22 回
+合計 15 問 / のべ 24 回
 
 | # | 問題 | 難易度 | カテゴリ | 回数 | 最後に解いた日 |
 | --- | --- | --- | --- | --- | --- |
@@ -142,7 +142,7 @@ python scripts/update_index.py
 | 21 | [21. Merge Two Sorted Lists](problems/linked-list/0021-merge-two-sorted-lists) | easy | linked-list | 1 | 2026-07-04 |
 | 141 | [141. Linked List Cycle](problems/linked-list/0141-linked-list-cycle) | easy | linked-list | 2 | 2026-07-10 |
 | 143 | [143. Reorder List](problems/linked-list/0143-reorder-list) | medium | linked-list | 2 | 2026-07-11 |
-| 206 | [206. Reverse Linked List](problems/linked-list/0206-reverse-linked-list) | easy | linked-list | 2 | 2026-07-03 |
+| 206 | [206. Reverse Linked List](problems/linked-list/0206-reverse-linked-list) | easy | linked-list | 4 | 2026-07-04 |
 | 100 | [100. Same Tree](problems/trees/0100-same-tree) | easy | trees | 1 | 2026-08-26 |
 | 102 | [102. Binary Tree Level Order Traversal](problems/trees/0102-binary-tree-level-order-traversal) | medium | trees | 2 | 2026-08-30 |
 | 104 | [104. Maximum Depth of Binary Tree](problems/trees/0104-maximum-depth-of-binary-tree) | easy | trees | 1 | 2026-07-23 |

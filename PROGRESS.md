@@ -95,7 +95,7 @@
 
 | | # | 問題 | 難易度 | 回数 | 最後に解いた日 |
 | --- | --- | --- | --- | --- | --- |
-| ✅ | 206 | [Reverse Linked List](problems/linked-list/0206-reverse-linked-list) | Easy | 2 | 2026-07-03 |
+| ✅ | 206 | [Reverse Linked List](problems/linked-list/0206-reverse-linked-list) | Easy | 4 | 2026-07-04 |
 | ✅ | 21 | [Merge Two Sorted Lists](problems/linked-list/0021-merge-two-sorted-lists) | Easy | 1 | 2026-07-04 |
 | ✅ | 143 | [Reorder List](problems/linked-list/0143-reorder-list) | Medium | 2 | 2026-07-11 |
 | ⬜ | 19 | Remove Nth Node From End of List | Medium | - | - |

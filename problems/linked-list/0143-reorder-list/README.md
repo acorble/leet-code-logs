@@ -57,7 +57,7 @@
 | 手順 | やること | 単体の問題 |
 | --- | --- | --- |
 | 1 | **中点を見つける** — slow が 1 歩進む間に fast が 2 歩 | 876. Middle of the Linked List<br>（同じ道具を [141](../0141-linked-list-cycle) では循環検出に使う） |
-| 2 | **後半を反転する** — prev / curr で `next` を張り替える | 206. Reverse Linked List |
+| 2 | **後半を反転する** — prev / curr で `next` を張り替える | [206. Reverse Linked List](../0206-reverse-linked-list)<br>（7/3 に獲得した形をそのまま使っている） |
 | 3 | **前半と後半を交互に繋ぐ** | 21. Merge Two Sorted Lists |
 
 3 つの独立した問題の組み合わせになっている。

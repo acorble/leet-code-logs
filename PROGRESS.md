@@ -101,7 +101,7 @@
 | ⬜ | 19 | Remove Nth Node From End of List | Medium | - | - |
 | ⬜ | 138 | Copy List with Random Pointer | Medium | - | - |
 | ⬜ | 2 | Add Two Numbers | Medium | - | - |
-| ✅ | 141 | [Linked List Cycle](problems/linked-list/0141-linked-list-cycle) | Easy | 1 | 2026-07-05 |
+| ✅ | 141 | [Linked List Cycle](problems/linked-list/0141-linked-list-cycle) | Easy | 2 | 2026-07-10 |
 | ⬜ | 287 | Find the Duplicate Number | Medium | - | - |
 | ⬜ | 146 | LRU Cache | Medium | - | - |
 | ⬜ | 23 | Merge k Sorted Lists | Hard | - | - |

@@ -18,14 +18,14 @@ class Solution:
         if not head or not head.next:
             return False
 
-        slow, fast = head, head.next
+        curr = head
+        nodeSet = set()
 
-        while fast.next and fast.next.next:
-            if slow == fast:
+        while curr.next:
+            if curr in nodeSet:
                 return True
-            # shift by one
-            slow = slow.next
-            # shift by two
-            fast = fast.next.next
+            else:
+                nodeSet.add(curr)
+                curr = curr.next
 
         return False

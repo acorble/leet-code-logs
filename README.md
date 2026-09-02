@@ -24,6 +24,7 @@ data/
 scripts/
   new_problem.py    # 問題ディレクトリの雛形を作る
   new_attempt.py    # 解き直し。前回のコードを attempts/ に退避する
+  _open_editor.py   # 作成後に README をエディタで開く
   update_index.py   # 下の一覧テーブルと PROGRESS.md を再生成する
   update_progress.py # PROGRESS.md だけを再生成する
 templates/          # 雛形の元ファイル
@@ -57,7 +58,8 @@ Claude Code でこのリポジトリを開き、解いたコードを貼って
 python scripts/new_problem.py 1 "Two Sum" --category arrays-hashing --difficulty easy
 ```
 
-`problems/arrays-hashing/0001-two-sum/` に README・solution.py・テストが作られる。
+`problems/arrays-hashing/0001-two-sum/` に README・solution.py・テストが作られ、
+**その問題の README がエディタで自動的に開く**（開きたくないときは `--no-open`）。
 カテゴリを増やしたいときは `mkdir problems/<category>` してから指定する。
 
 ### 2. 解いてテストする（任意）
@@ -84,7 +86,8 @@ python scripts/new_attempt.py 1 --result AC --minutes 6分 --note "今回はヒ�
 ```
 
 前回の `solution.py` が `attempts/<日付>.py` にコピーされ、問題の README の
-復習ログに新しい行が追加される。あとは `solution.py` を今回の解答で上書きする。
+復習ログに新しい行が追加され、**README がエディタで開く**。
+あとは `solution.py` を今回の解答で上書きする。
 
 退避先のファイル名は「そのコードを書いた日」。同じ日に複数回解いた場合は
 `2026-07-11.py`, `2026-07-11-2.py` と連番になる。

@@ -11,6 +11,9 @@ import sys
 from datetime import date
 from pathlib import Path
 
+sys.path.insert(0, str(Path(__file__).resolve().parent))
+from _open_editor import open_in_editor  # noqa: E402
+
 ROOT = Path(__file__).resolve().parent.parent
 TEMPLATES = ROOT / "templates"
 PROBLEMS = ROOT / "problems"
@@ -29,6 +32,7 @@ def main() -> int:
     parser.add_argument("-d", "--difficulty", default="", choices=["", "easy", "medium", "hard"], help="難易度")
     parser.add_argument("-u", "--url", default="", help="問題 URL (省略時はスラッグから生成)")
     parser.add_argument("--date", default="", help="解いた日 (省略時は今日。例: 2026-08-16)")
+    parser.add_argument("--no-open", action="store_true", help="README をエディタで開かない")
     args = parser.parse_args()
 
     slug = slugify(args.title)
@@ -68,6 +72,8 @@ def main() -> int:
     print(f"作成しました: {target.relative_to(ROOT)}")
     for out_name in files.values():
         print(f"  - {out_name}")
+    if not args.no_open:
+        open_in_editor(target / "README.md")
     return 0
 
 

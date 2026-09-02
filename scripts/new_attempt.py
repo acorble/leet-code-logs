@@ -16,6 +16,9 @@ import sys
 from datetime import date
 from pathlib import Path
 
+sys.path.insert(0, str(Path(__file__).resolve().parent))
+from _open_editor import open_in_editor  # noqa: E402
+
 ROOT = Path(__file__).resolve().parent.parent
 PROBLEMS = ROOT / "problems"
 START = "<!-- ATTEMPTS:START -->"
@@ -128,6 +131,7 @@ def main() -> int:
     parser.add_argument("-m", "--minutes", default="", help="かかった時間 (例: 12分)")
     parser.add_argument("-n", "--note", default="", help="今回のひとことメモ")
     parser.add_argument("--date", default="", help="解いた日 (省略時は今日。例: 2026-07-11)")
+    parser.add_argument("--no-open", action="store_true", help="README をエディタで開かない")
     args = parser.parse_args()
 
     problem = find_problem(args.problem)
@@ -152,6 +156,8 @@ def main() -> int:
     print(f"  前回のコードを退避: {rel}")
     print(f"  今回の解答は solution.py を上書きして書く")
     print(f"  README に「### {no} 回目」の見出しを用意しました（中身は自分で書く）")
+    if not args.no_open:
+        open_in_editor(readme)
     return 0
 
 

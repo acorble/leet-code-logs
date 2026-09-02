@@ -37,7 +37,9 @@ README の考察は上書きせず追記する。詳細は `/leetcode-log` ス�
 必ず `/leetcode-log` スキルの手順に従うこと。要点だけ再掲すると:
 
 1. `python scripts/new_problem.py <番号> "<タイトル>" -c <category> -d <difficulty>` で雛形を作る
-   （手で mkdir しない。ファイル名の規約がずれる）
+   （手で mkdir しない。ファイル名の規約がずれる）。
+   実行すると問題の README がエディタで自動的に開く。`--no-open` で抑止できるが、
+   ユーザーがその場で考察を書けるよう、**通常は付けないこと**
 2. `solution.py` にユーザーのコードを入れる
 3. テストファイルに問題文の Example を写す。テストは `solution` フィクスチャを引数に取る
    （`def test_example_1(solution):` → `solution.Solution().xxx(...)`）。import は書かない

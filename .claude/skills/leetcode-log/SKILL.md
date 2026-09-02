@@ -41,6 +41,8 @@ python scripts/new_problem.py <番号> "<タイトル>" -c <category> -d <easy|m
 ```
 
 手動で `mkdir` しないこと。ディレクトリ名・テストファイル名の規約はこのスクリプトが担保している。
+実行すると問題の README がエディタで開く。ユーザーがその場で「考えたこと」を
+書けるようにするためなので、**`--no-open` は付けないこと**。
 すでに存在する場合はエラーになる。その場合は解き直しなので「解き直し」の節へ。
 
 ## 2. solution.py にコードを入れる
@@ -131,7 +133,8 @@ python scripts/new_attempt.py <番号> --result <AC|WA|TLE|giveup> --minutes <�
 ```
 
 これで前回の `solution.py` が `attempts/<日付>.py` にコピーされ、
-README の復習ログに今回の行が追加される。**手でファイルを移動しないこと。**
+README の復習ログに今回の行が追加され、README がエディタで開く。
+**手でファイルを移動しないこと。** `--no-open` は付けないこと。
 
 `--result` `--minutes` `--note` はユーザーが言っていない場合は省略してよい
 （後から README を直接編集して埋められる）。所要時間や「ヒントを見たか」は

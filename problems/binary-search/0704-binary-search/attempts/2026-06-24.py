@@ -13,12 +13,16 @@ class Solution:
         left, right = 0, len(nums) - 1
 
         while 1 < right - left:
+            print(f"middle: {middle}")
+
             if target < nums[middle]:
+                print("left")
                 right = middle
-                middle = left + (right - left) // 2
+                middle = left + int((right - left) / 2)
             elif nums[middle] < target:
+                print("right")
                 left = middle
-                middle = left + (right - left) // 2
+                middle = left + int((right - left) / 2)
             else:
                 return middle
 

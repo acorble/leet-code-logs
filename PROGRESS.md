@@ -83,7 +83,7 @@
 
 | | # | 問題 | 難易度 | 回数 | 最後に解いた日 |
 | --- | --- | --- | --- | --- | --- |
-| ✅ | 704 | [Binary Search](problems/binary-search/0704-binary-search) | Easy | 1 | 2026-06-24 |
+| ✅ | 704 | [Binary Search](problems/binary-search/0704-binary-search) | Easy | 2 | 2026-06-24 |
 | ⬜ | 74 | Search a 2D Matrix | Medium | - | - |
 | ⬜ | 875 | Koko Eating Bananas | Medium | - | - |
 | ⬜ | 153 | Find Minimum in Rotated Sorted Array | Medium | - | - |

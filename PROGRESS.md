@@ -3,9 +3,9 @@
 このファイルは `python scripts/update_progress.py` で自動生成される。**手で編集しない。**
 `problems/` に問題ディレクトリがあるものを「解いた」として集計している。
 
-## 全体: 11 / 150
+## 全体: 12 / 150
 
-`███░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░` 7.3%
+`███░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░` 8.0%
 
 | セクション | 進捗 | | 学習対象 |
 | --- | --- | --- | --- |
@@ -14,7 +14,7 @@
 | Sliding Window | 0 / 6 | `░░░░░░░░░░░░` | ◯ |
 | Stack | 0 / 7 | `░░░░░░░░░░░░` | ◯ |
 | Binary Search | 0 / 7 | `░░░░░░░░░░░░` | ◯ |
-| Linked List | 0 / 11 | `░░░░░░░░░░░░` | ◯ |
+| Linked List | 1 / 11 | `█░░░░░░░░░░░` | ◯ |
 | Trees | 9 / 15 | `███████░░░░░` | ◯ |
 | Tries | 0 / 3 | `░░░░░░░░░░░░` |  |
 | Heap / Priority Queue | 0 / 7 | `░░░░░░░░░░░░` |  |
@@ -91,13 +91,13 @@
 | ⬜ | 981 | Time Based Key-Value Store | Medium | - | - |
 | ⬜ | 4 | Median of Two Sorted Arrays | Hard | - | - |
 
-## Linked List — 0 / 11
+## Linked List — 1 / 11
 
 | | # | 問題 | 難易度 | 回数 | 最後に解いた日 |
 | --- | --- | --- | --- | --- | --- |
 | ⬜ | 206 | Reverse Linked List | Easy | - | - |
 | ⬜ | 21 | Merge Two Sorted Lists | Easy | - | - |
-| ⬜ | 143 | Reorder List | Medium | - | - |
+| ✅ | 143 | [Reorder List](problems/linked-list/0143-reorder-list) | Medium | 1 | 2026-07-06 |
 | ⬜ | 19 | Remove Nth Node From End of List | Medium | - | - |
 | ⬜ | 138 | Copy List with Random Pointer | Medium | - | - |
 | ⬜ | 2 | Add Two Numbers | Medium | - | - |

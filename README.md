@@ -130,12 +130,13 @@ python scripts/update_index.py
 
 <!-- INDEX:START -->
 
-合計 11 問 / のべ 15 回
+合計 12 問 / のべ 16 回
 
 | # | 問題 | 難易度 | カテゴリ | 回数 | 最後に解いた日 |
 | --- | --- | --- | --- | --- | --- |
 | 1 | [1. Two Sum](problems/arrays-hashing/0001-two-sum) | easy | arrays-hashing | 2 | 2026-07-11 |
 | 217 | [217. Contains Duplicate](problems/arrays-hashing/0217-contains-duplicate) | easy | arrays-hashing | 1 | 2026-08-16 |
+| 143 | [143. Reorder List](problems/linked-list/0143-reorder-list) | medium | linked-list | 1 | 2026-07-06 |
 | 100 | [100. Same Tree](problems/trees/0100-same-tree) | easy | trees | 1 | 2026-08-26 |
 | 102 | [102. Binary Tree Level Order Traversal](problems/trees/0102-binary-tree-level-order-traversal) | medium | trees | 2 | 2026-08-30 |
 | 104 | [104. Maximum Depth of Binary Tree](problems/trees/0104-maximum-depth-of-binary-tree) | easy | trees | 1 | 2026-07-23 |

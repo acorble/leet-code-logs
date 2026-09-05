@@ -3,9 +3,9 @@
 このファイルは `python scripts/update_progress.py` で自動生成される。**手で編集しない。**
 `problems/` に問題ディレクトリがあるものを「解いた」として集計している。
 
-## 全体: 19 / 150
+## 全体: 20 / 150
 
-`█████░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░` 12.7%
+`█████░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░` 13.3%
 
 | セクション | 進捗 | | 学習対象 |
 | --- | --- | --- | --- |
@@ -13,7 +13,7 @@
 | Two Pointers | 0 / 5 | `░░░░░░░░░░░░` | ◯ |
 | Sliding Window | 0 / 6 | `░░░░░░░░░░░░` | ◯ |
 | Stack | 0 / 7 | `░░░░░░░░░░░░` | ◯ |
-| Binary Search | 3 / 7 | `█████░░░░░░░` | ◯ |
+| Binary Search | 4 / 7 | `███████░░░░░` | ◯ |
 | Linked List | 4 / 11 | `████░░░░░░░░` | ◯ |
 | Trees | 10 / 15 | `████████░░░░` | ◯ |
 | Tries | 0 / 3 | `░░░░░░░░░░░░` |  |
@@ -79,14 +79,14 @@
 | ⬜ | 853 | Car Fleet | Medium | - | - |
 | ⬜ | 84 | Largest Rectangle in Histogram | Hard | - | - |
 
-## Binary Search — 3 / 7
+## Binary Search — 4 / 7
 
 | | # | 問題 | 難易度 | 回数 | 最後に解いた日 |
 | --- | --- | --- | --- | --- | --- |
 | ✅ | 704 | [Binary Search](problems/binary-search/0704-binary-search) | Easy | 2 | 2026-06-24 |
 | ✅ | 74 | [Search a 2D Matrix](problems/binary-search/0074-search-a-2d-matrix) | Medium | 1 | 2026-06-26 |
 | ✅ | 875 | [Koko Eating Bananas](problems/binary-search/0875-koko-eating-bananas) | Medium | 1 | 2026-06-27 |
-| ⬜ | 153 | Find Minimum in Rotated Sorted Array | Medium | - | - |
+| ✅ | 153 | [Find Minimum in Rotated Sorted Array](problems/binary-search/0153-find-minimum-in-rotated-sorted-array) | Medium | 1 | 2026-06-28 |
 | ⬜ | 33 | Search in Rotated Sorted Array | Medium | - | - |
 | ⬜ | 981 | Time Based Key-Value Store | Medium | - | - |
 | ⬜ | 4 | Median of Two Sorted Arrays | Hard | - | - |

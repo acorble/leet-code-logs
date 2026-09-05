@@ -133,7 +133,7 @@ python scripts/update_index.py
 
 <!-- INDEX:START -->
 
-合計 18 問 / のべ 28 回
+合計 19 問 / のべ 29 回
 
 | # | 問題 | 難易度 | カテゴリ | 回数 | 最後に解いた日 |
 | --- | --- | --- | --- | --- | --- |
@@ -141,6 +141,7 @@ python scripts/update_index.py
 | 217 | [217. Contains Duplicate](problems/arrays-hashing/0217-contains-duplicate) | easy | arrays-hashing | 1 | 2026-08-16 |
 | 74 | [74. Search a 2D Matrix](problems/binary-search/0074-search-a-2d-matrix) | medium | binary-search | 1 | 2026-06-26 |
 | 704 | [704. Binary Search](problems/binary-search/0704-binary-search) | easy | binary-search | 2 | 2026-06-24 |
+| 875 | [875. Koko Eating Bananas](problems/binary-search/0875-koko-eating-bananas) | medium | binary-search | 1 | 2026-06-27 |
 | 21 | [21. Merge Two Sorted Lists](problems/linked-list/0021-merge-two-sorted-lists) | easy | linked-list | 1 | 2026-07-04 |
 | 141 | [141. Linked List Cycle](problems/linked-list/0141-linked-list-cycle) | easy | linked-list | 2 | 2026-07-10 |
 | 143 | [143. Reorder List](problems/linked-list/0143-reorder-list) | medium | linked-list | 2 | 2026-07-11 |

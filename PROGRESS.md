@@ -3,15 +3,15 @@
 このファイルは `python scripts/update_progress.py` で自動生成される。**手で編集しない。**
 `problems/` に問題ディレクトリがあるものを「解いた」として集計している。
 
-## 全体: 22 / 150
+## 全体: 23 / 150
 
-`██████░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░` 14.7%
+`██████░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░` 15.3%
 
 | セクション | 進捗 | | 学習対象 |
 | --- | --- | --- | --- |
 | Arrays & Hashing | 2 / 9 | `███░░░░░░░░░` | ◯ |
 | Two Pointers | 0 / 5 | `░░░░░░░░░░░░` | ◯ |
-| Sliding Window | 1 / 6 | `██░░░░░░░░░░` | ◯ |
+| Sliding Window | 2 / 6 | `████░░░░░░░░` | ◯ |
 | Stack | 0 / 7 | `░░░░░░░░░░░░` | ◯ |
 | Binary Search | 5 / 7 | `█████████░░░` | ◯ |
 | Linked List | 4 / 11 | `████░░░░░░░░` | ◯ |
@@ -56,12 +56,12 @@
 | ⬜ | 11 | Container With Most Water | Medium | - | - |
 | ⬜ | 42 | Trapping Rain Water | Hard | - | - |
 
-## Sliding Window — 1 / 6
+## Sliding Window — 2 / 6
 
 | | # | 問題 | 難易度 | 回数 | 最後に解いた日 |
 | --- | --- | --- | --- | --- | --- |
 | ✅ | 121 | [Best Time to Buy and Sell Stock](problems/sliding-window/0121-best-time-to-buy-and-sell-stock) | Easy | 1 | 2026-06-15 |
-| ⬜ | 3 | Longest Substring Without Repeating Characters | Medium | - | - |
+| ✅ | 3 | [Longest Substring Without Repeating Characters](problems/sliding-window/0003-longest-substring-without-repeating-characters) | Medium | 1 | 2026-06-16 |
 | ⬜ | 424 | Longest Repeating Character Replacement | Medium | - | - |
 | ⬜ | 567 | Permutation in String | Medium | - | - |
 | ⬜ | 76 | Minimum Window Substring | Hard | - | - |

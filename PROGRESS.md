@@ -3,14 +3,14 @@
 このファイルは `python scripts/update_progress.py` で自動生成される。**手で編集しない。**
 `problems/` に問題ディレクトリがあるものを「解いた」として集計している。
 
-## 全体: 25 / 150
+## 全体: 26 / 150
 
-`███████░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░` 16.7%
+`███████░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░` 17.3%
 
 | セクション | 進捗 | | 学習対象 |
 | --- | --- | --- | --- |
 | Arrays & Hashing | 2 / 9 | `███░░░░░░░░░` | ◯ |
-| Two Pointers | 0 / 5 | `░░░░░░░░░░░░` | ◯ |
+| Two Pointers | 1 / 5 | `██░░░░░░░░░░` | ◯ |
 | Sliding Window | 4 / 6 | `████████░░░░` | ◯ |
 | Stack | 0 / 7 | `░░░░░░░░░░░░` | ◯ |
 | Binary Search | 5 / 7 | `█████████░░░` | ◯ |
@@ -46,11 +46,11 @@
 | ⬜ | 36 | Valid Sudoku | Medium | - | - |
 | ⬜ | 128 | Longest Consecutive Sequence | Medium | - | - |
 
-## Two Pointers — 0 / 5
+## Two Pointers — 1 / 5
 
 | | # | 問題 | 難易度 | 回数 | 最後に解いた日 |
 | --- | --- | --- | --- | --- | --- |
-| ⬜ | 125 | Valid Palindrome | Easy | - | - |
+| ✅ | 125 | [Valid Palindrome](problems/two-pointers/0125-valid-palindrome) | Easy | 1 | 2026-06-10 |
 | ⬜ | 167 | Two Sum II - Input Array Is Sorted | Medium | - | - |
 | ⬜ | 15 | 3Sum | Medium | - | - |
 | ⬜ | 11 | Container With Most Water | Medium | - | - |

@@ -1,3 +1,4 @@
+
 # 1448. Count Good Nodes in Binary Tree
 
 - URL: https://leetcode.com/problems/count-good-nodes-in-binary-tree/
@@ -27,6 +28,10 @@ good なノードの個数を数える。根は必ず good。同じ値は good �
 ### 1 回目
 
 <!-- 最初に思いついた方針、詰まった点、気づき -->
+- 一応解けた。
+- nonlocalを初めて使った。nonlocalがないとinner function内で新たに定義する変数だと解釈してしまうらしい。nonlocalを入れることでこれは外側の変数だと認識させ、cntをインクリメントすることができるようになった。
+- Beats5%で反省の余地あり。多分「Good nodeかどうか」の判定を0(h)？でやってしまっているため遅い。
+
 
 ## 計算量
 

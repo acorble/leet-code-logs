@@ -133,7 +133,7 @@ python scripts/update_index.py
 
 <!-- INDEX:START -->
 
-合計 24 問 / のべ 34 回
+合計 25 問 / のべ 35 回
 
 | # | 問題 | 難易度 | カテゴリ | 回数 | 最後に解いた日 |
 | --- | --- | --- | --- | --- | --- |
@@ -151,6 +151,7 @@ python scripts/update_index.py
 | 3 | [3. Longest Substring Without Repeating Characters](problems/sliding-window/0003-longest-substring-without-repeating-characters) | medium | sliding-window | 1 | 2026-06-16 |
 | 121 | [121. Best Time to Buy and Sell Stock](problems/sliding-window/0121-best-time-to-buy-and-sell-stock) | easy | sliding-window | 1 | 2026-06-15 |
 | 424 | [424. Longest Repeating Character Replacement](problems/sliding-window/0424-longest-repeating-character-replacement) | medium | sliding-window | 1 | 2026-06-17 |
+| 567 | [567. Permutation in String](problems/sliding-window/0567-permutation-in-string) | medium | sliding-window | 1 | 2026-08-03 |
 | 100 | [100. Same Tree](problems/trees/0100-same-tree) | easy | trees | 1 | 2026-08-26 |
 | 102 | [102. Binary Tree Level Order Traversal](problems/trees/0102-binary-tree-level-order-traversal) | medium | trees | 2 | 2026-08-30 |
 | 104 | [104. Maximum Depth of Binary Tree](problems/trees/0104-maximum-depth-of-binary-tree) | easy | trees | 1 | 2026-07-23 |

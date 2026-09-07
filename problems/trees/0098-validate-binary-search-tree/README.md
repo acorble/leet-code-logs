@@ -29,6 +29,19 @@
 ### 1 回目
 
 <!-- 最初に思いついた方針、詰まった点、気づき -->
+DFSで解いた。
+helper関数の引数でもrootを使うとややこしいからnodeとかのほうが良いかも。あと数値だと0のときもfalsyになるらしく、if not valみたいな判定だとfalsyだからtrueになってしまう。これを知らず判定がうまく通らずテストケース落ちていた。学び。
+minEver = minValLeft if minValLeft is not None else root.val
+を最初、
+minEver = minValLeft or root.val
+と書いていた。その後、
+minEver = minValLeft if not minValLeft else root.val
+と直したがこれもだめ。minValLeftが0のときfalsyなので引っかかってしまうため。
+
+minValRight is None or root.val < minValRight
+の条件も最初、
+not minValRight or root.val < minValRight
+のように書いていて、minValRightが0のときにfalsyでtrueになってしまってテストケース落ちてた（falseになるべきなのにtrueになっていた）
 
 ## 計算量
 

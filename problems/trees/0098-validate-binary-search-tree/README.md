@@ -42,6 +42,7 @@ minValRight is None or root.val < minValRight
 の条件も最初、
 not minValRight or root.val < minValRight
 のように書いていて、minValRightが0のときにfalsyでtrueになってしまってテストケース落ちてた（falseになるべきなのにtrueになっていた）
+解説見れていないので見る。
 
 ## 計算量
 

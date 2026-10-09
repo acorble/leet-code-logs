@@ -44,7 +44,7 @@ def main() -> int:
             info = meta(problem_dir / "README.md")
             number = problem_dir.name.split("-")[0]
             title = info["title"] or problem_dir.name
-            link = f"[{title}]({problem_dir.relative_to(ROOT)})"
+            link = f"[{title}]({problem_dir.relative_to(ROOT).as_posix()})"
             rows.append(
                 f"| {number.lstrip('0') or '0'} | {link} | {info['difficulty'] or '-'} "
                 f"| {category_dir.name} | {info['count']} | {info['last'] or '-'} |"
@@ -67,9 +67,10 @@ def main() -> int:
     if START not in text or END not in text:
         print(f"README.md に {START} / {END} のマーカーがありません。", file=sys.stderr)
         return 1
+    block = START + "\n\n" + "\n".join(table) + "\n\n" + END
     new = re.sub(
         rf"{re.escape(START)}.*?{re.escape(END)}",
-        START + "\n\n" + "\n".join(table) + "\n\n" + END,
+        lambda _: block,  # 文字列で渡すと "\" がエスケープとして解釈される
         text,
         flags=re.DOTALL,
     )

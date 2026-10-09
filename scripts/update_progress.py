@@ -103,7 +103,7 @@ def main() -> int:
             title = r["title"] + (" 🔒" if r["premium"] else "")
             if r["number"] in solved:
                 problem, count, last = solved[r["number"]]
-                link = f"[{title}]({problem.relative_to(ROOT)})"
+                link = f"[{title}]({problem.relative_to(ROOT).as_posix()})"
                 lines.append(f"| ✅ | {r['number']} | {link} | {r['difficulty']} | {count} | {last} |")
             else:
                 lines.append(f"| ⬜ | {r['number']} | {title} | {r['difficulty']} | - | - |")

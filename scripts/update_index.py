@@ -77,12 +77,16 @@ def main() -> int:
     README.write_text(new, encoding="utf-8")
     print(f"README.md を更新しました ({len(rows)} 問)")
 
-    # NeetCode 150 の進捗も同時に更新する（片方だけ古くなるのを防ぐ）
+    # NeetCode 150 の進捗と解き直しの予定も同時に更新する（片方だけ古くなるのを防ぐ）
     import update_progress
+    import update_review
 
     update_progress.main()
+    update_review.main([])
     return 0
 
 
 if __name__ == "__main__":
+    if hasattr(sys.stdout, "reconfigure"):
+        sys.stdout.reconfigure(errors="replace")  # Windows のコンソール (cp932) で落ちないように
     raise SystemExit(main())

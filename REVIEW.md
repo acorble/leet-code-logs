@@ -1,0 +1,62 @@
+# 解き直しの予定
+
+このファイルは `python scripts/update_review.py` で自動生成される。**手で編集しない。**
+各問題の README の「復習ログ」と「次回やること」から作っている（2026-10-09 時点）。
+
+## 間隔の決め方
+
+何も見ずに解けるたびに間隔を広げる: 3 日 → 7 日 → 14 日 → 30 日 → 60 日 → 卒業
+
+| 自力 | 意味 | 次の間隔 |
+| --- | --- | --- |
+| ◎ | 何も見ずにすんなり解けた | 1 段広げる |
+| ○ | 何も見ずに解けたが時間がかかった | 据え置き（最低 1 週間） |
+| △ | ヒント・過去の解答・解説を見た | 3 日に戻す |
+| × | 解けなかった | 3 日に戻す |
+| ? | 記録なし | ○ と同じに扱う |
+
+同じ日の 2 回目以降（直後の書き直し）は数えない。
+期限切れは「間隔に対してどれだけ遅れているか」の割合が大きい順に並べている。
+
+## 今週やる (5)
+
+| 問題 | 前回 | 自力の履歴 | 間隔 | 予定日 | 状態 | 次回やること |
+| --- | --- | --- | --- | --- | --- | --- |
+| [543. Diameter of Binary Tree](problems/trees/0543-diameter-of-binary-tree) | 2026-07-28 | △ | 3 日 | 2026-07-31 | **70 日超過** | 深さを下から持ち上げる DFS で O(n) に解き直す<br>NeetCode の解説動画を見る |
+| [125. Valid Palindrome](problems/two-pointers/0125-valid-palindrome) | 2026-06-10 | ? | 7 日 | 2026-06-17 | **114 日超過** |  |
+| [121. Best Time to Buy and Sell Stock](problems/sliding-window/0121-best-time-to-buy-and-sell-stock) | 2026-06-15 | ? | 7 日 | 2026-06-22 | **109 日超過** |  |
+| [3. Longest Substring Without Repeating Characters](problems/sliding-window/0003-longest-substring-without-repeating-characters) | 2026-06-16 | ? | 7 日 | 2026-06-23 | **108 日超過** | 同じ情報を 2 通りの方法で求めていないか見直す（`left + i` で足りる） |
+| [424. Longest Repeating Character Replacement](problems/sliding-window/0424-longest-repeating-character-replacement) | 2026-06-17 | ? | 7 日 | 2026-06-24 | **107 日超過** |  |
+
+## 期限切れ（残り 22）
+
+| 問題 | 前回 | 自力の履歴 | 間隔 | 予定日 | 状態 | 次回やること |
+| --- | --- | --- | --- | --- | --- | --- |
+| [704. Binary Search](problems/binary-search/0704-binary-search) | 2026-06-24 | ? | 7 日 | 2026-07-01 | **100 日超過** |  |
+| [74. Search a 2D Matrix](problems/binary-search/0074-search-a-2d-matrix) | 2026-06-26 | ? | 7 日 | 2026-07-03 | **98 日超過** |  |
+| [875. Koko Eating Bananas](problems/binary-search/0875-koko-eating-bananas) | 2026-06-27 | ? | 7 日 | 2026-07-04 | **97 日超過** |  |
+| [153. Find Minimum in Rotated Sorted Array](problems/binary-search/0153-find-minimum-in-rotated-sorted-array) | 2026-06-28 | ? | 7 日 | 2026-07-05 | **96 日超過** |  |
+| [981. Time Based Key-Value Store](problems/binary-search/0981-time-based-key-value-store) | 2026-06-30 | ? | 7 日 | 2026-07-07 | **94 日超過** | `sort()` が本当に必要か考え直す<br>dict を key → [(timestamp, value)] の 1 本にまとめる |
+| [21. Merge Two Sorted Lists](problems/linked-list/0021-merge-two-sorted-lists) | 2026-07-04 | ? | 7 日 | 2026-07-11 | **90 日超過** |  |
+| [206. Reverse Linked List](problems/linked-list/0206-reverse-linked-list) | 2026-07-04 | ? → ? | 7 日 | 2026-07-11 | **90 日超過** |  |
+| [141. Linked List Cycle](problems/linked-list/0141-linked-list-cycle) | 2026-07-10 | ? → ? | 7 日 | 2026-07-17 | **84 日超過** | ループ条件を標準形 `while fast and fast.next` で書く |
+| [1. Two Sum](problems/arrays-hashing/0001-two-sum) | 2026-07-11 | ? | 7 日 | 2026-07-18 | **83 日超過** |  |
+| [143. Reorder List](problems/linked-list/0143-reorder-list) | 2026-07-11 | ? → ? | 7 日 | 2026-07-18 | **83 日超過** |  |
+| [104. Maximum Depth of Binary Tree](problems/trees/0104-maximum-depth-of-binary-tree) | 2026-07-23 | ? | 7 日 | 2026-07-30 | **71 日超過** | Stack を使った Iterative DFS で解く |
+| [567. Permutation in String](problems/sliding-window/0567-permutation-in-string) | 2026-08-03 | ? | 7 日 | 2026-08-10 | **60 日超過** |  |
+| [217. Contains Duplicate](problems/arrays-hashing/0217-contains-duplicate) | 2026-08-16 | ? | 7 日 | 2026-08-23 | **47 日超過** |  |
+| [226. Invert Binary Tree](problems/trees/0226-invert-binary-tree) | 2026-08-19 | ? → ? | 7 日 | 2026-08-26 | **44 日超過** |  |
+| [110. Balanced Binary Tree](problems/trees/0110-balanced-binary-tree) | 2026-08-22 | ○ | 7 日 | 2026-08-29 | **41 日超過** | 返り値のタプルか外側の変数か、どちらか一方に寄せて書き直す |
+| [100. Same Tree](problems/trees/0100-same-tree) | 2026-08-26 | ◎ | 7 日 | 2026-09-02 | **37 日超過** | BFS / Iterative DFS で解く |
+| [572. Subtree of Another Tree](problems/trees/0572-subtree-of-another-tree) | 2026-08-28 | ○ | 7 日 | 2026-09-04 | **35 日超過** | 解答を見て、より良いやり方を確認する |
+| [235. Lowest Common Ancestor of a Binary Search Tree](problems/trees/0235-lowest-common-ancestor-of-a-binary-search-tree) | 2026-08-29 | ? | 7 日 | 2026-09-05 | **34 日超過** | BST の大小関係で、探索する枝を片側に絞る |
+| [102. Binary Tree Level Order Traversal](problems/trees/0102-binary-tree-level-order-traversal) | 2026-08-30 | ○ | 7 日 | 2026-09-06 | **33 日超過** |  |
+| [1448. Count Good Nodes in Binary Tree](problems/trees/1448-count-good-nodes-in-binary-tree) | 2026-09-03 | ○ | 7 日 | 2026-09-10 | **29 日超過** | 経路の最大値だけを引数で渡して O(n) にする |
+| [98. Validate Binary Search Tree](problems/trees/0098-validate-binary-search-tree) | 2026-09-07 | ○ | 7 日 | 2026-09-14 | **25 日超過** | 解説を見る<br>上から範囲 (low, high) を渡す別解で書く |
+| [230. Kth Smallest Element in a BST](problems/trees/0230-kth-smallest-element-in-a-bst) | 2026-09-12 | ? | 7 日 | 2026-09-19 | **20 日超過** | 中順走査にして sort をなくす（O(n)）<br>k 個目で打ち切る（O(h + k)） |
+
+## 今後の予定 (1)
+
+| 問題 | 前回 | 自力の履歴 | 間隔 | 予定日 | 状態 | 次回やること |
+| --- | --- | --- | --- | --- | --- | --- |
+| [199. Binary Tree Right Side View](problems/trees/0199-binary-tree-right-side-view) | 2026-10-09 | ◎ → △ | 3 日 | 2026-10-12 | あと 3 日 | 何も見ずに BFS 版を書く<br>DFS 版（右の子から潜り、各深さで最初に会ったノードを取る）を書く |

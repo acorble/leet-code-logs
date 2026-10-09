@@ -6,7 +6,7 @@
 
 使い方:
     python scripts/new_attempt.py 1
-    python scripts/new_attempt.py 1 --result AC --minutes 8 --note "今回はヒント無しで解けた"
+    python scripts/new_attempt.py 1 --result AC --recall ◎ --minutes 8 --note "今回はヒント無しで解けた"
 """
 
 import argparse
@@ -75,7 +75,21 @@ def archive_path(attempts_dir: Path, day: str) -> Path:
     return candidate
 
 
-def update_log(readme: Path, archived_rel: str, day: str, result: str, minutes: str, note: str) -> int:
+def add_recall_column(lines: list) -> list:
+    """「自力」列が無い古い表に、「結果」の右隣へ列を足す。既存の行は「?」で埋める。"""
+    if not lines or "自力" in lines[0]:
+        return lines
+    out = []
+    for i, ln in enumerate(lines):
+        cells = ln.strip().strip("|").split("|")
+        cells.insert(3, " 自力 " if i == 0 else " --- " if i == 1 else " ? ")
+        out.append("|" + "|".join(cells) + "|")
+    return out
+
+
+def update_log(
+    readme: Path, archived_rel: str, day: str, result: str, recall: str, minutes: str, note: str
+) -> int:
     """既存行の solution.py リンクを退避先に貼り替え、新しい回の行を追加する。"""
     text = readme.read_text(encoding="utf-8")
     if START not in text or END not in text:
@@ -84,17 +98,17 @@ def update_log(readme: Path, archived_rel: str, day: str, result: str, minutes: 
     block = re.search(rf"{re.escape(START)}(.*?){re.escape(END)}", text, re.DOTALL).group(1)
     block = block.replace("[solution.py](solution.py)", f"[{archived_rel}]({archived_rel})")
 
-    lines = [ln for ln in block.strip().splitlines() if ln.strip()]
+    lines = add_recall_column([ln for ln in block.strip().splitlines() if ln.strip()])
     attempt_no = sum(1 for ln in lines if re.match(r"^\|\s*\d+\s*\|", ln)) + 1
     row = (
-        f"| {attempt_no} | {day} | {result or '-'} | {minutes or '-'} "
+        f"| {attempt_no} | {day} | {result or '-'} | {recall or '?'} | {minutes or '-'} "
         f"| [solution.py](solution.py) | {note} |"
     )
     new_block = "\n\n" + "\n".join(lines + [row]) + "\n\n"
 
     text = re.sub(
         rf"{re.escape(START)}.*?{re.escape(END)}",
-        START + new_block + END,
+        lambda _: START + new_block + END,
         text,
         flags=re.DOTALL,
     )
@@ -128,6 +142,13 @@ def main() -> int:
     parser = argparse.ArgumentParser(description="解き直しの記録を始める")
     parser.add_argument("problem", help="問題番号 (例: 1)、スラッグの一部、または問題ディレクトリのパス")
     parser.add_argument("-r", "--result", default="", help="結果 (AC / WA / TLE / giveup など)")
+    parser.add_argument(
+        "--recall",
+        default="",
+        choices=["", "◎", "○", "△", "×"],
+        help="自力度。◎ 何も見ずにすんなり / ○ 何も見ずに解けたが時間がかかった / "
+        "△ ヒント・過去の解答を見た / × 解けなかった。次に解く日の計算に使う",
+    )
     parser.add_argument("-m", "--minutes", default="", help="かかった時間 (例: 12分)")
     parser.add_argument("-n", "--note", default="", help="今回のひとことメモ")
     parser.add_argument("--date", default="", help="解いた日 (省略時は今日。例: 2026-07-11)")
@@ -149,7 +170,7 @@ def main() -> int:
     shutil.copy2(solution, dest)
 
     rel = dest.relative_to(problem).as_posix()
-    no = update_log(readme, rel, day, args.result, args.minutes, args.note)
+    no = update_log(readme, rel, day, args.result, args.recall, args.minutes, args.note)
     add_thoughts_heading(readme, no)
 
     print(f"{problem.relative_to(ROOT)} — {no} 回目の記録を開始しました")
@@ -162,4 +183,6 @@ def main() -> int:
 
 
 if __name__ == "__main__":
+    if hasattr(sys.stdout, "reconfigure"):
+        sys.stdout.reconfigure(errors="replace")  # Windows のコンソール (cp932) で落ちないように
     raise SystemExit(main())

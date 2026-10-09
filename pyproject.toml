@@ -1,4 +1,4 @@
 [tool.pytest.ini_options]
-testpaths = ["problems"]
+testpaths = ["problems", "scripts/tests"]
 python_files = ["test_*.py"]
 addopts = "-q"

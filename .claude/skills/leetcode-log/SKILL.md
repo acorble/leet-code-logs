@@ -33,11 +33,15 @@ Claude がしてよいのは `### N 回目` という**空の見出しを用意�
   `arrays-hashing` / `two-pointers` / `stack` / `binary-search` /
   `sliding-window` / `linked-list` / `trees`
 - 問題文の Example（入力と期待される出力）も聞くか、コードから妥当なケースを起こす。
+- **自力**（◎ 何も見ずにすんなり / ○ 何も見ずに解けたが時間がかかった /
+  △ ヒント・解説・過去の解答を見た / × 解けなかった）。次に解き直す日の計算に使う。
+  ユーザーの話から判断できればそれを使い、分からなければ他の不足情報と一緒に聞く。
+  「結果」(AC など) とは別物。AC でも解答を見ながらなら △
 
 ## 1. 雛形を作る
 
 ```bash
-python scripts/new_problem.py <番号> "<タイトル>" -c <category> -d <easy|medium|hard>
+python scripts/new_problem.py <番号> "<タイトル>" -c <category> -d <easy|medium|hard> --recall <◎|○|△|×>
 ```
 
 手動で `mkdir` しないこと。ディレクトリ名・テストファイル名の規約はこのスクリプトが担保している。
@@ -76,6 +80,9 @@ def test_example_1(solution):
 `.venv` が無ければ作る:
 `python3 -m venv .venv && ./.venv/bin/pip install -r requirements.txt`
 
+Windows では `.venv/bin/` が `.venv/Scripts/` になる（`./.venv/Scripts/python.exe -m pytest ...`）。
+スクリプトの実行も `.venv` の python を使ってよい。
+
 **テストが落ちても、そこで作業を止めないこと。** 未完成・不正解のコードを
 そのまま残したい場合があるため、テストはコミットの条件ではない。
 落ちた場合は、そのまま 5. 以降を続けて記録を完了させ、7. の報告で
@@ -95,6 +102,10 @@ def test_example_1(solution):
 - **学び・再利用できるパターン**: 次に似た問題が来たとき思い出せる形の一般化。
   関連する問題があれば相対パスでリンクする
 - **復習ログ**のメモ列: ユーザーが話した内容の範囲で短く
+- **次回やること**: 本人も Claude も書いてよい節。`- [ ] ...` の箇条書きで、
+  次に解き直すときに試すこと（別解・計算量の改善・解説を見る など）を書く。
+  ユーザーが「〜でも解く」「〜を見る」と言ったもの、学びの節で挙げた改善点を入れる。
+  ここに書いたものが REVIEW.md に載る
 
 **Claude が書かない節:**
 
@@ -104,12 +115,12 @@ def test_example_1(solution):
 ## 6. 一覧を更新してコミット
 
 ```bash
-python scripts/update_index.py   # ルート README の一覧 + PROGRESS.md
+python scripts/update_index.py   # ルート README の一覧 + PROGRESS.md + REVIEW.md
 git add -A && git commit -m "<番号>. <タイトル>"
 ```
 
-`PROGRESS.md` は NeetCode 150 の進捗表で、`problems/` から自動生成される。
-**手で ✅ を付けたり編集したりしないこと。**
+`PROGRESS.md` は NeetCode 150 の進捗表、`REVIEW.md` は解き直しの予定表で、
+どちらも `problems/` から自動生成される。**手で ✅ を付けたり編集したりしないこと。**
 
 テストの成否にかかわらずコミットする。未完成なら
 `git commit -m "<番号>. <タイトル> (WIP)"` のように印を付ける。
@@ -129,16 +140,18 @@ git add -A && git commit -m "<番号>. <タイトル>"
 ## A. 前回のコードを退避する
 
 ```bash
-python scripts/new_attempt.py <番号> --result <AC|WA|TLE|giveup> --minutes <所要時間> --note "<ひとこと>"
+python scripts/new_attempt.py <番号> --recall <◎|○|△|×> --result <AC|WA|TLE|giveup> --minutes <所要時間> --note "<ひとこと>"
 ```
 
 これで前回の `solution.py` が `attempts/<日付>.py` にコピーされ、
 README の復習ログに今回の行が追加され、README がエディタで開く。
 **手でファイルを移動しないこと。** `--no-open` は付けないこと。
 
-`--result` `--minutes` `--note` はユーザーが言っていない場合は省略してよい
-（後から README を直接編集して埋められる）。所要時間や「ヒントを見たか」は
-上達の記録として価値があるので、話に出ていれば必ず入れる。
+**`--recall` は解き直しでは特に重要**（次に解く日がこれで決まる）。
+ユーザーの話から判断できなければ聞く。前回のコードや解説を見ながら解いたなら、
+AC でも △。`--result` `--minutes` `--note` はユーザーが言っていない場合は省略してよい
+（後から README を直接編集して埋められる）。所要時間は上達の記録として価値があるので、
+話に出ていれば必ず入れる。
 
 ## B. 今回のコードを solution.py に上書きする
 
@@ -164,6 +177,8 @@ diff problems/<category>/<dir>/attempts/<日付>.py problems/<category>/<dir>/so
   **中身は書かない。既存の回の記述にも触らない。**
 - 「学び・再利用できるパターン」は上書きせず追記する。前回の記述を消さない
 - 解法が変わった場合は「計算量」を更新する
+- 「次回やること」のうち今回済んだ項目は行ごと消す（履歴は復習ログと学びの節に残る）。
+  新しく出てきた課題があれば足す
 
 ## E. テスト・一覧更新・コミット
 

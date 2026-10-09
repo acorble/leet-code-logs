@@ -4,7 +4,8 @@ LeetCode で解いた問題のコードと考えを記録するリポジトリ�
 
 ## 前提
 
-- Python。仮想環境は `.venv`（`./.venv/bin/python -m pytest` で実行する）
+- Python。仮想環境は `.venv`（`./.venv/bin/python -m pytest` で実行する。
+  Windows では `./.venv/Scripts/python.exe`）
 - 問題は `problems/<category>/<4桁番号>-<スラッグ>/` に 1 問 1 ディレクトリ
 - `solution.py` は常に最新の解答。過去の解答は `attempts/<日付>.py` に残す
 - 同じ問題を何度も解き直して記録するのが前提。**過去の解答とメモを消さないこと**
@@ -23,7 +24,7 @@ Claude がこの節に対してしてよいのは **`### N 回目` という空�
 書き換え・削除・整形はしない。ユーザーから明示的に「ここに書いて」と頼まれた場合のみ書く。
 
 他の節（問題の要約 / 計算量 / 学び・再利用できるパターン / 復習ログのメモ）は
-Claude が書いてよい。
+Claude が書いてよい。`## 次回やること` は本人と Claude のどちらが書いてもよい節。
 
 ## 解き直し（既に同じ番号のディレクトリがある場合）
 
@@ -36,7 +37,7 @@ README の考察は上書きせず追記する。詳細は `/leetcode-log` ス�
 
 必ず `/leetcode-log` スキルの手順に従うこと。要点だけ再掲すると:
 
-1. `python scripts/new_problem.py <番号> "<タイトル>" -c <category> -d <difficulty>` で雛形を作る
+1. `python scripts/new_problem.py <番号> "<タイトル>" -c <category> -d <difficulty> --recall <自力>` で雛形を作る
    （手で mkdir しない。ファイル名の規約がずれる）。
    実行すると問題の README がエディタで自動的に開く。`--no-open` で抑止できるが、
    ユーザーがその場で考察を書けるよう、**通常は付けないこと**
@@ -46,8 +47,8 @@ README の考察は上書きせず追記する。詳細は `/leetcode-log` ス�
 4. `./.venv/bin/python -m pytest problems/<category>/<dir>` で確認する
    （**任意**。落ちても記録は止めない。未完成・不正解のコードもそのまま保存する）
 5. 問題ディレクトリの `README.md` を埋める
-6. `python scripts/update_index.py` でルート README の一覧と PROGRESS.md を更新
-   （PROGRESS.md は NeetCode 150 の進捗。自動生成なので手で編集しないこと）
+6. `python scripts/update_index.py` でルート README の一覧と PROGRESS.md / REVIEW.md を更新
+   （どちらも自動生成なので手で編集しないこと）
 7. `<番号>. <タイトル>` というメッセージでコミット（テストの成否は問わない）
 
 ## NeetCode 150
@@ -56,6 +57,16 @@ README の考察は上書きせず追記する。詳細は `/leetcode-log` ス�
 進捗は `PROGRESS.md`（`problems/` から自動生成）。
 「次に何を解けばいい?」と聞かれたら PROGRESS.md の未着手 (⬜) から、
 学習対象セクション（`problems/` にカテゴリがあるもの）を優先して提案する。
+あわせて REVIEW.md の「今週やる」から解き直しも提案する（新規と復習の両方を出す）。
+
+## 解き直しの予定（REVIEW.md）
+
+`REVIEW.md` は忘却曲線に基づく解き直しの予定表で、`scripts/update_review.py` が
+各問題 README の復習ログ（日付と「自力」列）と `## 次回やること` から生成する。
+自力の記号は ◎ 何も見ずにすんなり / ○ 何も見ずに解けたが時間がかかった /
+△ ヒント・解説・過去の解答を見た / × 解けなかった / ? 記録なし。
+間隔は 3 → 7 → 14 → 30 → 60 日で、◎ で 1 段上がり、△ と × で 3 日に戻る（詳細は `scripts/_review.py`）。
+記録するときは自力を必ず確認する。「結果」が AC でも、答えを見ながらなら △。
 
 ## テストについて
 

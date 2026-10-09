@@ -31,6 +31,13 @@ def main() -> int:
     parser.add_argument("-c", "--category", default="misc", help="カテゴリ (problems/ 配下のディレクトリ名)")
     parser.add_argument("-d", "--difficulty", default="", choices=["", "easy", "medium", "hard"], help="難易度")
     parser.add_argument("-u", "--url", default="", help="問題 URL (省略時はスラッグから生成)")
+    parser.add_argument(
+        "--recall",
+        default="",
+        choices=["", "◎", "○", "△", "×"],
+        help="自力度。◎ 何も見ずにすんなり / ○ 何も見ずに解けたが時間がかかった / "
+        "△ ヒント・解説を見た / × 解けなかった。次に解く日の計算に使う",
+    )
     parser.add_argument("--date", default="", help="解いた日 (省略時は今日。例: 2026-08-16)")
     parser.add_argument("--no-open", action="store_true", help="README をエディタで開かない")
     args = parser.parse_args()
@@ -57,6 +64,7 @@ def main() -> int:
         "difficulty": args.difficulty or "?",
         "category": args.category,
         "date": args.date or date.today().isoformat(),
+        "recall": args.recall or "?",
     }
 
     target.mkdir(parents=True)
@@ -78,4 +86,6 @@ def main() -> int:
 
 
 if __name__ == "__main__":
+    if hasattr(sys.stdout, "reconfigure"):
+        sys.stdout.reconfigure(errors="replace")  # Windows のコンソール (cp932) で落ちないように
     raise SystemExit(main())

@@ -5,6 +5,7 @@ LeetCode で解いた問題のコードと、解いたときの考えを記録�
 - 言語: Python
 - 分類: アルゴリズムのカテゴリ別 (`problems/<category>/<番号>-<スラッグ>/`)
 - 進め方: [NeetCode 150](https://neetcode.io/practice) に沿って進める → **[進捗はこちら](PROGRESS.md)**
+- 復習: 忘却曲線に沿って解き直す → **[解き直しの予定はこちら](REVIEW.md)**
 
 ## ディレクトリ構成
 
@@ -12,21 +13,25 @@ LeetCode で解いた問題のコードと、解いたときの考えを記録�
 problems/
   arrays-hashing/
     0001-two-sum/
-      README.md              # 問題メモ + 復習ログ
+      README.md              # 問題メモ + 復習ログ + 次回やること
       solution.py            # 最新の解答
       attempts/              # 過去の解答 (2026-08-30.py ...)
       test_0001_two_sum.py   # サンプルケースのテスト
   two-pointers/
   ...
 PROGRESS.md         # NeetCode 150 の進捗 (自動生成。手で編集しない)
+REVIEW.md           # 解き直しの予定 (自動生成。手で編集しない)
 data/
   neetcode150.tsv   # NeetCode 150 の問題リスト
 scripts/
   new_problem.py    # 問題ディレクトリの雛形を作る
   new_attempt.py    # 解き直し。前回のコードを attempts/ に退避する
   _open_editor.py   # 作成後に README をエディタで開く
-  update_index.py   # 下の一覧テーブルと PROGRESS.md を再生成する
+  update_index.py   # 下の一覧テーブルと PROGRESS.md / REVIEW.md を再生成する
   update_progress.py # PROGRESS.md だけを再生成する
+  update_review.py  # REVIEW.md だけを再生成する
+  _review.py        # 解き直しの間隔を計算する (忘却曲線)
+  tests/            # スクリプトのテスト
 templates/          # 雛形の元ファイル
 conftest.py         # solution.py を読み込む pytest フィクスチャ
 CLAUDE.md           # Claude 向けのリポジトリ規約
@@ -55,7 +60,7 @@ Claude Code でこのリポジトリを開き、解いたコードを貼って
 ### 1. 新しい問題を始める
 
 ```bash
-python scripts/new_problem.py 1 "Two Sum" --category arrays-hashing --difficulty easy
+python scripts/new_problem.py 1 "Two Sum" --category arrays-hashing --difficulty easy --recall ○
 ```
 
 `problems/arrays-hashing/0001-two-sum/` に README・solution.py・テストが作られ、
@@ -82,7 +87,7 @@ def test_example_1(solution):
 ### 3. 同じ問題を解き直す
 
 ```bash
-python scripts/new_attempt.py 1 --result AC --minutes 6分 --note "今回はヒント無し"
+python scripts/new_attempt.py 1 --result AC --recall ◎ --minutes 6分 --note "今回はヒント無し"
 ```
 
 前回の `solution.py` が `attempts/<日付>.py` にコピーされ、問題の README の
@@ -110,9 +115,24 @@ diff problems/arrays-hashing/0001-two-sum/attempts/2026-08-30.py \
 python scripts/update_index.py
 ```
 
-この README の一覧と [PROGRESS.md](PROGRESS.md) の両方が更新される。
+この README の一覧と [PROGRESS.md](PROGRESS.md)、[REVIEW.md](REVIEW.md) が更新される。
 進捗のチェックは手で付けない。`problems/` に問題ディレクトリがあれば
 自動で ✅ になる仕組みなので、記録とチェックがズレることがない。
+
+### 5. 解き直しの予定を見る
+
+[REVIEW.md](REVIEW.md) に、次に解き直す問題が期限の近い順に並ぶ。
+予定日は復習ログの「自力」列から決まる（忘却曲線に基づく間隔反復）。
+
+| 自力 | 意味 | 次の間隔 |
+| --- | --- | --- |
+| ◎ | 何も見ずにすんなり解けた | 1 段広げる（3 → 7 → 14 → 30 → 60 日 → 卒業） |
+| ○ | 何も見ずに解けたが時間がかかった | 据え置き（最低 1 週間） |
+| △ | ヒント・解説・過去の解答を見た | 3 日に戻す |
+| × | 解けなかった | 3 日に戻す |
+
+「結果」(AC など) とは別に記録する。AC でも答えを見ながらなら △。
+各問題の README の「次回やること」に書いた箇条書きも、REVIEW.md に一緒に載る。
 
 ## カテゴリ
 

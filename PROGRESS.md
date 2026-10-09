@@ -119,7 +119,7 @@
 | ✅ | 572 | [Subtree of Another Tree](problems/trees/0572-subtree-of-another-tree) | Easy | 1 | 2026-08-28 |
 | ✅ | 235 | [Lowest Common Ancestor of a Binary Search Tree](problems/trees/0235-lowest-common-ancestor-of-a-binary-search-tree) | Medium | 1 | 2026-08-29 |
 | ✅ | 102 | [Binary Tree Level Order Traversal](problems/trees/0102-binary-tree-level-order-traversal) | Medium | 2 | 2026-08-30 |
-| ✅ | 199 | [Binary Tree Right Side View](problems/trees/0199-binary-tree-right-side-view) | Medium | 1 | 2026-09-02 |
+| ✅ | 199 | [Binary Tree Right Side View](problems/trees/0199-binary-tree-right-side-view) | Medium | 2 | 2026-10-09 |
 | ✅ | 1448 | [Count Good Nodes in Binary Tree](problems/trees/1448-count-good-nodes-in-binary-tree) | Medium | 1 | 2026-09-03 |
 | ✅ | 98 | [Validate Binary Search Tree](problems/trees/0098-validate-binary-search-tree) | Medium | 1 | 2026-09-07 |
 | ✅ | 230 | [Kth Smallest Element in a BST](problems/trees/0230-kth-smallest-element-in-a-bst) | Medium | 1 | 2026-09-12 |

@@ -4,7 +4,6 @@ https://leetcode.com/problems/binary-tree-right-side-view/
 """
 
 from collections import deque
-from typing import List, Optional
 
 
 # Definition for a binary tree node.
@@ -16,22 +15,23 @@ class TreeNode:
 
 
 class Solution:
-    def rightSideView(self, root: Optional[TreeNode]) -> List[int]:
-        q = deque([root])
-        ret = []
+    def rightSideView(self, root: TreeNode | None) -> list[int]:
 
         if not root:
             return []
+        
+        q = deque([root])
+        ret = []
 
         while q:
             node = None
-            for i in range(len(q)):
+            for _ in range(len(q)):
                 node = q.popleft()
                 if node.left:
                     q.append(node.left)
                 if node.right:
                     q.append(node.right)
-            # append to ret here
+            # ここでのnodeは層ごとの右端になる
             ret.append(node.val)
-
+        
         return ret

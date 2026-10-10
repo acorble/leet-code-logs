@@ -133,7 +133,7 @@ python scripts/update_index.py
 
 <!-- INDEX:START -->
 
-合計 28 問 / のべ 38 回
+合計 29 問 / のべ 39 回
 
 | # | 問題 | 難易度 | カテゴリ | 回数 | 最後に解いた日 |
 | --- | --- | --- | --- | --- | --- |
@@ -157,6 +157,7 @@ python scripts/update_index.py
 | 102 | [102. Binary Tree Level Order Traversal](problems/trees/0102-binary-tree-level-order-traversal) | medium | trees | 2 | 2026-08-30 |
 | 104 | [104. Maximum Depth of Binary Tree](problems/trees/0104-maximum-depth-of-binary-tree) | easy | trees | 1 | 2026-07-23 |
 | 110 | [110. Balanced Binary Tree](problems/trees/0110-balanced-binary-tree) | easy | trees | 1 | 2026-08-22 |
+| 145 | [145. Binary Tree Postorder Traversal](problems/trees/0145-binary-tree-postorder-traversal) | easy | trees | 1 | 2026-10-10 |
 | 199 | [199. Binary Tree Right Side View](problems/trees/0199-binary-tree-right-side-view) | medium | trees | 1 | 2026-09-02 |
 | 226 | [226. Invert Binary Tree](problems/trees/0226-invert-binary-tree) | easy | trees | 3 | 2026-08-19 |
 | 230 | [230. Kth Smallest Element in a BST](problems/trees/0230-kth-smallest-element-in-a-bst) | medium | trees | 1 | 2026-09-12 |

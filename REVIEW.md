@@ -60,4 +60,4 @@
 
 | 問題 | 前回 | 自力の履歴 | 間隔 | 予定日 | 状態 | 次回やること |
 | --- | --- | --- | --- | --- | --- | --- |
-| [145. Binary Tree Postorder Traversal](problems/trees/0145-binary-tree-postorder-traversal) | 2026-10-10 | ? | 7 日 | 2026-10-17 | あと 2 日 |  |
+| [145. Binary Tree Postorder Traversal](problems/trees/0145-binary-tree-postorder-traversal) | 2026-10-10 | ◎ | 7 日 | 2026-10-17 | あと 2 日 | 再帰を使わず、スタックで解く（follow-up） |

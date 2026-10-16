@@ -153,7 +153,7 @@ python scripts/update_index.py
 
 <!-- INDEX:START -->
 
-合計 29 問 / のべ 40 回
+合計 30 問 / のべ 41 回
 
 | # | 問題 | 難易度 | カテゴリ | 回数 | 最後に解いた日 |
 | --- | --- | --- | --- | --- | --- |
@@ -172,6 +172,7 @@ python scripts/update_index.py
 | 121 | [121. Best Time to Buy and Sell Stock](problems/sliding-window/0121-best-time-to-buy-and-sell-stock) | easy | sliding-window | 1 | 2026-06-15 |
 | 424 | [424. Longest Repeating Character Replacement](problems/sliding-window/0424-longest-repeating-character-replacement) | medium | sliding-window | 1 | 2026-06-17 |
 | 567 | [567. Permutation in String](problems/sliding-window/0567-permutation-in-string) | medium | sliding-window | 1 | 2026-08-03 |
+| 739 | [739. Daily Temperatures](problems/stack/0739-daily-temperatures) | medium | stack | 1 | 2026-10-15 |
 | 98 | [98. Validate Binary Search Tree](problems/trees/0098-validate-binary-search-tree) | medium | trees | 1 | 2026-09-07 |
 | 100 | [100. Same Tree](problems/trees/0100-same-tree) | easy | trees | 1 | 2026-08-26 |
 | 102 | [102. Binary Tree Level Order Traversal](problems/trees/0102-binary-tree-level-order-traversal) | medium | trees | 2 | 2026-08-30 |

@@ -153,7 +153,7 @@ python scripts/update_index.py
 
 <!-- INDEX:START -->
 
-合計 40 問 / のべ 59 回
+合計 40 問 / のべ 60 回
 
 | # | 問題 | 難易度 | カテゴリ | 回数 | 最後に解いた日 |
 | --- | --- | --- | --- | --- | --- |
@@ -196,6 +196,6 @@ python scripts/update_index.py
 | 543 | [543. Diameter of Binary Tree](problems/trees/0543-diameter-of-binary-tree) | easy | trees | 1 | 2026-07-28 |
 | 572 | [572. Subtree of Another Tree](problems/trees/0572-subtree-of-another-tree) | easy | trees | 1 | 2026-08-28 |
 | 1448 | [1448. Count Good Nodes in Binary Tree](problems/trees/1448-count-good-nodes-in-binary-tree) | medium | trees | 1 | 2026-09-03 |
-| 125 | [125. Valid Palindrome](problems/two-pointers/0125-valid-palindrome) | easy | two-pointers | 3 | 2026-08-16 |
+| 125 | [125. Valid Palindrome](problems/two-pointers/0125-valid-palindrome) | easy | two-pointers | 4 | 2026-08-16 |
 
 <!-- INDEX:END -->

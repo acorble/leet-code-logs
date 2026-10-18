@@ -50,7 +50,7 @@
 
 | | # | 問題 | 難易度 | 回数 | 最後に解いた日 |
 | --- | --- | --- | --- | --- | --- |
-| ✅ | 125 | [Valid Palindrome](problems/two-pointers/0125-valid-palindrome) | Easy | 1 | 2026-06-10 |
+| ✅ | 125 | [Valid Palindrome](problems/two-pointers/0125-valid-palindrome) | Easy | 2 | 2026-07-19 |
 | ⬜ | 167 | Two Sum II - Input Array Is Sorted | Medium | - | - |
 | ⬜ | 15 | 3Sum | Medium | - | - |
 | ⬜ | 11 | Container With Most Water | Medium | - | - |

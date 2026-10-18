@@ -35,7 +35,6 @@
 | [238. Product of Array Except Self](problems/arrays-hashing/0238-product-of-array-except-self) | 2026-06-03 | ? | 7 日 | 2026-06-10 | **130 日超過** | Python で解く<br>follow-up: `prefixes` / `suffixes` の配列を使わず、答えの配列だけで解く（追加の空間 O(1)） |
 | [36. Valid Sudoku](problems/arrays-hashing/0036-valid-sudoku) | 2026-06-04 | ? | 7 日 | 2026-06-11 | **129 日超過** | Python で解く<br>盤面を 1 周するだけで、行・列・ブロックを同時にチェックする（ブロックの番号は `(r // 3, c // 3)`） |
 | [128. Longest Consecutive Sequence](problems/arrays-hashing/0128-longest-consecutive-sequence) | 2026-06-05 | ? | 7 日 | 2026-06-12 | **128 日超過** | O(n) で解く（毎回 `Collections.min` で最小値を探さずに、どこから数え始めればよいかを考える）<br>Python で解く |
-| [125. Valid Palindrome](problems/two-pointers/0125-valid-palindrome) | 2026-06-10 | ? | 7 日 | 2026-06-17 | **123 日超過** |  |
 | [121. Best Time to Buy and Sell Stock](problems/sliding-window/0121-best-time-to-buy-and-sell-stock) | 2026-06-15 | ? | 7 日 | 2026-06-22 | **118 日超過** |  |
 | [3. Longest Substring Without Repeating Characters](problems/sliding-window/0003-longest-substring-without-repeating-characters) | 2026-06-16 | ? | 7 日 | 2026-06-23 | **117 日超過** | 同じ情報を 2 通りの方法で求めていないか見直す（`left + i` で足りる） |
 | [424. Longest Repeating Character Replacement](problems/sliding-window/0424-longest-repeating-character-replacement) | 2026-06-17 | ? | 7 日 | 2026-06-24 | **116 日超過** |  |
@@ -50,6 +49,7 @@
 | [141. Linked List Cycle](problems/linked-list/0141-linked-list-cycle) | 2026-07-10 | ? → ? | 7 日 | 2026-07-17 | **93 日超過** | ループ条件を標準形 `while fast and fast.next` で書く |
 | [1. Two Sum](problems/arrays-hashing/0001-two-sum) | 2026-07-11 | ? | 7 日 | 2026-07-18 | **92 日超過** |  |
 | [143. Reorder List](problems/linked-list/0143-reorder-list) | 2026-07-11 | ? → ? | 7 日 | 2026-07-18 | **92 日超過** |  |
+| [125. Valid Palindrome](problems/two-pointers/0125-valid-palindrome) | 2026-07-19 | ? → ? | 7 日 | 2026-07-26 | **84 日超過** | `isalnum()` / `lower()` を使わずに、文字コードの範囲（`'a' <= c <= 'z'` など）で判定して書いてみる（面接でよく聞かれる） |
 | [104. Maximum Depth of Binary Tree](problems/trees/0104-maximum-depth-of-binary-tree) | 2026-07-23 | ? | 7 日 | 2026-07-30 | **80 日超過** | Stack を使った Iterative DFS で解く |
 | [567. Permutation in String](problems/sliding-window/0567-permutation-in-string) | 2026-08-03 | ? | 7 日 | 2026-08-10 | **69 日超過** |  |
 | [217. Contains Duplicate](problems/arrays-hashing/0217-contains-duplicate) | 2026-08-16 | ? | 7 日 | 2026-08-23 | **56 日超過** |  |

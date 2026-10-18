@@ -6,35 +6,22 @@ https://leetcode.com/problems/valid-palindrome/
 
 class Solution:
     def isPalindrome(self, s: str) -> bool:
-        # initialize two pointers (left and right)
-        left, right = 0, len(s) - 1
+        l, r = 0, len(s) -1
 
-        # while loop until two pointers meet
-        while left < right:
-            # while loop (left pointer)
-            while left < right:
-                # check if the character is alphanumeric
-                if s[left].isalnum():
-                    # if true: exit loop
-                    break
-                # if false: increment left pointer
-                else:
-                    left += 1
-            # while loop (right pointer)
-            while left < right:
-                # check if the character is alphanumeric
-                if s[right].isalnum():
-                    # if true: exit loop
-                    break
-                # if false: decrement right pointer
-                else:
-                    right -= 1
-            # check if the two characters at both pointers differ (case-insensitive)
-            if s[left].lower() != s[right].lower():
-                # return False
+        while l < r:
+            # move left pointer inward until the character is alphabet or digit
+            while l < r and not s[l].isalnum():
+                l += 1
+
+            # move right pointer inward until the character is alphabet or digit
+            while l < r and not s[r].isalnum():
+                r -= 1
+
+            # check if the characters at left and right pointers are the same in lowercase
+            if s[l].lower() != s[r].lower():
                 return False
-            # move both pointers inward
-            left += 1
-            right -= 1
+
+            l += 1
+            r -= 1
 
         return True

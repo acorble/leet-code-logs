@@ -153,7 +153,7 @@ python scripts/update_index.py
 
 <!-- INDEX:START -->
 
-合計 40 問 / のべ 60 回
+合計 41 問 / のべ 61 回
 
 | # | 問題 | 難易度 | カテゴリ | 回数 | 最後に解いた日 |
 | --- | --- | --- | --- | --- | --- |
@@ -197,5 +197,6 @@ python scripts/update_index.py
 | 572 | [572. Subtree of Another Tree](problems/trees/0572-subtree-of-another-tree) | easy | trees | 1 | 2026-08-28 |
 | 1448 | [1448. Count Good Nodes in Binary Tree](problems/trees/1448-count-good-nodes-in-binary-tree) | medium | trees | 1 | 2026-09-03 |
 | 125 | [125. Valid Palindrome](problems/two-pointers/0125-valid-palindrome) | easy | two-pointers | 4 | 2026-08-16 |
+| 167 | [167. Two Sum II - Input Array Is Sorted](problems/two-pointers/0167-two-sum-ii-input-array-is-sorted) | medium | two-pointers | 1 | 2026-06-11 |
 
 <!-- INDEX:END -->

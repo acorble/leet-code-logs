@@ -32,7 +32,6 @@
 
 | 問題 | 前回 | 自力の履歴 | 間隔 | 予定日 | 状態 | 次回やること |
 | --- | --- | --- | --- | --- | --- | --- |
-| [20. Valid Parentheses](problems/stack/0020-valid-parentheses) | 2026-06-20 | ? | 7 日 | 2026-06-27 | **113 日超過** | 閉じ括弧 → 開き括弧の dict を使って、括弧ごとの if 分岐をなくして書く |
 | [704. Binary Search](problems/binary-search/0704-binary-search) | 2026-06-24 | ? | 7 日 | 2026-07-01 | **109 日超過** |  |
 | [74. Search a 2D Matrix](problems/binary-search/0074-search-a-2d-matrix) | 2026-06-26 | ? | 7 日 | 2026-07-03 | **107 日超過** |  |
 | [875. Koko Eating Bananas](problems/binary-search/0875-koko-eating-bananas) | 2026-06-27 | ? | 7 日 | 2026-07-04 | **106 日超過** |  |
@@ -46,6 +45,7 @@
 | [104. Maximum Depth of Binary Tree](problems/trees/0104-maximum-depth-of-binary-tree) | 2026-07-23 | ? | 7 日 | 2026-07-30 | **80 日超過** | Stack を使った Iterative DFS で解く |
 | [567. Permutation in String](problems/sliding-window/0567-permutation-in-string) | 2026-08-03 | ? | 7 日 | 2026-08-10 | **69 日超過** |  |
 | [217. Contains Duplicate](problems/arrays-hashing/0217-contains-duplicate) | 2026-08-16 | ? | 7 日 | 2026-08-23 | **56 日超過** |  |
+| [20. Valid Parentheses](problems/stack/0020-valid-parentheses) | 2026-08-16 | ? → ? | 7 日 | 2026-08-23 | **56 日超過** | 閉じ括弧 → 開き括弧の dict を使って、括弧ごとの if 分岐をなくして書く<br>`pop()` の前に Stack が空でないか確かめる（`]` のような入力で落ちないか、提出前に自分で試す） |
 | [226. Invert Binary Tree](problems/trees/0226-invert-binary-tree) | 2026-08-19 | ? → ? | 7 日 | 2026-08-26 | **53 日超過** |  |
 | [110. Balanced Binary Tree](problems/trees/0110-balanced-binary-tree) | 2026-08-22 | ○ | 7 日 | 2026-08-29 | **50 日超過** | 返り値のタプルか外側の変数か、どちらか一方に寄せて書き直す |
 | [100. Same Tree](problems/trees/0100-same-tree) | 2026-08-26 | ◎ | 7 日 | 2026-09-02 | **46 日超過** | BFS / Iterative DFS で解く |

@@ -78,4 +78,3 @@ def push(self, val):
 ### 細かい点
 
 - `push` の `if self.minArr: ... else: ...` は、`min(self.minArr[-1], value) if self.minArr else value` と 1 行にもできる
-- LeetCode の雛形では引数名が `val` だが、`value` にしても動く（LeetCode は位置で渡している）

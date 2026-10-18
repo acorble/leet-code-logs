@@ -153,7 +153,7 @@ python scripts/update_index.py
 
 <!-- INDEX:START -->
 
-合計 36 問 / のべ 53 回
+合計 37 問 / のべ 54 回
 
 | # | 問題 | 難易度 | カテゴリ | 回数 | 最後に解いた日 |
 | --- | --- | --- | --- | --- | --- |
@@ -161,6 +161,7 @@ python scripts/update_index.py
 | 49 | [49. Group Anagrams](problems/arrays-hashing/0049-group-anagrams) | medium | arrays-hashing | 2 | 2026-05-23 |
 | 217 | [217. Contains Duplicate](problems/arrays-hashing/0217-contains-duplicate) | easy | arrays-hashing | 1 | 2026-08-16 |
 | 242 | [242. Valid Anagram](problems/arrays-hashing/0242-valid-anagram) | easy | arrays-hashing | 2 | 2026-04-18 |
+| 271 | [271. Encode and Decode Strings](problems/arrays-hashing/0271-encode-and-decode-strings) | medium | arrays-hashing | 1 | 2026-06-01 |
 | 347 | [347. Top K Frequent Elements](problems/arrays-hashing/0347-top-k-frequent-elements) | medium | arrays-hashing | 1 | 2026-05-30 |
 | 74 | [74. Search a 2D Matrix](problems/binary-search/0074-search-a-2d-matrix) | medium | binary-search | 1 | 2026-06-26 |
 | 153 | [153. Find Minimum in Rotated Sorted Array](problems/binary-search/0153-find-minimum-in-rotated-sorted-array) | medium | binary-search | 1 | 2026-06-28 |

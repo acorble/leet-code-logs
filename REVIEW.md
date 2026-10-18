@@ -61,5 +61,5 @@
 
 | 問題 | 前回 | 自力の履歴 | 間隔 | 予定日 | 状態 | 次回やること |
 | --- | --- | --- | --- | --- | --- | --- |
-| [150. Evaluate Reverse Polish Notation](problems/stack/0150-evaluate-reverse-polish-notation) | 2026-10-18 | △ | 3 日 | 2026-10-21 | あと 3 日 | 動画を見ずに Stack で書けるか確かめる<br>演算子ごとの if 分岐を、演算子 → 関数の dict にまとめて書いてみる |
+| [150. Evaluate Reverse Polish Notation](problems/stack/0150-evaluate-reverse-polish-notation) | 2026-10-18 | ○ → △ | 3 日 | 2026-10-21 | あと 3 日 | 動画を見ずに Stack で書けるか確かめる<br>演算子ごとの if 分岐を、演算子 → 関数の dict にまとめて書いてみる |
 | [739. Daily Temperatures](problems/stack/0739-daily-temperatures) | 2026-10-15 | ○ | 7 日 | 2026-10-22 | あと 4 日 | Stack を使った O(n) の解法を自分で考える<br>提出前に `print` を消す |

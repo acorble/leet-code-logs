@@ -28,7 +28,7 @@
 | [347. Top K Frequent Elements](problems/arrays-hashing/0347-top-k-frequent-elements) | 2026-05-30 | ? | 7 日 | 2026-06-06 | **134 日超過** | Python で解く<br>並べ替えを使わずに O(n) で解く（「出現回数」を添え字にしたバケツを使う） |
 | [271. Encode and Decode Strings](problems/arrays-hashing/0271-encode-and-decode-strings) | 2026-06-01 | ? | 7 日 | 2026-06-08 | **132 日超過** | Python で解く<br>長さと中身の間に区切り文字を入れる形（`4#neet`）にして、2 桁以上の長さでも戻せるようにする<br>提出前に、10 文字以上の文字列と空文字を自分で試す |
 
-## 期限切れ（残り 34）
+## 期限切れ（残り 35）
 
 | 問題 | 前回 | 自力の履歴 | 間隔 | 予定日 | 状態 | 次回やること |
 | --- | --- | --- | --- | --- | --- | --- |
@@ -36,6 +36,7 @@
 | [36. Valid Sudoku](problems/arrays-hashing/0036-valid-sudoku) | 2026-06-04 | ? | 7 日 | 2026-06-11 | **129 日超過** | Python で解く<br>盤面を 1 周するだけで、行・列・ブロックを同時にチェックする（ブロックの番号は `(r // 3, c // 3)`） |
 | [128. Longest Consecutive Sequence](problems/arrays-hashing/0128-longest-consecutive-sequence) | 2026-06-05 | ? | 7 日 | 2026-06-12 | **128 日超過** | O(n) で解く（毎回 `Collections.min` で最小値を探さずに、どこから数え始めればよいかを考える）<br>Python で解く |
 | [167. Two Sum II - Input Array Is Sorted](problems/two-pointers/0167-two-sum-ii-input-array-is-sorted) | 2026-06-11 | ? | 7 日 | 2026-06-18 | **122 日超過** | なぜ「小さければ左、大きければ右」を動かしても答えを飛ばさないのか、自分の言葉で説明できるようにする |
+| [11. Container With Most Water](problems/two-pointers/0011-container-with-most-water) | 2026-06-13 | ? | 7 日 | 2026-06-20 | **120 日超過** | 左右で同じ処理を 2 回書かずに、「低いほうを 1 つ動かす」1 本のループで書く<br>なぜ低いほうを動かせばよいのか（高いほうを動かしても増えない理由）を説明できるようにする |
 | [121. Best Time to Buy and Sell Stock](problems/sliding-window/0121-best-time-to-buy-and-sell-stock) | 2026-06-15 | ? | 7 日 | 2026-06-22 | **118 日超過** |  |
 | [3. Longest Substring Without Repeating Characters](problems/sliding-window/0003-longest-substring-without-repeating-characters) | 2026-06-16 | ? | 7 日 | 2026-06-23 | **117 日超過** | 同じ情報を 2 通りの方法で求めていないか見直す（`left + i` で足りる） |
 | [424. Longest Repeating Character Replacement](problems/sliding-window/0424-longest-repeating-character-replacement) | 2026-06-17 | ? | 7 日 | 2026-06-24 | **116 日超過** |  |

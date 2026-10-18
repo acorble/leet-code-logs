@@ -49,10 +49,10 @@
 | [141. Linked List Cycle](problems/linked-list/0141-linked-list-cycle) | 2026-07-10 | ? → ? | 7 日 | 2026-07-17 | **93 日超過** | ループ条件を標準形 `while fast and fast.next` で書く |
 | [1. Two Sum](problems/arrays-hashing/0001-two-sum) | 2026-07-11 | ? | 7 日 | 2026-07-18 | **92 日超過** |  |
 | [143. Reorder List](problems/linked-list/0143-reorder-list) | 2026-07-11 | ? → ? | 7 日 | 2026-07-18 | **92 日超過** |  |
-| [125. Valid Palindrome](problems/two-pointers/0125-valid-palindrome) | 2026-07-19 | ? → ? | 7 日 | 2026-07-26 | **84 日超過** | `isalnum()` / `lower()` を使わずに、文字コードの範囲（`'a' <= c <= 'z'` など）で判定して書いてみる（面接でよく聞かれる） |
 | [104. Maximum Depth of Binary Tree](problems/trees/0104-maximum-depth-of-binary-tree) | 2026-07-23 | ? | 7 日 | 2026-07-30 | **80 日超過** | Stack を使った Iterative DFS で解く |
 | [567. Permutation in String](problems/sliding-window/0567-permutation-in-string) | 2026-08-03 | ? | 7 日 | 2026-08-10 | **69 日超過** |  |
 | [217. Contains Duplicate](problems/arrays-hashing/0217-contains-duplicate) | 2026-08-16 | ? | 7 日 | 2026-08-23 | **56 日超過** |  |
+| [125. Valid Palindrome](problems/two-pointers/0125-valid-palindrome) | 2026-08-16 | ? → ? → ? | 7 日 | 2026-08-23 | **56 日超過** | 内側の while にも `l < r` を入れる。提出前に、記号だけの文字列（`".,"`）を自分で試す<br>`isalnum()` / `lower()` を使わずに、文字コードの範囲（`'a' <= c <= 'z'` など）で判定して書いてみる（面接でよく聞かれる） |
 | [226. Invert Binary Tree](problems/trees/0226-invert-binary-tree) | 2026-08-19 | ? → ? | 7 日 | 2026-08-26 | **53 日超過** |  |
 | [110. Balanced Binary Tree](problems/trees/0110-balanced-binary-tree) | 2026-08-22 | ○ | 7 日 | 2026-08-29 | **50 日超過** | 返り値のタプルか外側の変数か、どちらか一方に寄せて書き直す |
 | [100. Same Tree](problems/trees/0100-same-tree) | 2026-08-26 | ◎ | 7 日 | 2026-09-02 | **46 日超過** | BFS / Iterative DFS で解く |

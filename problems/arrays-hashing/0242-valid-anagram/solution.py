@@ -1,11 +1,27 @@
 """242. Valid Anagram
 
 https://leetcode.com/problems/valid-anagram/
-
-Python ではまだ解いていない。これまでの解答は attempts/ の .java（Java）。
 """
 
 
 class Solution:
     def isAnagram(self, s: str, t: str) -> bool:
-        raise NotImplementedError
+        if len(s) != len(t):
+            return False
+
+        maps = {}
+        mapt = {}
+
+        for c in s:
+            if c in maps:
+                maps[c] += 1
+            else:
+                maps[c] = 0
+
+        for c in t:
+            if c in mapt:
+                mapt[c] += 1
+            else:
+                mapt[c] = 0
+
+        return maps == mapt

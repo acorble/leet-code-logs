@@ -37,7 +37,7 @@
 | | # | 問題 | 難易度 | 回数 | 最後に解いた日 |
 | --- | --- | --- | --- | --- | --- |
 | ✅ | 217 | [Contains Duplicate](problems/arrays-hashing/0217-contains-duplicate) | Easy | 2 | 2026-10-18 |
-| ✅ | 242 | [Valid Anagram](problems/arrays-hashing/0242-valid-anagram) | Easy | 2 | 2026-04-18 |
+| ✅ | 242 | [Valid Anagram](problems/arrays-hashing/0242-valid-anagram) | Easy | 3 | 2026-10-18 |
 | ✅ | 1 | [Two Sum](problems/arrays-hashing/0001-two-sum) | Easy | 2 | 2026-07-11 |
 | ✅ | 49 | [Group Anagrams](problems/arrays-hashing/0049-group-anagrams) | Medium | 2 | 2026-05-23 |
 | ✅ | 347 | [Top K Frequent Elements](problems/arrays-hashing/0347-top-k-frequent-elements) | Medium | 1 | 2026-05-30 |

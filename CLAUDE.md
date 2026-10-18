@@ -68,6 +68,10 @@ README の考察は上書きせず追記する。詳細は `/leetcode-log` ス�
 間隔は 3 → 7 → 14 → 30 → 60 日で、◎ で 1 段上がり、△ と × で 3 日に戻る（詳細は `scripts/_review.py`）。
 記録するときは自力を必ず確認する。「結果」が AC でも、答えを見ながらなら △。
 
+解き直しの予定を Google カレンダーに入れるよう頼まれたら `/review-calendar` スキルに従う。
+予定の形式（7:00–9:00、通知は前日 23:00 と当日 7:00）は `scripts/review_events.py` が決めている。
+カレンダーはメイン (primary) だけを使う（`.claude/hooks/calendar-guard.sh` が強制）。
+
 ## テストについて
 
 `problems/` 配下には同名の `solution.py` が多数あるため、ルートの `conftest.py` が

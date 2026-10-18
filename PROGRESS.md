@@ -3,16 +3,16 @@
 このファイルは `python scripts/update_progress.py` で自動生成される。**手で編集しない。**
 `problems/` に問題ディレクトリがあるものを「解いた」として集計している。
 
-## 全体: 29 / 150
+## 全体: 30 / 150
 
-`████████░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░` 19.3%
+`████████░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░` 20.0%
 
 | セクション | 進捗 | | 学習対象 |
 | --- | --- | --- | --- |
 | Arrays & Hashing | 2 / 9 | `███░░░░░░░░░` | ◯ |
 | Two Pointers | 1 / 5 | `██░░░░░░░░░░` | ◯ |
 | Sliding Window | 4 / 6 | `████████░░░░` | ◯ |
-| Stack | 1 / 7 | `██░░░░░░░░░░` | ◯ |
+| Stack | 2 / 7 | `███░░░░░░░░░` | ◯ |
 | Binary Search | 5 / 7 | `█████████░░░` | ◯ |
 | Linked List | 4 / 11 | `████░░░░░░░░` | ◯ |
 | Trees | 12 / 15 | `██████████░░` | ◯ |
@@ -67,13 +67,13 @@
 | ⬜ | 76 | Minimum Window Substring | Hard | - | - |
 | ⬜ | 239 | Sliding Window Maximum | Hard | - | - |
 
-## Stack — 1 / 7
+## Stack — 2 / 7
 
 | | # | 問題 | 難易度 | 回数 | 最後に解いた日 |
 | --- | --- | --- | --- | --- | --- |
 | ⬜ | 20 | Valid Parentheses | Easy | - | - |
 | ⬜ | 155 | Min Stack | Medium | - | - |
-| ⬜ | 150 | Evaluate Reverse Polish Notation | Medium | - | - |
+| ✅ | 150 | [Evaluate Reverse Polish Notation](problems/stack/0150-evaluate-reverse-polish-notation) | Medium | 1 | 2026-10-18 |
 | ⬜ | 22 | Generate Parentheses | Medium | - | - |
 | ✅ | 739 | [Daily Temperatures](problems/stack/0739-daily-temperatures) | Medium | 1 | 2026-10-15 |
 | ⬜ | 853 | Car Fleet | Medium | - | - |

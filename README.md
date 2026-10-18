@@ -153,7 +153,7 @@ python scripts/update_index.py
 
 <!-- INDEX:START -->
 
-合計 43 問 / のべ 66 回
+合計 43 問 / のべ 67 回
 
 | # | 問題 | 難易度 | カテゴリ | 回数 | 最後に解いた日 |
 | --- | --- | --- | --- | --- | --- |
@@ -163,7 +163,7 @@ python scripts/update_index.py
 | 128 | [128. Longest Consecutive Sequence](problems/arrays-hashing/0128-longest-consecutive-sequence) | medium | arrays-hashing | 1 | 2026-06-05 |
 | 217 | [217. Contains Duplicate](problems/arrays-hashing/0217-contains-duplicate) | easy | arrays-hashing | 2 | 2026-10-18 |
 | 238 | [238. Product of Array Except Self](problems/arrays-hashing/0238-product-of-array-except-self) | medium | arrays-hashing | 1 | 2026-06-03 |
-| 242 | [242. Valid Anagram](problems/arrays-hashing/0242-valid-anagram) | easy | arrays-hashing | 3 | 2026-10-18 |
+| 242 | [242. Valid Anagram](problems/arrays-hashing/0242-valid-anagram) | easy | arrays-hashing | 4 | 2026-10-18 |
 | 271 | [271. Encode and Decode Strings](problems/arrays-hashing/0271-encode-and-decode-strings) | medium | arrays-hashing | 1 | 2026-06-01 |
 | 347 | [347. Top K Frequent Elements](problems/arrays-hashing/0347-top-k-frequent-elements) | medium | arrays-hashing | 1 | 2026-05-30 |
 | 74 | [74. Search a 2D Matrix](problems/binary-search/0074-search-a-2d-matrix) | medium | binary-search | 1 | 2026-06-26 |

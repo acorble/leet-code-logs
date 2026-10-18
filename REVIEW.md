@@ -74,4 +74,4 @@
 | [739. Daily Temperatures](problems/stack/0739-daily-temperatures) | 2026-10-15 | ○ | 7 日 | 2026-10-22 | あと 4 日 | Stack を使った O(n) の解法を自分で考える<br>提出前に `print` を消す |
 | [20. Valid Parentheses](problems/stack/0020-valid-parentheses) | 2026-10-17 | ? → ? → ◎ | 14 日 | 2026-10-31 | あと 13 日 | 閉じ括弧 → 開き括弧の dict を使って、括弧ごとの if 分岐をなくして書く |
 | [217. Contains Duplicate](problems/arrays-hashing/0217-contains-duplicate) | 2026-10-18 | ? → ◎ | 14 日 | 2026-11-01 | あと 14 日 |  |
-| [242. Valid Anagram](problems/arrays-hashing/0242-valid-anagram) | 2026-10-18 | ? → ? → ◎ | 14 日 | 2026-11-01 | あと 14 日 | 初めて出てきた文字を `1` から数える（`d.get(c, 0) + 1`）<br>dict を 1 つにして、`s` は +1・`t` は -1 で数える形で書く。そのあと `collections.Counter` でも書いてみる |
+| [242. Valid Anagram](problems/arrays-hashing/0242-valid-anagram) | 2026-10-18 | ? → ? → ◎ | 14 日 | 2026-11-01 | あと 14 日 | dict を 1 つにして、`s` は +1・`t` は -1 で数える形で書く。そのあと `collections.Counter` でも書いてみる |

@@ -9,19 +9,12 @@ class Solution:
         if len(s) != len(t):
             return False
 
-        maps = {}
-        mapt = {}
+        maps, mapt = {}, {}
 
         for c in s:
-            if c in maps:
-                maps[c] += 1
-            else:
-                maps[c] = 0
+            maps[c] = maps.get(c, 0) + 1
 
         for c in t:
-            if c in mapt:
-                mapt[c] += 1
-            else:
-                mapt[c] = 0
+            mapt[c] = mapt.get(c, 0) + 1
 
         return maps == mapt

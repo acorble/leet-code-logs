@@ -28,10 +28,11 @@
 | [3. Longest Substring Without Repeating Characters](problems/sliding-window/0003-longest-substring-without-repeating-characters) | 2026-06-16 | ? | 7 日 | 2026-06-23 | **117 日超過** | 同じ情報を 2 通りの方法で求めていないか見直す（`left + i` で足りる） |
 | [424. Longest Repeating Character Replacement](problems/sliding-window/0424-longest-repeating-character-replacement) | 2026-06-17 | ? | 7 日 | 2026-06-24 | **116 日超過** |  |
 
-## 期限切れ（残り 24）
+## 期限切れ（残り 25）
 
 | 問題 | 前回 | 自力の履歴 | 間隔 | 予定日 | 状態 | 次回やること |
 | --- | --- | --- | --- | --- | --- | --- |
+| [155. Min Stack](problems/stack/0155-min-stack) | 2026-06-21 | ? | 7 日 | 2026-06-28 | **112 日超過** | Stack を 1 本にして、`(値, その時点の最小値)` の組を積む形で書く |
 | [704. Binary Search](problems/binary-search/0704-binary-search) | 2026-06-24 | ? | 7 日 | 2026-07-01 | **109 日超過** |  |
 | [74. Search a 2D Matrix](problems/binary-search/0074-search-a-2d-matrix) | 2026-06-26 | ? | 7 日 | 2026-07-03 | **107 日超過** |  |
 | [875. Koko Eating Bananas](problems/binary-search/0875-koko-eating-bananas) | 2026-06-27 | ? | 7 日 | 2026-07-04 | **106 日超過** |  |

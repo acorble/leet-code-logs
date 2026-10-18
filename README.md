@@ -153,7 +153,7 @@ python scripts/update_index.py
 
 <!-- INDEX:START -->
 
-合計 32 問 / のべ 47 回
+合計 33 問 / のべ 48 回
 
 | # | 問題 | 難易度 | カテゴリ | 回数 | 最後に解いた日 |
 | --- | --- | --- | --- | --- | --- |
@@ -174,6 +174,7 @@ python scripts/update_index.py
 | 567 | [567. Permutation in String](problems/sliding-window/0567-permutation-in-string) | medium | sliding-window | 1 | 2026-08-03 |
 | 20 | [20. Valid Parentheses](problems/stack/0020-valid-parentheses) | easy | stack | 4 | 2026-10-17 |
 | 150 | [150. Evaluate Reverse Polish Notation](problems/stack/0150-evaluate-reverse-polish-notation) | medium | stack | 2 | 2026-10-18 |
+| 155 | [155. Min Stack](problems/stack/0155-min-stack) | medium | stack | 1 | 2026-06-21 |
 | 739 | [739. Daily Temperatures](problems/stack/0739-daily-temperatures) | medium | stack | 1 | 2026-10-15 |
 | 98 | [98. Validate Binary Search Tree](problems/trees/0098-validate-binary-search-tree) | medium | trees | 1 | 2026-09-07 |
 | 100 | [100. Same Tree](problems/trees/0100-same-tree) | easy | trees | 1 | 2026-08-26 |

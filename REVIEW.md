@@ -28,12 +28,13 @@
 | [347. Top K Frequent Elements](problems/arrays-hashing/0347-top-k-frequent-elements) | 2026-05-30 | ? | 7 日 | 2026-06-06 | **134 日超過** | Python で解く<br>並べ替えを使わずに O(n) で解く（「出現回数」を添え字にしたバケツを使う） |
 | [271. Encode and Decode Strings](problems/arrays-hashing/0271-encode-and-decode-strings) | 2026-06-01 | ? | 7 日 | 2026-06-08 | **132 日超過** | Python で解く<br>長さと中身の間に区切り文字を入れる形（`4#neet`）にして、2 桁以上の長さでも戻せるようにする<br>提出前に、10 文字以上の文字列と空文字を自分で試す |
 
-## 期限切れ（残り 31）
+## 期限切れ（残り 32）
 
 | 問題 | 前回 | 自力の履歴 | 間隔 | 予定日 | 状態 | 次回やること |
 | --- | --- | --- | --- | --- | --- | --- |
 | [238. Product of Array Except Self](problems/arrays-hashing/0238-product-of-array-except-self) | 2026-06-03 | ? | 7 日 | 2026-06-10 | **130 日超過** | Python で解く<br>follow-up: `prefixes` / `suffixes` の配列を使わず、答えの配列だけで解く（追加の空間 O(1)） |
 | [36. Valid Sudoku](problems/arrays-hashing/0036-valid-sudoku) | 2026-06-04 | ? | 7 日 | 2026-06-11 | **129 日超過** | Python で解く<br>盤面を 1 周するだけで、行・列・ブロックを同時にチェックする（ブロックの番号は `(r // 3, c // 3)`） |
+| [128. Longest Consecutive Sequence](problems/arrays-hashing/0128-longest-consecutive-sequence) | 2026-06-05 | ? | 7 日 | 2026-06-12 | **128 日超過** | O(n) で解く（毎回 `Collections.min` で最小値を探さずに、どこから数え始めればよいかを考える）<br>Python で解く |
 | [125. Valid Palindrome](problems/two-pointers/0125-valid-palindrome) | 2026-06-10 | ? | 7 日 | 2026-06-17 | **123 日超過** |  |
 | [121. Best Time to Buy and Sell Stock](problems/sliding-window/0121-best-time-to-buy-and-sell-stock) | 2026-06-15 | ? | 7 日 | 2026-06-22 | **118 日超過** |  |
 | [3. Longest Substring Without Repeating Characters](problems/sliding-window/0003-longest-substring-without-repeating-characters) | 2026-06-16 | ? | 7 日 | 2026-06-23 | **117 日超過** | 同じ情報を 2 通りの方法で求めていないか見直す（`left + i` で足りる） |

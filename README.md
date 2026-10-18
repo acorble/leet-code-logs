@@ -153,11 +153,12 @@ python scripts/update_index.py
 
 <!-- INDEX:START -->
 
-合計 34 問 / のべ 50 回
+合計 35 問 / のべ 51 回
 
 | # | 問題 | 難易度 | カテゴリ | 回数 | 最後に解いた日 |
 | --- | --- | --- | --- | --- | --- |
 | 1 | [1. Two Sum](problems/arrays-hashing/0001-two-sum) | easy | arrays-hashing | 2 | 2026-07-11 |
+| 49 | [49. Group Anagrams](problems/arrays-hashing/0049-group-anagrams) | medium | arrays-hashing | 1 | 2026-05-02 |
 | 217 | [217. Contains Duplicate](problems/arrays-hashing/0217-contains-duplicate) | easy | arrays-hashing | 1 | 2026-08-16 |
 | 242 | [242. Valid Anagram](problems/arrays-hashing/0242-valid-anagram) | easy | arrays-hashing | 2 | 2026-04-18 |
 | 74 | [74. Search a 2D Matrix](problems/binary-search/0074-search-a-2d-matrix) | medium | binary-search | 1 | 2026-06-26 |

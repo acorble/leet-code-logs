@@ -24,14 +24,15 @@
 | --- | --- | --- | --- | --- | --- | --- |
 | [543. Diameter of Binary Tree](problems/trees/0543-diameter-of-binary-tree) | 2026-07-28 | △ | 3 日 | 2026-07-31 | **79 日超過** | 深さを下から持ち上げる DFS で O(n) に解き直す<br>NeetCode の解説動画を見る |
 | [242. Valid Anagram](problems/arrays-hashing/0242-valid-anagram) | 2026-04-18 | ? → ? | 7 日 | 2026-04-25 | **176 日超過** | Python で解く（まず `dict` で数える。そのあと `collections.Counter` でも書いてみる）<br>最初に長さを比べて、違えばすぐ `False` を返す |
+| [49. Group Anagrams](problems/arrays-hashing/0049-group-anagrams) | 2026-05-02 | ? | 7 日 | 2026-05-09 | **162 日超過** | Python で解く<br>グループを探して回らずに、「並べ替えた文字列」か「26 文字分の個数」を dict のキーにして 1 回で振り分ける |
 | [125. Valid Palindrome](problems/two-pointers/0125-valid-palindrome) | 2026-06-10 | ? | 7 日 | 2026-06-17 | **123 日超過** |  |
 | [121. Best Time to Buy and Sell Stock](problems/sliding-window/0121-best-time-to-buy-and-sell-stock) | 2026-06-15 | ? | 7 日 | 2026-06-22 | **118 日超過** |  |
-| [3. Longest Substring Without Repeating Characters](problems/sliding-window/0003-longest-substring-without-repeating-characters) | 2026-06-16 | ? | 7 日 | 2026-06-23 | **117 日超過** | 同じ情報を 2 通りの方法で求めていないか見直す（`left + i` で足りる） |
 
-## 期限切れ（残り 26）
+## 期限切れ（残り 27）
 
 | 問題 | 前回 | 自力の履歴 | 間隔 | 予定日 | 状態 | 次回やること |
 | --- | --- | --- | --- | --- | --- | --- |
+| [3. Longest Substring Without Repeating Characters](problems/sliding-window/0003-longest-substring-without-repeating-characters) | 2026-06-16 | ? | 7 日 | 2026-06-23 | **117 日超過** | 同じ情報を 2 通りの方法で求めていないか見直す（`left + i` で足りる） |
 | [424. Longest Repeating Character Replacement](problems/sliding-window/0424-longest-repeating-character-replacement) | 2026-06-17 | ? | 7 日 | 2026-06-24 | **116 日超過** |  |
 | [155. Min Stack](problems/stack/0155-min-stack) | 2026-06-21 | ? | 7 日 | 2026-06-28 | **112 日超過** | Stack を 1 本にして、`(値, その時点の最小値)` の組を積む形で書く |
 | [704. Binary Search](problems/binary-search/0704-binary-search) | 2026-06-24 | ? | 7 日 | 2026-07-01 | **109 日超過** |  |

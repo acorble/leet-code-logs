@@ -3,13 +3,13 @@
 このファイルは `python scripts/update_progress.py` で自動生成される。**手で編集しない。**
 `problems/` に問題ディレクトリがあるものを「解いた」として集計している。
 
-## 全体: 33 / 150
+## 全体: 34 / 150
 
-`█████████░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░` 22.0%
+`█████████░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░` 22.7%
 
 | セクション | 進捗 | | 学習対象 |
 | --- | --- | --- | --- |
-| Arrays & Hashing | 3 / 9 | `████░░░░░░░░` | ◯ |
+| Arrays & Hashing | 4 / 9 | `█████░░░░░░░` | ◯ |
 | Two Pointers | 1 / 5 | `██░░░░░░░░░░` | ◯ |
 | Sliding Window | 4 / 6 | `████████░░░░` | ◯ |
 | Stack | 4 / 7 | `███████░░░░░` | ◯ |
@@ -32,14 +32,14 @@
 範囲を広げるときは `mkdir problems/<category>` して、
 `data/neetcode150.tsv` の 2 列目にそのカテゴリ名を入れる。
 
-## Arrays & Hashing — 3 / 9
+## Arrays & Hashing — 4 / 9
 
 | | # | 問題 | 難易度 | 回数 | 最後に解いた日 |
 | --- | --- | --- | --- | --- | --- |
 | ✅ | 217 | [Contains Duplicate](problems/arrays-hashing/0217-contains-duplicate) | Easy | 1 | 2026-08-16 |
 | ✅ | 242 | [Valid Anagram](problems/arrays-hashing/0242-valid-anagram) | Easy | 2 | 2026-04-18 |
 | ✅ | 1 | [Two Sum](problems/arrays-hashing/0001-two-sum) | Easy | 2 | 2026-07-11 |
-| ⬜ | 49 | Group Anagrams | Medium | - | - |
+| ✅ | 49 | [Group Anagrams](problems/arrays-hashing/0049-group-anagrams) | Medium | 1 | 2026-05-02 |
 | ⬜ | 347 | Top K Frequent Elements | Medium | - | - |
 | ⬜ | 271 | Encode and Decode Strings 🔒 | Medium | - | - |
 | ⬜ | 238 | Product of Array Except Self | Medium | - | - |

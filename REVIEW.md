@@ -35,7 +35,6 @@
 | [238. Product of Array Except Self](problems/arrays-hashing/0238-product-of-array-except-self) | 2026-06-03 | ? | 7 日 | 2026-06-10 | **130 日超過** | Python で解く<br>follow-up: `prefixes` / `suffixes` の配列を使わず、答えの配列だけで解く（追加の空間 O(1)） |
 | [36. Valid Sudoku](problems/arrays-hashing/0036-valid-sudoku) | 2026-06-04 | ? | 7 日 | 2026-06-11 | **129 日超過** | Python で解く<br>盤面を 1 周するだけで、行・列・ブロックを同時にチェックする（ブロックの番号は `(r // 3, c // 3)`） |
 | [128. Longest Consecutive Sequence](problems/arrays-hashing/0128-longest-consecutive-sequence) | 2026-06-05 | ? | 7 日 | 2026-06-12 | **128 日超過** | O(n) で解く（毎回 `Collections.min` で最小値を探さずに、どこから数え始めればよいかを考える）<br>Python で解く |
-| [15. 3Sum](problems/two-pointers/0015-3sum) | 2026-06-11 | ? | 7 日 | 2026-06-18 | **122 日超過** | ループの中の `print` を消して提出する<br>`nums[i] > 0` になったら、それ以降は 0 にならないので `break` する |
 | [167. Two Sum II - Input Array Is Sorted](problems/two-pointers/0167-two-sum-ii-input-array-is-sorted) | 2026-06-11 | ? | 7 日 | 2026-06-18 | **122 日超過** | なぜ「小さければ左、大きければ右」を動かしても答えを飛ばさないのか、自分の言葉で説明できるようにする |
 | [121. Best Time to Buy and Sell Stock](problems/sliding-window/0121-best-time-to-buy-and-sell-stock) | 2026-06-15 | ? | 7 日 | 2026-06-22 | **118 日超過** |  |
 | [3. Longest Substring Without Repeating Characters](problems/sliding-window/0003-longest-substring-without-repeating-characters) | 2026-06-16 | ? | 7 日 | 2026-06-23 | **117 日超過** | 同じ情報を 2 通りの方法で求めていないか見直す（`left + i` で足りる） |
@@ -62,6 +61,7 @@
 | [235. Lowest Common Ancestor of a Binary Search Tree](problems/trees/0235-lowest-common-ancestor-of-a-binary-search-tree) | 2026-08-29 | ? | 7 日 | 2026-09-05 | **43 日超過** | BST の大小関係で、探索する枝を片側に絞る |
 | [102. Binary Tree Level Order Traversal](problems/trees/0102-binary-tree-level-order-traversal) | 2026-08-30 | ○ | 7 日 | 2026-09-06 | **42 日超過** |  |
 | [1448. Count Good Nodes in Binary Tree](problems/trees/1448-count-good-nodes-in-binary-tree) | 2026-09-03 | ○ | 7 日 | 2026-09-10 | **38 日超過** | 経路の最大値だけを引数で渡して O(n) にする |
+| [15. 3Sum](problems/two-pointers/0015-3sum) | 2026-09-06 | ? → ? | 7 日 | 2026-09-13 | **35 日超過** | 1 回目の「並べ替えて 1 つ固定 → 2 ポインタ」を、1 回目のコードを見ずに書く<br>ループの中の `print` を消して提出する<br>`nums[i] > 0` になったら、それ以降は 0 にならないので `break` する |
 | [98. Validate Binary Search Tree](problems/trees/0098-validate-binary-search-tree) | 2026-09-07 | ○ | 7 日 | 2026-09-14 | **34 日超過** | 解説を見る<br>上から範囲 (low, high) を渡す別解で書く |
 | [230. Kth Smallest Element in a BST](problems/trees/0230-kth-smallest-element-in-a-bst) | 2026-09-12 | ? | 7 日 | 2026-09-19 | **29 日超過** | 中順走査にして sort をなくす（O(n)）<br>k 個目で打ち切る（O(h + k)） |
 | [199. Binary Tree Right Side View](problems/trees/0199-binary-tree-right-side-view) | 2026-10-09 | ◎ → △ | 3 日 | 2026-10-12 | **6 日超過** | 何も見ずに BFS 版を書く<br>DFS 版（右の子から潜り、各深さで最初に会ったノードを取る）を書く |

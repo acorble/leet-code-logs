@@ -52,7 +52,7 @@
 | --- | --- | --- | --- | --- | --- |
 | ✅ | 125 | [Valid Palindrome](problems/two-pointers/0125-valid-palindrome) | Easy | 4 | 2026-08-16 |
 | ✅ | 167 | [Two Sum II - Input Array Is Sorted](problems/two-pointers/0167-two-sum-ii-input-array-is-sorted) | Medium | 1 | 2026-06-11 |
-| ✅ | 15 | [3Sum](problems/two-pointers/0015-3sum) | Medium | 1 | 2026-06-11 |
+| ✅ | 15 | [3Sum](problems/two-pointers/0015-3sum) | Medium | 2 | 2026-09-06 |
 | ⬜ | 11 | Container With Most Water | Medium | - | - |
 | ⬜ | 42 | Trapping Rain Water | Hard | - | - |
 

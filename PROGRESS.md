@@ -39,7 +39,7 @@
 | ✅ | 217 | [Contains Duplicate](problems/arrays-hashing/0217-contains-duplicate) | Easy | 1 | 2026-08-16 |
 | ✅ | 242 | [Valid Anagram](problems/arrays-hashing/0242-valid-anagram) | Easy | 2 | 2026-04-18 |
 | ✅ | 1 | [Two Sum](problems/arrays-hashing/0001-two-sum) | Easy | 2 | 2026-07-11 |
-| ✅ | 49 | [Group Anagrams](problems/arrays-hashing/0049-group-anagrams) | Medium | 1 | 2026-05-02 |
+| ✅ | 49 | [Group Anagrams](problems/arrays-hashing/0049-group-anagrams) | Medium | 2 | 2026-05-23 |
 | ⬜ | 347 | Top K Frequent Elements | Medium | - | - |
 | ⬜ | 271 | Encode and Decode Strings 🔒 | Medium | - | - |
 | ⬜ | 238 | Product of Array Except Self | Medium | - | - |

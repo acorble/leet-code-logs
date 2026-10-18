@@ -153,7 +153,7 @@ python scripts/update_index.py
 
 <!-- INDEX:START -->
 
-合計 32 問 / のべ 45 回
+合計 32 問 / のべ 46 回
 
 | # | 問題 | 難易度 | カテゴリ | 回数 | 最後に解いた日 |
 | --- | --- | --- | --- | --- | --- |
@@ -172,7 +172,7 @@ python scripts/update_index.py
 | 121 | [121. Best Time to Buy and Sell Stock](problems/sliding-window/0121-best-time-to-buy-and-sell-stock) | easy | sliding-window | 1 | 2026-06-15 |
 | 424 | [424. Longest Repeating Character Replacement](problems/sliding-window/0424-longest-repeating-character-replacement) | medium | sliding-window | 1 | 2026-06-17 |
 | 567 | [567. Permutation in String](problems/sliding-window/0567-permutation-in-string) | medium | sliding-window | 1 | 2026-08-03 |
-| 20 | [20. Valid Parentheses](problems/stack/0020-valid-parentheses) | easy | stack | 2 | 2026-08-16 |
+| 20 | [20. Valid Parentheses](problems/stack/0020-valid-parentheses) | easy | stack | 3 | 2026-08-16 |
 | 150 | [150. Evaluate Reverse Polish Notation](problems/stack/0150-evaluate-reverse-polish-notation) | medium | stack | 2 | 2026-10-18 |
 | 739 | [739. Daily Temperatures](problems/stack/0739-daily-temperatures) | medium | stack | 1 | 2026-10-15 |
 | 98 | [98. Validate Binary Search Tree](problems/trees/0098-validate-binary-search-tree) | medium | trees | 1 | 2026-09-07 |

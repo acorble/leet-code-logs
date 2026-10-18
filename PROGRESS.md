@@ -71,7 +71,7 @@
 
 | | # | 問題 | 難易度 | 回数 | 最後に解いた日 |
 | --- | --- | --- | --- | --- | --- |
-| ✅ | 20 | [Valid Parentheses](problems/stack/0020-valid-parentheses) | Easy | 2 | 2026-08-16 |
+| ✅ | 20 | [Valid Parentheses](problems/stack/0020-valid-parentheses) | Easy | 3 | 2026-08-16 |
 | ⬜ | 155 | Min Stack | Medium | - | - |
 | ✅ | 150 | [Evaluate Reverse Polish Notation](problems/stack/0150-evaluate-reverse-polish-notation) | Medium | 2 | 2026-10-18 |
 | ⬜ | 22 | Generate Parentheses | Medium | - | - |

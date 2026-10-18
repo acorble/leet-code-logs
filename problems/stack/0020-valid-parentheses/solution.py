@@ -12,11 +12,11 @@ class Solution:
             if c == '(' or c == '{' or c == '[':
                 stack.append(c)
             else:
-                if c == ')' and stack.pop() == '(':
+                if c == ')' and stack != [] and stack.pop() == '(':
                     continue
-                elif c == '}' and stack.pop() == '{':
+                elif c == '}' and stack != [] and stack.pop() == '{':
                     continue
-                elif c == ']' and stack.pop() == '[':
+                elif c == ']' and stack != [] and stack.pop() == '[':
                     continue
                 else:
                     return False

@@ -9,6 +9,10 @@ LeetCode で解いた問題のコードと考えを記録するリポジトリ�
 - 問題は `problems/<category>/<4桁番号>-<スラッグ>/` に 1 問 1 ディレクトリ
 - `solution.py` は常に最新の解答。過去の解答は `attempts/<日付>.py` に残す
 - 同じ問題を何度も解き直して記録するのが前提。**過去の解答とメモを消さないこと**
+- 昔 Java で解いた回は、Python に訳さず `attempts/<日付>.java` にそのまま置き、復習ログからリンクする。
+  Python でまだ解いていない問題の `solution.py` は `NotImplementedError` の雛形のままにし、
+  テストは Python の解答が入るまでスキップする（例: `problems/arrays-hashing/0242-valid-anagram`）。
+  `new_attempt.py` は、復習ログに `solution.py` の回がなければ退避せずに次の回を足す
 - カテゴリは以下の 7 つのみ。これ以外は使わず、必要なら先にユーザーへ確認する
   `arrays-hashing` / `two-pointers` / `stack` / `binary-search` /
   `sliding-window` / `linked-list` / `trees`

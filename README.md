@@ -153,12 +153,13 @@ python scripts/update_index.py
 
 <!-- INDEX:START -->
 
-合計 33 問 / のべ 48 回
+合計 34 問 / のべ 50 回
 
 | # | 問題 | 難易度 | カテゴリ | 回数 | 最後に解いた日 |
 | --- | --- | --- | --- | --- | --- |
 | 1 | [1. Two Sum](problems/arrays-hashing/0001-two-sum) | easy | arrays-hashing | 2 | 2026-07-11 |
 | 217 | [217. Contains Duplicate](problems/arrays-hashing/0217-contains-duplicate) | easy | arrays-hashing | 1 | 2026-08-16 |
+| 242 | [242. Valid Anagram](problems/arrays-hashing/0242-valid-anagram) | easy | arrays-hashing | 2 | 2026-04-18 |
 | 74 | [74. Search a 2D Matrix](problems/binary-search/0074-search-a-2d-matrix) | medium | binary-search | 1 | 2026-06-26 |
 | 153 | [153. Find Minimum in Rotated Sorted Array](problems/binary-search/0153-find-minimum-in-rotated-sorted-array) | medium | binary-search | 1 | 2026-06-28 |
 | 704 | [704. Binary Search](problems/binary-search/0704-binary-search) | easy | binary-search | 2 | 2026-06-24 |

@@ -96,7 +96,8 @@ def update_log(
         sys.exit(f"{readme.name} に {START} / {END} のマーカーがありません。手で追加してください。")
 
     block = re.search(rf"{re.escape(START)}(.*?){re.escape(END)}", text, re.DOTALL).group(1)
-    block = block.replace("[solution.py](solution.py)", f"[{archived_rel}]({archived_rel})")
+    if archived_rel:
+        block = block.replace("[solution.py](solution.py)", f"[{archived_rel}]({archived_rel})")
 
     lines = add_recall_column([ln for ln in block.strip().splitlines() if ln.strip()])
     attempt_no = sum(1 for ln in lines if re.match(r"^\|\s*\d+\s*\|", ln)) + 1
@@ -165,16 +166,19 @@ def main() -> int:
     attempts.mkdir(exist_ok=True)
     day = args.date or date.today().isoformat()
 
-    # 退避先の名前は「今回の日付」ではなく「退避するコードを書いた日」
-    dest = archive_path(attempts, previous_day(readme, day))
-    shutil.copy2(solution, dest)
-
-    rel = dest.relative_to(problem).as_posix()
+    # 復習ログに solution.py を指す回がなければ、solution.py はまだ雛形のまま
+    # （過去の回が Java などで、attempts/ に直接置いてある）。退避するものがない
+    rel = None
+    if "[solution.py](solution.py)" in readme.read_text(encoding="utf-8"):
+        # 退避先の名前は「今回の日付」ではなく「退避するコードを書いた日」
+        dest = archive_path(attempts, previous_day(readme, day))
+        shutil.copy2(solution, dest)
+        rel = dest.relative_to(problem).as_posix()
     no = update_log(readme, rel, day, args.result, args.recall, args.minutes, args.note)
     add_thoughts_heading(readme, no)
 
     print(f"{problem.relative_to(ROOT)} — {no} 回目の記録を開始しました")
-    print(f"  前回のコードを退避: {rel}")
+    print(f"  前回のコードを退避: {rel}" if rel else "  solution.py は雛形のままなので退避しませんでした")
     print(f"  今回の解答は solution.py を上書きして書く")
     print(f"  README に「### {no} 回目」の見出しを用意しました（中身は自分で書く）")
     if not args.no_open:

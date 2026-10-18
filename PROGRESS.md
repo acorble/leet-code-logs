@@ -3,14 +3,14 @@
 このファイルは `python scripts/update_progress.py` で自動生成される。**手で編集しない。**
 `problems/` に問題ディレクトリがあるものを「解いた」として集計している。
 
-## 全体: 40 / 150
+## 全体: 41 / 150
 
-`███████████░░░░░░░░░░░░░░░░░░░░░░░░░░░░░` 26.7%
+`███████████░░░░░░░░░░░░░░░░░░░░░░░░░░░░░` 27.3%
 
 | セクション | 進捗 | | 学習対象 |
 | --- | --- | --- | --- |
 | Arrays & Hashing | 9 / 9 | `████████████` | ◯ |
-| Two Pointers | 2 / 5 | `█████░░░░░░░` | ◯ |
+| Two Pointers | 3 / 5 | `███████░░░░░` | ◯ |
 | Sliding Window | 4 / 6 | `████████░░░░` | ◯ |
 | Stack | 4 / 7 | `███████░░░░░` | ◯ |
 | Binary Search | 5 / 7 | `█████████░░░` | ◯ |
@@ -46,13 +46,13 @@
 | ✅ | 36 | [Valid Sudoku](problems/arrays-hashing/0036-valid-sudoku) | Medium | 1 | 2026-06-04 |
 | ✅ | 128 | [Longest Consecutive Sequence](problems/arrays-hashing/0128-longest-consecutive-sequence) | Medium | 1 | 2026-06-05 |
 
-## Two Pointers — 2 / 5
+## Two Pointers — 3 / 5
 
 | | # | 問題 | 難易度 | 回数 | 最後に解いた日 |
 | --- | --- | --- | --- | --- | --- |
 | ✅ | 125 | [Valid Palindrome](problems/two-pointers/0125-valid-palindrome) | Easy | 4 | 2026-08-16 |
 | ✅ | 167 | [Two Sum II - Input Array Is Sorted](problems/two-pointers/0167-two-sum-ii-input-array-is-sorted) | Medium | 1 | 2026-06-11 |
-| ⬜ | 15 | 3Sum | Medium | - | - |
+| ✅ | 15 | [3Sum](problems/two-pointers/0015-3sum) | Medium | 1 | 2026-06-11 |
 | ⬜ | 11 | Container With Most Water | Medium | - | - |
 | ⬜ | 42 | Trapping Rain Water | Hard | - | - |
 

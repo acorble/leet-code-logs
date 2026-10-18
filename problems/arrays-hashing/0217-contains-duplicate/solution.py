@@ -3,16 +3,13 @@
 https://leetcode.com/problems/contains-duplicate/
 """
 
-from typing import List
-
 
 class Solution:
-    def containsDuplicate(self, nums: List[int]) -> bool:
-        seen = set()
-
-        for num in nums:
-            if num in seen:
+    def containsDuplicate(self, nums: list[int]) -> bool:
+        s = set()
+        for n in nums:
+            if n in s:
                 return True
-            seen.add(num)
-
+            else:
+                s.add(n)
         return False

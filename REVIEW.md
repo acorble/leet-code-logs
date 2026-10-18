@@ -28,7 +28,7 @@
 | [347. Top K Frequent Elements](problems/arrays-hashing/0347-top-k-frequent-elements) | 2026-05-30 | ? | 7 日 | 2026-06-06 | **134 日超過** | Python で解く<br>並べ替えを使わずに O(n) で解く（「出現回数」を添え字にしたバケツを使う） |
 | [271. Encode and Decode Strings](problems/arrays-hashing/0271-encode-and-decode-strings) | 2026-06-01 | ? | 7 日 | 2026-06-08 | **132 日超過** | Python で解く<br>長さと中身の間に区切り文字を入れる形（`4#neet`）にして、2 桁以上の長さでも戻せるようにする<br>提出前に、10 文字以上の文字列と空文字を自分で試す |
 
-## 期限切れ（残り 35）
+## 期限切れ（残り 34）
 
 | 問題 | 前回 | 自力の履歴 | 間隔 | 予定日 | 状態 | 次回やること |
 | --- | --- | --- | --- | --- | --- | --- |
@@ -53,7 +53,6 @@
 | [143. Reorder List](problems/linked-list/0143-reorder-list) | 2026-07-11 | ? → ? | 7 日 | 2026-07-18 | **92 日超過** |  |
 | [104. Maximum Depth of Binary Tree](problems/trees/0104-maximum-depth-of-binary-tree) | 2026-07-23 | ? | 7 日 | 2026-07-30 | **80 日超過** | Stack を使った Iterative DFS で解く |
 | [567. Permutation in String](problems/sliding-window/0567-permutation-in-string) | 2026-08-03 | ? | 7 日 | 2026-08-10 | **69 日超過** |  |
-| [217. Contains Duplicate](problems/arrays-hashing/0217-contains-duplicate) | 2026-08-16 | ? | 7 日 | 2026-08-23 | **56 日超過** |  |
 | [125. Valid Palindrome](problems/two-pointers/0125-valid-palindrome) | 2026-08-16 | ? → ? → ? | 7 日 | 2026-08-23 | **56 日超過** | 内側の while にも `l < r` を入れる。提出前に、記号だけの文字列（`".,"`）を自分で試す<br>`isalnum()` / `lower()` を使わずに、文字コードの範囲（`'a' <= c <= 'z'` など）で判定して書いてみる（面接でよく聞かれる） |
 | [226. Invert Binary Tree](problems/trees/0226-invert-binary-tree) | 2026-08-19 | ? → ? | 7 日 | 2026-08-26 | **53 日超過** |  |
 | [110. Balanced Binary Tree](problems/trees/0110-balanced-binary-tree) | 2026-08-22 | ○ | 7 日 | 2026-08-29 | **50 日超過** | 返り値のタプルか外側の変数か、どちらか一方に寄せて書き直す |
@@ -68,10 +67,11 @@
 | [199. Binary Tree Right Side View](problems/trees/0199-binary-tree-right-side-view) | 2026-10-09 | ◎ → △ | 3 日 | 2026-10-12 | **6 日超過** | 何も見ずに BFS 版を書く<br>DFS 版（右の子から潜り、各深さで最初に会ったノードを取る）を書く |
 | [145. Binary Tree Postorder Traversal](problems/trees/0145-binary-tree-postorder-traversal) | 2026-10-10 | ◎ | 7 日 | 2026-10-17 | **1 日超過** | 再帰を使わず、スタックで解く（follow-up） |
 
-## 今後の予定 (3)
+## 今後の予定 (4)
 
 | 問題 | 前回 | 自力の履歴 | 間隔 | 予定日 | 状態 | 次回やること |
 | --- | --- | --- | --- | --- | --- | --- |
 | [150. Evaluate Reverse Polish Notation](problems/stack/0150-evaluate-reverse-polish-notation) | 2026-10-18 | ○ → △ | 3 日 | 2026-10-21 | あと 3 日 | 動画を見ずに Stack で書けるか確かめる<br>演算子ごとの if 分岐を、演算子 → 関数の dict にまとめて書いてみる |
 | [739. Daily Temperatures](problems/stack/0739-daily-temperatures) | 2026-10-15 | ○ | 7 日 | 2026-10-22 | あと 4 日 | Stack を使った O(n) の解法を自分で考える<br>提出前に `print` を消す |
 | [20. Valid Parentheses](problems/stack/0020-valid-parentheses) | 2026-10-17 | ? → ? → ◎ | 14 日 | 2026-10-31 | あと 13 日 | 閉じ括弧 → 開き括弧の dict を使って、括弧ごとの if 分岐をなくして書く |
+| [217. Contains Duplicate](problems/arrays-hashing/0217-contains-duplicate) | 2026-10-18 | ? → ◎ | 14 日 | 2026-11-01 | あと 14 日 |  |

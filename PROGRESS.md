@@ -3,13 +3,13 @@
 このファイルは `python scripts/update_progress.py` で自動生成される。**手で編集しない。**
 `problems/` に問題ディレクトリがあるものを「解いた」として集計している。
 
-## 全体: 37 / 150
+## 全体: 38 / 150
 
-`██████████░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░` 24.7%
+`██████████░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░` 25.3%
 
 | セクション | 進捗 | | 学習対象 |
 | --- | --- | --- | --- |
-| Arrays & Hashing | 7 / 9 | `█████████░░░` | ◯ |
+| Arrays & Hashing | 8 / 9 | `███████████░` | ◯ |
 | Two Pointers | 1 / 5 | `██░░░░░░░░░░` | ◯ |
 | Sliding Window | 4 / 6 | `████████░░░░` | ◯ |
 | Stack | 4 / 7 | `███████░░░░░` | ◯ |
@@ -32,7 +32,7 @@
 範囲を広げるときは `mkdir problems/<category>` して、
 `data/neetcode150.tsv` の 2 列目にそのカテゴリ名を入れる。
 
-## Arrays & Hashing — 7 / 9
+## Arrays & Hashing — 8 / 9
 
 | | # | 問題 | 難易度 | 回数 | 最後に解いた日 |
 | --- | --- | --- | --- | --- | --- |
@@ -43,7 +43,7 @@
 | ✅ | 347 | [Top K Frequent Elements](problems/arrays-hashing/0347-top-k-frequent-elements) | Medium | 1 | 2026-05-30 |
 | ✅ | 271 | [Encode and Decode Strings 🔒](problems/arrays-hashing/0271-encode-and-decode-strings) | Medium | 1 | 2026-06-01 |
 | ✅ | 238 | [Product of Array Except Self](problems/arrays-hashing/0238-product-of-array-except-self) | Medium | 1 | 2026-06-03 |
-| ⬜ | 36 | Valid Sudoku | Medium | - | - |
+| ✅ | 36 | [Valid Sudoku](problems/arrays-hashing/0036-valid-sudoku) | Medium | 1 | 2026-06-04 |
 | ⬜ | 128 | Longest Consecutive Sequence | Medium | - | - |
 
 ## Two Pointers — 1 / 5

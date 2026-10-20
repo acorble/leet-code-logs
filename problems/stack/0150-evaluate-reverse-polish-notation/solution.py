@@ -6,19 +6,19 @@ https://leetcode.com/problems/evaluate-reverse-polish-notation/
 
 class Solution:
     def evalRPN(self, tokens: list[str]) -> int:
-        stack = []
-
+        s = []
         for c in tokens:
             if c == '+':
-                stack.append(stack.pop() + stack.pop())
+                s.append(s.pop() + s.pop())
             elif c == '-':
-                a, b = stack.pop(), stack.pop()
-                stack.append(b - a)
+                a, b = s.pop(), s.pop()
+                s.append(b - a)
             elif c == '*':
-                stack.append(stack.pop() * stack.pop())
+                print(s)
+                s.append(s.pop() * s.pop())
             elif c == '/':
-                a, b = stack.pop(), stack.pop()
-                stack.append(int(b / a))
+                a, b = s.pop(), s.pop()
+                s.append(int(b / a))
             else:
-                stack.append(int(c))
-        return stack[0]
+                s.append(int(c))
+        return s[0]

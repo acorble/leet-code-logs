@@ -73,7 +73,7 @@
 | --- | --- | --- | --- | --- | --- |
 | ✅ | 20 | [Valid Parentheses](problems/stack/0020-valid-parentheses) | Easy | 4 | 2026-10-17 |
 | ✅ | 155 | [Min Stack](problems/stack/0155-min-stack) | Medium | 1 | 2026-06-21 |
-| ✅ | 150 | [Evaluate Reverse Polish Notation](problems/stack/0150-evaluate-reverse-polish-notation) | Medium | 2 | 2026-10-18 |
+| ✅ | 150 | [Evaluate Reverse Polish Notation](problems/stack/0150-evaluate-reverse-polish-notation) | Medium | 3 | 2026-10-21 |
 | ⬜ | 22 | Generate Parentheses | Medium | - | - |
 | ✅ | 739 | [Daily Temperatures](problems/stack/0739-daily-temperatures) | Medium | 1 | 2026-10-15 |
 | ✅ | 853 | [Car Fleet](problems/stack/0853-car-fleet) | Medium | 2 | 2026-10-20 |

@@ -14,7 +14,6 @@ class Solution:
                 a, b = s.pop(), s.pop()
                 s.append(b - a)
             elif c == '*':
-                print(s)
                 s.append(s.pop() * s.pop())
             elif c == '/':
                 a, b = s.pop(), s.pop()

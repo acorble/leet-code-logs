@@ -72,7 +72,7 @@
 | --- | --- | --- | --- | --- | --- | --- |
 | [150. Evaluate Reverse Polish Notation](problems/stack/0150-evaluate-reverse-polish-notation) | 2026-10-18 | ○ → △ | 3 日 | 2026-10-21 | あと 1 日 | 動画を見ずに Stack で書けるか確かめる<br>演算子ごとの if 分岐を、演算子 → 関数の dict にまとめて書いてみる |
 | [739. Daily Temperatures](problems/stack/0739-daily-temperatures) | 2026-10-15 | ○ | 7 日 | 2026-10-22 | あと 2 日 | Stack を使った O(n) の解法を自分で考える<br>提出前に `print` を消す |
-| [853. Car Fleet](problems/stack/0853-car-fleet) | 2026-10-20 | × | 3 日 | 2026-10-23 | あと 3 日 | 位置の降順（ゴールに近い順）にソートしてから到着時間を見る<br>到着時間は小数のまま比べる（切り上げない）<br>スタックに到着時間を積む書き方（NeetCode の解説）でも解く |
+| [853. Car Fleet](problems/stack/0853-car-fleet) | 2026-10-20 | × | 3 日 | 2026-10-23 | あと 3 日 | ヒントなしで、位置でソート → ゴールに近い順に到着時間を比べる形を最初から書けるか確かめる<br>スタックに到着時間を積む書き方（NeetCode の解説）でも解く |
 | [20. Valid Parentheses](problems/stack/0020-valid-parentheses) | 2026-10-17 | ? → ? → ◎ | 14 日 | 2026-10-31 | あと 11 日 | 閉じ括弧 → 開き括弧の dict を使って、括弧ごとの if 分岐をなくして書く |
 | [217. Contains Duplicate](problems/arrays-hashing/0217-contains-duplicate) | 2026-10-18 | ? → ◎ | 14 日 | 2026-11-01 | あと 12 日 |  |
 | [242. Valid Anagram](problems/arrays-hashing/0242-valid-anagram) | 2026-10-18 | ? → ? → ◎ | 14 日 | 2026-11-01 | あと 12 日 | dict を 1 つにして、`s` は +1・`t` は -1 で数える形で書く。そのあと `collections.Counter` でも書いてみる |

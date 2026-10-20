@@ -8,18 +8,15 @@ class Solution:
     def carFleet(self, target: int, position: list[int], speed: list[int]) -> int:
         timeToReachStack = []
 
-        ans = 0
+        zipped = sorted(zip(position, speed))
 
-        for i in range(len(position)):
+        for position, speed in zipped:
             # calculate each time to reach target of each car
-            timeToReach = 0
-            if (target - position[i]) % speed[i] == 0:
-                timeToReach = (target - position[i]) // speed[i]
-            else:
-                timeToReach = (target - position[i]) // speed[i] + 1
+            timeToReach = (target - position) / speed
 
             timeToReachStack.append(timeToReach)
 
+        ans = 0
         lastMax = 0
 
         while timeToReachStack:

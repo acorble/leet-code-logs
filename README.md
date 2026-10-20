@@ -153,7 +153,7 @@ python scripts/update_index.py
 
 <!-- INDEX:START -->
 
-合計 43 問 / のべ 67 回
+合計 44 問 / のべ 68 回
 
 | # | 問題 | 難易度 | カテゴリ | 回数 | 最後に解いた日 |
 | --- | --- | --- | --- | --- | --- |
@@ -183,6 +183,7 @@ python scripts/update_index.py
 | 150 | [150. Evaluate Reverse Polish Notation](problems/stack/0150-evaluate-reverse-polish-notation) | medium | stack | 2 | 2026-10-18 |
 | 155 | [155. Min Stack](problems/stack/0155-min-stack) | medium | stack | 1 | 2026-06-21 |
 | 739 | [739. Daily Temperatures](problems/stack/0739-daily-temperatures) | medium | stack | 1 | 2026-10-15 |
+| 853 | [853. Car Fleet](problems/stack/0853-car-fleet) | medium | stack | 1 | 2026-10-20 |
 | 98 | [98. Validate Binary Search Tree](problems/trees/0098-validate-binary-search-tree) | medium | trees | 1 | 2026-09-07 |
 | 100 | [100. Same Tree](problems/trees/0100-same-tree) | easy | trees | 1 | 2026-08-26 |
 | 102 | [102. Binary Tree Level Order Traversal](problems/trees/0102-binary-tree-level-order-traversal) | medium | trees | 2 | 2026-08-30 |

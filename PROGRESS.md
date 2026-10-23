@@ -76,7 +76,7 @@
 | ✅ | 150 | [Evaluate Reverse Polish Notation](problems/stack/0150-evaluate-reverse-polish-notation) | Medium | 3 | 2026-10-21 |
 | ⬜ | 22 | Generate Parentheses | Medium | - | - |
 | ✅ | 739 | [Daily Temperatures](problems/stack/0739-daily-temperatures) | Medium | 2 | 2026-10-22 |
-| ✅ | 853 | [Car Fleet](problems/stack/0853-car-fleet) | Medium | 2 | 2026-10-20 |
+| ✅ | 853 | [Car Fleet](problems/stack/0853-car-fleet) | Medium | 3 | 2026-10-24 |
 | ⬜ | 84 | Largest Rectangle in Histogram | Hard | - | - |
 
 ## Binary Search — 5 / 7

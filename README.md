@@ -153,7 +153,7 @@ python scripts/update_index.py
 
 <!-- INDEX:START -->
 
-合計 44 問 / のべ 72 回
+合計 45 問 / のべ 73 回
 
 | # | 問題 | 難易度 | カテゴリ | 回数 | 最後に解いた日 |
 | --- | --- | --- | --- | --- | --- |
@@ -180,6 +180,7 @@ python scripts/update_index.py
 | 424 | [424. Longest Repeating Character Replacement](problems/sliding-window/0424-longest-repeating-character-replacement) | medium | sliding-window | 1 | 2026-06-17 |
 | 567 | [567. Permutation in String](problems/sliding-window/0567-permutation-in-string) | medium | sliding-window | 1 | 2026-08-03 |
 | 20 | [20. Valid Parentheses](problems/stack/0020-valid-parentheses) | easy | stack | 4 | 2026-10-17 |
+| 84 | [84. Largest Rectangle in Histogram](problems/stack/0084-largest-rectangle-in-histogram) | hard | stack | 1 | 2026-10-24 |
 | 150 | [150. Evaluate Reverse Polish Notation](problems/stack/0150-evaluate-reverse-polish-notation) | medium | stack | 3 | 2026-10-21 |
 | 155 | [155. Min Stack](problems/stack/0155-min-stack) | medium | stack | 1 | 2026-06-21 |
 | 739 | [739. Daily Temperatures](problems/stack/0739-daily-temperatures) | medium | stack | 2 | 2026-10-22 |

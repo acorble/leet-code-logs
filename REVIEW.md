@@ -66,11 +66,12 @@
 | [199. Binary Tree Right Side View](problems/trees/0199-binary-tree-right-side-view) | 2026-10-09 | ◎ → △ | 3 日 | 2026-10-12 | **12 日超過** | 何も見ずに BFS 版を書く<br>DFS 版（右の子から潜り、各深さで最初に会ったノードを取る）を書く |
 | [145. Binary Tree Postorder Traversal](problems/trees/0145-binary-tree-postorder-traversal) | 2026-10-10 | ◎ | 7 日 | 2026-10-17 | **7 日超過** | 再帰を使わず、スタックで解く（follow-up） |
 
-## 今後の予定 (6)
+## 今後の予定 (7)
 
 | 問題 | 前回 | 自力の履歴 | 間隔 | 予定日 | 状態 | 次回やること |
 | --- | --- | --- | --- | --- | --- | --- |
 | [739. Daily Temperatures](problems/stack/0739-daily-temperatures) | 2026-10-22 | ○ → △ | 3 日 | 2026-10-25 | あと 1 日 | ヒントなしで Stack の解法を書く（「待っている日は温度の降順に並ぶ」から自分で組み立てる）<br>Stack に `(温度, 添え字)` の組ではなく添え字だけを積む形でも書く（温度は `temperatures[stack[-1]]` で引ける） |
+| [84. Largest Rectangle in Histogram](problems/stack/0084-largest-rectangle-in-histogram) | 2026-10-24 | △ | 3 日 | 2026-10-27 | あと 3 日 | ヒントなしで単調 Stack の解法を書く（「pop した棒の左端を引き継ぐ」まで自分で思い出す）<br>なぜ pop した瞬間にその棒の面積が決まるのか（右にも左にも広げられない理由）を説明できるようにする |
 | [150. Evaluate Reverse Polish Notation](problems/stack/0150-evaluate-reverse-polish-notation) | 2026-10-21 | ○ → △ → ○ | 7 日 | 2026-10-28 | あと 4 日 | 提出前に `print` を消す（3 回目は `*` の分岐に `print(s)` が残っていた）<br>演算子ごとの if 分岐を、演算子 → 関数の dict にまとめて書いてみる |
 | [20. Valid Parentheses](problems/stack/0020-valid-parentheses) | 2026-10-17 | ? → ? → ◎ | 14 日 | 2026-10-31 | あと 7 日 | 閉じ括弧 → 開き括弧の dict を使って、括弧ごとの if 分岐をなくして書く |
 | [853. Car Fleet](problems/stack/0853-car-fleet) | 2026-10-24 | × → ○ | 7 日 | 2026-10-31 | あと 7 日 | Stack 版で解く（各集団の先頭の到着時間を積み、前の集団に追いつく車は pop する。最後に残った数が答え）。3 回目までの解き方は NeetCode でいう Iteration 版<br>組を作るところを `zip` で書く（3 回目は `for` と添え字で手作りしていた）<br>組を受け取るときに `entry[0]` / `entry[1]` ではなく、2 つの変数に分けて受け取る |

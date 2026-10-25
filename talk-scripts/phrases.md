@@ -52,7 +52,7 @@
 | --- | --- | --- |
 | "Sorry, I'm not sure I follow. Do you mean ...?" | 聞き取れなかったとき。自分の理解を添えると相手が説明し直しやすい。"repeat that again" の again は不要 | [226](../problems/trees/0226-invert-binary-tree/english/2026-09-19-mock.md) |
 | "Let me think for a second." | 考える間を取る。"So, uh..." でつなぐ代わりに | [226](../problems/trees/0226-invert-binary-tree/english/2026-09-19-mock.md) |
-| "If I'm not mistaken, ..." | 自信がないときの前置き。"If I'm not wrong" ではなくこちら | [226](../problems/trees/0226-invert-binary-tree/english/2026-09-19-mock.md) |
+| "If I'm not mistaken, ..." | 自信がないときの前置き。"If I'm not wrong" も通じるが、こちらが決まった言い方。ただし計算量のように根拠を言える場面では、前置きより根拠を言い切るほうが強い | [226](../problems/trees/0226-invert-binary-tree/english/2026-09-19-mock.md) |
 | "Do you have any questions or comments?" | 説明を終えて相手に渡す。226 でできていた | [226](../problems/trees/0226-invert-binary-tree/english/2026-09-19-mock.md) |
 
 ## 自分の癖（注意する語）

@@ -63,6 +63,5 @@
 | --- | --- | --- |
 | problem を "program" と言う（または program に聞こえる） | problem /ˈprɑːbləm/。program /ˈproʊɡræm/ と区別する | [226](../problems/trees/0226-invert-binary-tree/english/2026-09-19-mock.md) |
 | 単数・複数、三人称単数（"3 case", "they has both child"） | three **cases** / it **has** both **children** | [226](../problems/trees/0226-invert-binary-tree/english/2026-09-19-mock.md) |
-| "is can be" と動詞を重ねる | "space complexity **can be** less than ..." | [226](../problems/trees/0226-invert-binary-tree/english/2026-09-19-mock.md) |
 | 文頭がほぼ毎回 "So, uh" | 黙って間を取るか "Let me think for a second." | [226](../problems/trees/0226-invert-binary-tree/english/2026-09-19-mock.md) |
 | "binary" だけで名詞にする（"the given binary is not balanced"） | **binary tree** まで言う | [226](../problems/trees/0226-invert-binary-tree/english/2026-09-19-mock.md) |

@@ -53,7 +53,6 @@
 | [104. Maximum Depth of Binary Tree](problems/trees/0104-maximum-depth-of-binary-tree) | 2026-07-23 | ? | 7 日 | 2026-07-30 | **87 日超過** | Stack を使った Iterative DFS で解く |
 | [567. Permutation in String](problems/sliding-window/0567-permutation-in-string) | 2026-08-03 | ? | 7 日 | 2026-08-10 | **76 日超過** |  |
 | [125. Valid Palindrome](problems/two-pointers/0125-valid-palindrome) | 2026-08-16 | ? → ? → ? | 7 日 | 2026-08-23 | **63 日超過** | 内側の while にも `l < r` を入れる。提出前に、記号だけの文字列（`".,"`）を自分で試す<br>`isalnum()` / `lower()` を使わずに、文字コードの範囲（`'a' <= c <= 'z'` など）で判定して書いてみる（面接でよく聞かれる） |
-| [226. Invert Binary Tree](problems/trees/0226-invert-binary-tree) | 2026-08-19 | ? → ? | 7 日 | 2026-08-26 | **60 日超過** |  |
 | [110. Balanced Binary Tree](problems/trees/0110-balanced-binary-tree) | 2026-08-22 | ○ | 7 日 | 2026-08-29 | **57 日超過** | 返り値のタプルか外側の変数か、どちらか一方に寄せて書き直す |
 | [100. Same Tree](problems/trees/0100-same-tree) | 2026-08-26 | ◎ | 7 日 | 2026-09-02 | **53 日超過** | BFS / Iterative DFS で解く |
 | [572. Subtree of Another Tree](problems/trees/0572-subtree-of-another-tree) | 2026-08-28 | ○ | 7 日 | 2026-09-04 | **51 日超過** | 解答を見て、より良いやり方を確認する |
@@ -64,6 +63,7 @@
 | [98. Validate Binary Search Tree](problems/trees/0098-validate-binary-search-tree) | 2026-09-07 | ○ | 7 日 | 2026-09-14 | **41 日超過** | 解説を見る<br>上から範囲 (low, high) を渡す別解で書く |
 | [230. Kth Smallest Element in a BST](problems/trees/0230-kth-smallest-element-in-a-bst) | 2026-09-12 | ? | 7 日 | 2026-09-19 | **36 日超過** | 中順走査にして sort をなくす（O(n)）<br>k 個目で打ち切る（O(h + k)） |
 | [199. Binary Tree Right Side View](problems/trees/0199-binary-tree-right-side-view) | 2026-10-09 | ◎ → △ | 3 日 | 2026-10-12 | **13 日超過** | 何も見ずに BFS 版を書く<br>DFS 版（右の子から潜り、各深さで最初に会ったノードを取る）を書く |
+| [226. Invert Binary Tree](problems/trees/0226-invert-binary-tree) | 2026-09-19 | ? → ? → ◎ | 14 日 | 2026-10-03 | **22 日超過** | 英語で、空間計算量を最初から「O(h)（平衡なら O(log n)、一直線に偏った木なら最悪 O(n)）、再帰のスタックのぶん」と一息で言う<br>書き終えたら、None・子が片方だけ・両方ある小さな木でコードを追って見せてから計算量に進む |
 | [145. Binary Tree Postorder Traversal](problems/trees/0145-binary-tree-postorder-traversal) | 2026-10-10 | ◎ | 7 日 | 2026-10-17 | **8 日超過** | 再帰を使わず、スタックで解く（follow-up） |
 | [739. Daily Temperatures](problems/stack/0739-daily-temperatures) | 2026-10-22 | ○ → △ | 3 日 | 2026-10-25 | **今日** | ヒントなしで Stack の解法を書く（「待っている日は温度の降順に並ぶ」から自分で組み立てる）<br>Stack に `(温度, 添え字)` の組ではなく添え字だけを積む形でも書く（温度は `temperatures[stack[-1]]` で引ける） |
 

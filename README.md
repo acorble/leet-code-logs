@@ -153,7 +153,7 @@ python scripts/update_index.py
 
 <!-- INDEX:START -->
 
-合計 45 問 / のべ 73 回
+合計 45 問 / のべ 74 回
 
 | # | 問題 | 難易度 | カテゴリ | 回数 | 最後に解いた日 |
 | --- | --- | --- | --- | --- | --- |
@@ -192,7 +192,7 @@ python scripts/update_index.py
 | 110 | [110. Balanced Binary Tree](problems/trees/0110-balanced-binary-tree) | easy | trees | 1 | 2026-08-22 |
 | 145 | [145. Binary Tree Postorder Traversal](problems/trees/0145-binary-tree-postorder-traversal) | easy | trees | 1 | 2026-10-10 |
 | 199 | [199. Binary Tree Right Side View](problems/trees/0199-binary-tree-right-side-view) | medium | trees | 2 | 2026-10-09 |
-| 226 | [226. Invert Binary Tree](problems/trees/0226-invert-binary-tree) | easy | trees | 3 | 2026-08-19 |
+| 226 | [226. Invert Binary Tree](problems/trees/0226-invert-binary-tree) | easy | trees | 4 | 2026-09-19 |
 | 230 | [230. Kth Smallest Element in a BST](problems/trees/0230-kth-smallest-element-in-a-bst) | medium | trees | 1 | 2026-09-12 |
 | 235 | [235. Lowest Common Ancestor of a Binary Search Tree](problems/trees/0235-lowest-common-ancestor-of-a-binary-search-tree) | medium | trees | 1 | 2026-08-29 |
 | 543 | [543. Diameter of Binary Tree](problems/trees/0543-diameter-of-binary-tree) | easy | trees | 1 | 2026-07-28 |

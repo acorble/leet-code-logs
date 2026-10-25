@@ -12,13 +12,13 @@
 | Arrays & Hashing | 9 / 9 | `████████████` | ◯ |
 | Two Pointers | 4 / 5 | `██████████░░` | ◯ |
 | Sliding Window | 4 / 6 | `████████░░░░` | ◯ |
-| Stack | 6 / 7 | `██████████░░` | ◯ |
+| Stack | 6 / 6 | `████████████` | ◯ |
 | Binary Search | 5 / 7 | `█████████░░░` | ◯ |
 | Linked List | 4 / 11 | `████░░░░░░░░` | ◯ |
 | Trees | 12 / 15 | `██████████░░` | ◯ |
 | Tries | 0 / 3 | `░░░░░░░░░░░░` |  |
 | Heap / Priority Queue | 0 / 7 | `░░░░░░░░░░░░` |  |
-| Backtracking | 0 / 9 | `░░░░░░░░░░░░` |  |
+| Backtracking | 0 / 10 | `░░░░░░░░░░░░` |  |
 | Graphs | 0 / 13 | `░░░░░░░░░░░░` |  |
 | Advanced Graphs | 0 / 6 | `░░░░░░░░░░░░` |  |
 | 1-D DP | 0 / 12 | `░░░░░░░░░░░░` |  |
@@ -67,14 +67,13 @@
 | ⬜ | 76 | Minimum Window Substring | Hard | - | - |
 | ⬜ | 239 | Sliding Window Maximum | Hard | - | - |
 
-## Stack — 6 / 7
+## Stack — 6 / 6
 
 | | # | 問題 | 難易度 | 回数 | 最後に解いた日 |
 | --- | --- | --- | --- | --- | --- |
 | ✅ | 20 | [Valid Parentheses](problems/stack/0020-valid-parentheses) | Easy | 4 | 2026-10-17 |
 | ✅ | 155 | [Min Stack](problems/stack/0155-min-stack) | Medium | 1 | 2026-06-21 |
 | ✅ | 150 | [Evaluate Reverse Polish Notation](problems/stack/0150-evaluate-reverse-polish-notation) | Medium | 3 | 2026-10-21 |
-| ⬜ | 22 | Generate Parentheses | Medium | - | - |
 | ✅ | 739 | [Daily Temperatures](problems/stack/0739-daily-temperatures) | Medium | 2 | 2026-10-22 |
 | ✅ | 853 | [Car Fleet](problems/stack/0853-car-fleet) | Medium | 3 | 2026-10-24 |
 | ✅ | 84 | [Largest Rectangle in Histogram](problems/stack/0084-largest-rectangle-in-histogram) | Hard | 1 | 2026-10-24 |
@@ -147,15 +146,16 @@
 | ⬜ | 355 | Design Twitter | Medium | - | - |
 | ⬜ | 295 | Find Median from Data Stream | Hard | - | - |
 
-## Backtracking — 0 / 9
+## Backtracking — 0 / 10
 
 | | # | 問題 | 難易度 | 回数 | 最後に解いた日 |
 | --- | --- | --- | --- | --- | --- |
 | ⬜ | 78 | Subsets | Medium | - | - |
 | ⬜ | 39 | Combination Sum | Medium | - | - |
+| ⬜ | 40 | Combination Sum II | Medium | - | - |
 | ⬜ | 46 | Permutations | Medium | - | - |
 | ⬜ | 90 | Subsets II | Medium | - | - |
-| ⬜ | 40 | Combination Sum II | Medium | - | - |
+| ⬜ | 22 | Generate Parentheses | Medium | - | - |
 | ⬜ | 79 | Word Search | Medium | - | - |
 | ⬜ | 131 | Palindrome Partitioning | Medium | - | - |
 | ⬜ | 17 | Letter Combinations of a Phone Number | Medium | - | - |

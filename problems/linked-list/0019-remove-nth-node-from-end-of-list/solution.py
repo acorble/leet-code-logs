@@ -33,13 +33,10 @@ class Solution:
         nodes[index] = None
 
         # now index is equal to the size of the list
-        if index == 1:
-            return None
+        if n == index:
+            # remove the leftmost node
+            return head.next
         else:
-            if n == index:
-                # remove the leftmost node
-                return head.next
-            else:
-                # remove n th node
-                nodes[index - n - 1].next = nodes[index - n + 1]
-                return head
+            # remove n th node
+            nodes[index - n - 1].next = nodes[index - n + 1]
+            return head

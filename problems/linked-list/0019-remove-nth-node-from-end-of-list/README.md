@@ -89,3 +89,8 @@ nodes[2].next = nodes[4]     # 3 → 5 につなぎ替える
 - `index == 1` の分岐を消し、`if n == index` / `else` の 2 つだけになった。入れ子もなくなった
 - 長さ 1 のリストは `n == index` の側で `head.next`（None）を返すので、答えは変わらない
 - 残っている特別扱いは「先頭を消す」場合だけ。これはダミーのノードで消せる（次回やること）
+- `if not head` は残した。関数定義が `ListNode | None` なので念のため、という判断。
+  LeetCode の `Optional` はリスト・木の問題でほぼ機械的に付くもので、入力の範囲を決めるのは制約のほう。
+  ただしこのコードでは、None が来るとループが回らず `nodes[-n - 1]` で KeyError になるので、
+  チェックは実際に落ちる箇所を守っている。面接では "The constraints say there's at least one node,
+  but the signature allows None, so I'll add a guard just in case." と理由を添えれば、どちらでもよい

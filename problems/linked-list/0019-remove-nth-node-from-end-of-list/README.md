@@ -39,6 +39,13 @@ follow-up は「1 周（one pass）でできるか」。
 ### 1 回目
 
 <!-- 最初に思いついた方針、詰まった点、気づき -->
+素直に思いついた解法で解いてみたが、space complexityがO(n)なので最適ではないかも。もっと素直なのは最後まで行ってからもう一度traverseして途中で止めるやり方みたいだが、その場合だとtime complexityそのままO(n)のままに、spaceをO(1)にできる。トレードオフになる。
+"My first idea is to store every node in a hash map, so I can look up the target by index in one pass. That's O(L) time and O(L) space. A simpler way is two passes: count the length first, then walk to the node. That's O(1) space. And the optimal way is two pointers, one pass with O(1) space."
+
+ノードの保存にhashmapを使ったけど、今回連番だから普通にlistを使えばよかった。Neetcodeの回答例でもlistを使ってた。どちらかというとhashmapの方が無駄なデータあるからちょっと無駄。hashmapを使う意味があまりない。
+
+次は2Pointersで解いてみたい。
+
 
 ### 2 回目
 

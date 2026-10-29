@@ -1,7 +1,7 @@
 # 解き直しの予定
 
 このファイルは `python scripts/update_review.py` で自動生成される。**手で編集しない。**
-各問題の README の「復習ログ」と「次回やること」から作っている（2026-10-25 時点）。
+各問題の README の「復習ログ」と「次回やること」から作っている（2026-10-29 時点）。
 
 ## 間隔の決め方
 
@@ -22,58 +22,59 @@
 
 | 問題 | 前回 | 自力の履歴 | 間隔 | 予定日 | 状態 | 次回やること |
 | --- | --- | --- | --- | --- | --- | --- |
-| [543. Diameter of Binary Tree](problems/trees/0543-diameter-of-binary-tree) | 2026-07-28 | △ | 3 日 | 2026-07-31 | **86 日超過** | 深さを下から持ち上げる DFS で O(n) に解き直す<br>NeetCode の解説動画を見る |
-| [49. Group Anagrams](problems/arrays-hashing/0049-group-anagrams) | 2026-05-23 | ? → ? | 7 日 | 2026-05-30 | **148 日超過** | Python で解く<br>「26 文字分の個数」をキーにする版で書く（キーを作るのが O(k log k) から O(k) になる。1 回目のコメントの「int[] でもやってみたい」） |
-| [347. Top K Frequent Elements](problems/arrays-hashing/0347-top-k-frequent-elements) | 2026-05-30 | ? | 7 日 | 2026-06-06 | **141 日超過** | Python で解く<br>並べ替えを使わずに O(n) で解く（「出現回数」を添え字にしたバケツを使う） |
-| [271. Encode and Decode Strings](problems/arrays-hashing/0271-encode-and-decode-strings) | 2026-06-01 | ? | 7 日 | 2026-06-08 | **139 日超過** | Python で解く<br>長さと中身の間に区切り文字を入れる形（`4#neet`）にして、2 桁以上の長さでも戻せるようにする<br>提出前に、10 文字以上の文字列と空文字を自分で試す |
-| [238. Product of Array Except Self](problems/arrays-hashing/0238-product-of-array-except-self) | 2026-06-03 | ? | 7 日 | 2026-06-10 | **137 日超過** | Python で解く<br>follow-up: `prefixes` / `suffixes` の配列を使わず、答えの配列だけで解く（追加の空間 O(1)） |
+| [543. Diameter of Binary Tree](problems/trees/0543-diameter-of-binary-tree) | 2026-07-28 | △ | 3 日 | 2026-07-31 | **90 日超過** | 深さを下から持ち上げる DFS で O(n) に解き直す<br>NeetCode の解説動画を見る |
+| [49. Group Anagrams](problems/arrays-hashing/0049-group-anagrams) | 2026-05-23 | ? → ? | 7 日 | 2026-05-30 | **152 日超過** | Python で解く<br>「26 文字分の個数」をキーにする版で書く（キーを作るのが O(k log k) から O(k) になる。1 回目のコメントの「int[] でもやってみたい」） |
+| [347. Top K Frequent Elements](problems/arrays-hashing/0347-top-k-frequent-elements) | 2026-05-30 | ? | 7 日 | 2026-06-06 | **145 日超過** | Python で解く<br>並べ替えを使わずに O(n) で解く（「出現回数」を添え字にしたバケツを使う） |
+| [271. Encode and Decode Strings](problems/arrays-hashing/0271-encode-and-decode-strings) | 2026-06-01 | ? | 7 日 | 2026-06-08 | **143 日超過** | Python で解く<br>長さと中身の間に区切り文字を入れる形（`4#neet`）にして、2 桁以上の長さでも戻せるようにする<br>提出前に、10 文字以上の文字列と空文字を自分で試す |
+| [238. Product of Array Except Self](problems/arrays-hashing/0238-product-of-array-except-self) | 2026-06-03 | ? | 7 日 | 2026-06-10 | **141 日超過** | Python で解く<br>follow-up: `prefixes` / `suffixes` の配列を使わず、答えの配列だけで解く（追加の空間 O(1)） |
 
-## 期限切れ（残り 34）
-
-| 問題 | 前回 | 自力の履歴 | 間隔 | 予定日 | 状態 | 次回やること |
-| --- | --- | --- | --- | --- | --- | --- |
-| [36. Valid Sudoku](problems/arrays-hashing/0036-valid-sudoku) | 2026-06-04 | ? | 7 日 | 2026-06-11 | **136 日超過** | Python で解く<br>盤面を 1 周するだけで、行・列・ブロックを同時にチェックする（ブロックの番号は `(r // 3, c // 3)`） |
-| [128. Longest Consecutive Sequence](problems/arrays-hashing/0128-longest-consecutive-sequence) | 2026-06-05 | ? | 7 日 | 2026-06-12 | **135 日超過** | O(n) で解く（毎回 `Collections.min` で最小値を探さずに、どこから数え始めればよいかを考える）<br>Python で解く |
-| [167. Two Sum II - Input Array Is Sorted](problems/two-pointers/0167-two-sum-ii-input-array-is-sorted) | 2026-06-11 | ? | 7 日 | 2026-06-18 | **129 日超過** | なぜ「小さければ左、大きければ右」を動かしても答えを飛ばさないのか、自分の言葉で説明できるようにする |
-| [11. Container With Most Water](problems/two-pointers/0011-container-with-most-water) | 2026-06-13 | ? | 7 日 | 2026-06-20 | **127 日超過** | 左右で同じ処理を 2 回書かずに、「低いほうを 1 つ動かす」1 本のループで書く<br>なぜ低いほうを動かせばよいのか（高いほうを動かしても増えない理由）を説明できるようにする |
-| [121. Best Time to Buy and Sell Stock](problems/sliding-window/0121-best-time-to-buy-and-sell-stock) | 2026-06-15 | ? | 7 日 | 2026-06-22 | **125 日超過** |  |
-| [3. Longest Substring Without Repeating Characters](problems/sliding-window/0003-longest-substring-without-repeating-characters) | 2026-06-16 | ? | 7 日 | 2026-06-23 | **124 日超過** | 同じ情報を 2 通りの方法で求めていないか見直す（`left + i` で足りる） |
-| [424. Longest Repeating Character Replacement](problems/sliding-window/0424-longest-repeating-character-replacement) | 2026-06-17 | ? | 7 日 | 2026-06-24 | **123 日超過** |  |
-| [155. Min Stack](problems/stack/0155-min-stack) | 2026-06-21 | ? | 7 日 | 2026-06-28 | **119 日超過** | Stack を 1 本にして、`(値, その時点の最小値)` の組を積む形で書く |
-| [704. Binary Search](problems/binary-search/0704-binary-search) | 2026-06-24 | ? | 7 日 | 2026-07-01 | **116 日超過** |  |
-| [74. Search a 2D Matrix](problems/binary-search/0074-search-a-2d-matrix) | 2026-06-26 | ? | 7 日 | 2026-07-03 | **114 日超過** |  |
-| [875. Koko Eating Bananas](problems/binary-search/0875-koko-eating-bananas) | 2026-06-27 | ? | 7 日 | 2026-07-04 | **113 日超過** |  |
-| [153. Find Minimum in Rotated Sorted Array](problems/binary-search/0153-find-minimum-in-rotated-sorted-array) | 2026-06-28 | ? | 7 日 | 2026-07-05 | **112 日超過** |  |
-| [981. Time Based Key-Value Store](problems/binary-search/0981-time-based-key-value-store) | 2026-06-30 | ? | 7 日 | 2026-07-07 | **110 日超過** | `sort()` が本当に必要か考え直す<br>dict を key → [(timestamp, value)] の 1 本にまとめる |
-| [21. Merge Two Sorted Lists](problems/linked-list/0021-merge-two-sorted-lists) | 2026-07-04 | ? | 7 日 | 2026-07-11 | **106 日超過** |  |
-| [206. Reverse Linked List](problems/linked-list/0206-reverse-linked-list) | 2026-07-04 | ? → ? | 7 日 | 2026-07-11 | **106 日超過** |  |
-| [141. Linked List Cycle](problems/linked-list/0141-linked-list-cycle) | 2026-07-10 | ? → ? | 7 日 | 2026-07-17 | **100 日超過** | ループ条件を標準形 `while fast and fast.next` で書く |
-| [1. Two Sum](problems/arrays-hashing/0001-two-sum) | 2026-07-11 | ? | 7 日 | 2026-07-18 | **99 日超過** |  |
-| [143. Reorder List](problems/linked-list/0143-reorder-list) | 2026-07-11 | ? → ? | 7 日 | 2026-07-18 | **99 日超過** |  |
-| [104. Maximum Depth of Binary Tree](problems/trees/0104-maximum-depth-of-binary-tree) | 2026-07-23 | ? | 7 日 | 2026-07-30 | **87 日超過** | Stack を使った Iterative DFS で解く |
-| [567. Permutation in String](problems/sliding-window/0567-permutation-in-string) | 2026-08-03 | ? | 7 日 | 2026-08-10 | **76 日超過** |  |
-| [125. Valid Palindrome](problems/two-pointers/0125-valid-palindrome) | 2026-08-16 | ? → ? → ? | 7 日 | 2026-08-23 | **63 日超過** | 内側の while にも `l < r` を入れる。提出前に、記号だけの文字列（`".,"`）を自分で試す<br>`isalnum()` / `lower()` を使わずに、文字コードの範囲（`'a' <= c <= 'z'` など）で判定して書いてみる（面接でよく聞かれる） |
-| [110. Balanced Binary Tree](problems/trees/0110-balanced-binary-tree) | 2026-08-22 | ○ | 7 日 | 2026-08-29 | **57 日超過** | 返り値のタプルか外側の変数か、どちらか一方に寄せて書き直す |
-| [100. Same Tree](problems/trees/0100-same-tree) | 2026-08-26 | ◎ | 7 日 | 2026-09-02 | **53 日超過** | BFS / Iterative DFS で解く |
-| [572. Subtree of Another Tree](problems/trees/0572-subtree-of-another-tree) | 2026-08-28 | ○ | 7 日 | 2026-09-04 | **51 日超過** | 解答を見て、より良いやり方を確認する |
-| [235. Lowest Common Ancestor of a Binary Search Tree](problems/trees/0235-lowest-common-ancestor-of-a-binary-search-tree) | 2026-08-29 | ? | 7 日 | 2026-09-05 | **50 日超過** | BST の大小関係で、探索する枝を片側に絞る |
-| [102. Binary Tree Level Order Traversal](problems/trees/0102-binary-tree-level-order-traversal) | 2026-08-30 | ○ | 7 日 | 2026-09-06 | **49 日超過** |  |
-| [1448. Count Good Nodes in Binary Tree](problems/trees/1448-count-good-nodes-in-binary-tree) | 2026-09-03 | ○ | 7 日 | 2026-09-10 | **45 日超過** | 経路の最大値だけを引数で渡して O(n) にする |
-| [15. 3Sum](problems/two-pointers/0015-3sum) | 2026-09-06 | ? → ? | 7 日 | 2026-09-13 | **42 日超過** | 1 回目の「並べ替えて 1 つ固定 → 2 ポインタ」を、1 回目のコードを見ずに書く<br>ループの中の `print` を消して提出する<br>`nums[i] > 0` になったら、それ以降は 0 にならないので `break` する |
-| [98. Validate Binary Search Tree](problems/trees/0098-validate-binary-search-tree) | 2026-09-07 | ○ | 7 日 | 2026-09-14 | **41 日超過** | 解説を見る<br>上から範囲 (low, high) を渡す別解で書く |
-| [230. Kth Smallest Element in a BST](problems/trees/0230-kth-smallest-element-in-a-bst) | 2026-09-12 | ? | 7 日 | 2026-09-19 | **36 日超過** | 中順走査にして sort をなくす（O(n)）<br>k 個目で打ち切る（O(h + k)） |
-| [199. Binary Tree Right Side View](problems/trees/0199-binary-tree-right-side-view) | 2026-10-09 | ◎ → △ | 3 日 | 2026-10-12 | **13 日超過** | 何も見ずに BFS 版を書く<br>DFS 版（右の子から潜り、各深さで最初に会ったノードを取る）を書く |
-| [226. Invert Binary Tree](problems/trees/0226-invert-binary-tree) | 2026-09-19 | ? → ? → ◎ | 14 日 | 2026-10-03 | **22 日超過** | 英語で、空間計算量を最初から「O(h)（平衡なら O(log n)、一直線に偏った木なら最悪 O(n)）、再帰のスタックのぶん」と一息で言う<br>書き終えたら、None・子が片方だけ・両方ある小さな木でコードを追って見せてから計算量に進む |
-| [145. Binary Tree Postorder Traversal](problems/trees/0145-binary-tree-postorder-traversal) | 2026-10-10 | ◎ | 7 日 | 2026-10-17 | **8 日超過** | 再帰を使わず、スタックで解く（follow-up） |
-| [739. Daily Temperatures](problems/stack/0739-daily-temperatures) | 2026-10-22 | ○ → △ | 3 日 | 2026-10-25 | **今日** | ヒントなしで Stack の解法を書く（「待っている日は温度の降順に並ぶ」から自分で組み立てる）<br>Stack に `(温度, 添え字)` の組ではなく添え字だけを積む形でも書く（温度は `temperatures[stack[-1]]` で引ける） |
-
-## 今後の予定 (6)
+## 期限切れ（残り 36）
 
 | 問題 | 前回 | 自力の履歴 | 間隔 | 予定日 | 状態 | 次回やること |
 | --- | --- | --- | --- | --- | --- | --- |
-| [84. Largest Rectangle in Histogram](problems/stack/0084-largest-rectangle-in-histogram) | 2026-10-24 | △ | 3 日 | 2026-10-27 | あと 2 日 | ヒントなしで単調 Stack の解法を書く（「pop した棒の左端を引き継ぐ」まで自分で思い出す）<br>なぜ pop した瞬間にその棒の面積が決まるのか（右にも左にも広げられない理由）を説明できるようにする |
-| [150. Evaluate Reverse Polish Notation](problems/stack/0150-evaluate-reverse-polish-notation) | 2026-10-21 | ○ → △ → ○ | 7 日 | 2026-10-28 | あと 3 日 | 提出前に `print` を消す（3 回目は `*` の分岐に `print(s)` が残っていた）<br>演算子ごとの if 分岐を、演算子 → 関数の dict にまとめて書いてみる |
-| [20. Valid Parentheses](problems/stack/0020-valid-parentheses) | 2026-10-17 | ? → ? → ◎ | 14 日 | 2026-10-31 | あと 6 日 | 閉じ括弧 → 開き括弧の dict を使って、括弧ごとの if 分岐をなくして書く |
-| [853. Car Fleet](problems/stack/0853-car-fleet) | 2026-10-24 | × → ○ | 7 日 | 2026-10-31 | あと 6 日 | Stack 版で解く（各集団の先頭の到着時間を積み、前の集団に追いつく車は pop する。最後に残った数が答え）。3 回目までの解き方は NeetCode でいう Iteration 版<br>組を作るところを `zip` で書く（3 回目は `for` と添え字で手作りしていた）<br>組を受け取るときに `entry[0]` / `entry[1]` ではなく、2 つの変数に分けて受け取る |
-| [217. Contains Duplicate](problems/arrays-hashing/0217-contains-duplicate) | 2026-10-18 | ? → ◎ | 14 日 | 2026-11-01 | あと 7 日 |  |
-| [242. Valid Anagram](problems/arrays-hashing/0242-valid-anagram) | 2026-10-18 | ? → ? → ◎ | 14 日 | 2026-11-01 | あと 7 日 | dict を 1 つにして、`s` は +1・`t` は -1 で数える形で書く。そのあと `collections.Counter` でも書いてみる |
+| [36. Valid Sudoku](problems/arrays-hashing/0036-valid-sudoku) | 2026-06-04 | ? | 7 日 | 2026-06-11 | **140 日超過** | Python で解く<br>盤面を 1 周するだけで、行・列・ブロックを同時にチェックする（ブロックの番号は `(r // 3, c // 3)`） |
+| [128. Longest Consecutive Sequence](problems/arrays-hashing/0128-longest-consecutive-sequence) | 2026-06-05 | ? | 7 日 | 2026-06-12 | **139 日超過** | O(n) で解く（毎回 `Collections.min` で最小値を探さずに、どこから数え始めればよいかを考える）<br>Python で解く |
+| [167. Two Sum II - Input Array Is Sorted](problems/two-pointers/0167-two-sum-ii-input-array-is-sorted) | 2026-06-11 | ? | 7 日 | 2026-06-18 | **133 日超過** | なぜ「小さければ左、大きければ右」を動かしても答えを飛ばさないのか、自分の言葉で説明できるようにする |
+| [11. Container With Most Water](problems/two-pointers/0011-container-with-most-water) | 2026-06-13 | ? | 7 日 | 2026-06-20 | **131 日超過** | 左右で同じ処理を 2 回書かずに、「低いほうを 1 つ動かす」1 本のループで書く<br>なぜ低いほうを動かせばよいのか（高いほうを動かしても増えない理由）を説明できるようにする |
+| [121. Best Time to Buy and Sell Stock](problems/sliding-window/0121-best-time-to-buy-and-sell-stock) | 2026-06-15 | ? | 7 日 | 2026-06-22 | **129 日超過** |  |
+| [3. Longest Substring Without Repeating Characters](problems/sliding-window/0003-longest-substring-without-repeating-characters) | 2026-06-16 | ? | 7 日 | 2026-06-23 | **128 日超過** | 同じ情報を 2 通りの方法で求めていないか見直す（`left + i` で足りる） |
+| [424. Longest Repeating Character Replacement](problems/sliding-window/0424-longest-repeating-character-replacement) | 2026-06-17 | ? | 7 日 | 2026-06-24 | **127 日超過** |  |
+| [155. Min Stack](problems/stack/0155-min-stack) | 2026-06-21 | ? | 7 日 | 2026-06-28 | **123 日超過** | Stack を 1 本にして、`(値, その時点の最小値)` の組を積む形で書く |
+| [704. Binary Search](problems/binary-search/0704-binary-search) | 2026-06-24 | ? | 7 日 | 2026-07-01 | **120 日超過** |  |
+| [74. Search a 2D Matrix](problems/binary-search/0074-search-a-2d-matrix) | 2026-06-26 | ? | 7 日 | 2026-07-03 | **118 日超過** |  |
+| [875. Koko Eating Bananas](problems/binary-search/0875-koko-eating-bananas) | 2026-06-27 | ? | 7 日 | 2026-07-04 | **117 日超過** |  |
+| [153. Find Minimum in Rotated Sorted Array](problems/binary-search/0153-find-minimum-in-rotated-sorted-array) | 2026-06-28 | ? | 7 日 | 2026-07-05 | **116 日超過** |  |
+| [981. Time Based Key-Value Store](problems/binary-search/0981-time-based-key-value-store) | 2026-06-30 | ? | 7 日 | 2026-07-07 | **114 日超過** | `sort()` が本当に必要か考え直す<br>dict を key → [(timestamp, value)] の 1 本にまとめる |
+| [21. Merge Two Sorted Lists](problems/linked-list/0021-merge-two-sorted-lists) | 2026-07-04 | ? | 7 日 | 2026-07-11 | **110 日超過** |  |
+| [206. Reverse Linked List](problems/linked-list/0206-reverse-linked-list) | 2026-07-04 | ? → ? | 7 日 | 2026-07-11 | **110 日超過** |  |
+| [141. Linked List Cycle](problems/linked-list/0141-linked-list-cycle) | 2026-07-10 | ? → ? | 7 日 | 2026-07-17 | **104 日超過** | ループ条件を標準形 `while fast and fast.next` で書く |
+| [1. Two Sum](problems/arrays-hashing/0001-two-sum) | 2026-07-11 | ? | 7 日 | 2026-07-18 | **103 日超過** |  |
+| [143. Reorder List](problems/linked-list/0143-reorder-list) | 2026-07-11 | ? → ? | 7 日 | 2026-07-18 | **103 日超過** |  |
+| [104. Maximum Depth of Binary Tree](problems/trees/0104-maximum-depth-of-binary-tree) | 2026-07-23 | ? | 7 日 | 2026-07-30 | **91 日超過** | Stack を使った Iterative DFS で解く |
+| [567. Permutation in String](problems/sliding-window/0567-permutation-in-string) | 2026-08-03 | ? | 7 日 | 2026-08-10 | **80 日超過** |  |
+| [125. Valid Palindrome](problems/two-pointers/0125-valid-palindrome) | 2026-08-16 | ? → ? → ? | 7 日 | 2026-08-23 | **67 日超過** | 内側の while にも `l < r` を入れる。提出前に、記号だけの文字列（`".,"`）を自分で試す<br>`isalnum()` / `lower()` を使わずに、文字コードの範囲（`'a' <= c <= 'z'` など）で判定して書いてみる（面接でよく聞かれる） |
+| [110. Balanced Binary Tree](problems/trees/0110-balanced-binary-tree) | 2026-08-22 | ○ | 7 日 | 2026-08-29 | **61 日超過** | 返り値のタプルか外側の変数か、どちらか一方に寄せて書き直す |
+| [100. Same Tree](problems/trees/0100-same-tree) | 2026-08-26 | ◎ | 7 日 | 2026-09-02 | **57 日超過** | BFS / Iterative DFS で解く |
+| [572. Subtree of Another Tree](problems/trees/0572-subtree-of-another-tree) | 2026-08-28 | ○ | 7 日 | 2026-09-04 | **55 日超過** | 解答を見て、より良いやり方を確認する |
+| [235. Lowest Common Ancestor of a Binary Search Tree](problems/trees/0235-lowest-common-ancestor-of-a-binary-search-tree) | 2026-08-29 | ? | 7 日 | 2026-09-05 | **54 日超過** | BST の大小関係で、探索する枝を片側に絞る |
+| [102. Binary Tree Level Order Traversal](problems/trees/0102-binary-tree-level-order-traversal) | 2026-08-30 | ○ | 7 日 | 2026-09-06 | **53 日超過** |  |
+| [1448. Count Good Nodes in Binary Tree](problems/trees/1448-count-good-nodes-in-binary-tree) | 2026-09-03 | ○ | 7 日 | 2026-09-10 | **49 日超過** | 経路の最大値だけを引数で渡して O(n) にする |
+| [15. 3Sum](problems/two-pointers/0015-3sum) | 2026-09-06 | ? → ? | 7 日 | 2026-09-13 | **46 日超過** | 1 回目の「並べ替えて 1 つ固定 → 2 ポインタ」を、1 回目のコードを見ずに書く<br>ループの中の `print` を消して提出する<br>`nums[i] > 0` になったら、それ以降は 0 にならないので `break` する |
+| [98. Validate Binary Search Tree](problems/trees/0098-validate-binary-search-tree) | 2026-09-07 | ○ | 7 日 | 2026-09-14 | **45 日超過** | 解説を見る<br>上から範囲 (low, high) を渡す別解で書く |
+| [230. Kth Smallest Element in a BST](problems/trees/0230-kth-smallest-element-in-a-bst) | 2026-09-12 | ? | 7 日 | 2026-09-19 | **40 日超過** | 中順走査にして sort をなくす（O(n)）<br>k 個目で打ち切る（O(h + k)） |
+| [199. Binary Tree Right Side View](problems/trees/0199-binary-tree-right-side-view) | 2026-10-09 | ◎ → △ | 3 日 | 2026-10-12 | **17 日超過** | 何も見ずに BFS 版を書く<br>DFS 版（右の子から潜り、各深さで最初に会ったノードを取る）を書く |
+| [226. Invert Binary Tree](problems/trees/0226-invert-binary-tree) | 2026-09-19 | ? → ? → ◎ | 14 日 | 2026-10-03 | **26 日超過** | 英語で、空間計算量を最初から「O(h)（平衡なら O(log n)、一直線に偏った木なら最悪 O(n)）、再帰のスタックのぶん」と一息で言う<br>書き終えたら、None・子が片方だけ・両方ある小さな木でコードを追って見せてから計算量に進む |
+| [145. Binary Tree Postorder Traversal](problems/trees/0145-binary-tree-postorder-traversal) | 2026-10-10 | ◎ | 7 日 | 2026-10-17 | **12 日超過** | 再帰を使わず、スタックで解く（follow-up） |
+| [739. Daily Temperatures](problems/stack/0739-daily-temperatures) | 2026-10-22 | ○ → △ | 3 日 | 2026-10-25 | **4 日超過** | ヒントなしで Stack の解法を書く（「待っている日は温度の降順に並ぶ」から自分で組み立てる）<br>Stack に `(温度, 添え字)` の組ではなく添え字だけを積む形でも書く（温度は `temperatures[stack[-1]]` で引ける） |
+| [84. Largest Rectangle in Histogram](problems/stack/0084-largest-rectangle-in-histogram) | 2026-10-24 | △ | 3 日 | 2026-10-27 | **2 日超過** | ヒントなしで単調 Stack の解法を書く（「pop した棒の左端を引き継ぐ」まで自分で思い出す）<br>なぜ pop した瞬間にその棒の面積が決まるのか（右にも左にも広げられない理由）を説明できるようにする |
+| [150. Evaluate Reverse Polish Notation](problems/stack/0150-evaluate-reverse-polish-notation) | 2026-10-21 | ○ → △ → ○ | 7 日 | 2026-10-28 | **1 日超過** | 提出前に `print` を消す（3 回目は `*` の分岐に `print(s)` が残っていた）<br>演算子ごとの if 分岐を、演算子 → 関数の dict にまとめて書いてみる |
+
+## 今後の予定 (5)
+
+| 問題 | 前回 | 自力の履歴 | 間隔 | 予定日 | 状態 | 次回やること |
+| --- | --- | --- | --- | --- | --- | --- |
+| [20. Valid Parentheses](problems/stack/0020-valid-parentheses) | 2026-10-17 | ? → ? → ◎ | 14 日 | 2026-10-31 | あと 2 日 | 閉じ括弧 → 開き括弧の dict を使って、括弧ごとの if 分岐をなくして書く |
+| [853. Car Fleet](problems/stack/0853-car-fleet) | 2026-10-24 | × → ○ | 7 日 | 2026-10-31 | あと 2 日 | Stack 版で解く（各集団の先頭の到着時間を積み、前の集団に追いつく車は pop する。最後に残った数が答え）。3 回目までの解き方は NeetCode でいう Iteration 版<br>組を作るところを `zip` で書く（3 回目は `for` と添え字で手作りしていた）<br>組を受け取るときに `entry[0]` / `entry[1]` ではなく、2 つの変数に分けて受け取る |
+| [217. Contains Duplicate](problems/arrays-hashing/0217-contains-duplicate) | 2026-10-18 | ? → ◎ | 14 日 | 2026-11-01 | あと 3 日 |  |
+| [242. Valid Anagram](problems/arrays-hashing/0242-valid-anagram) | 2026-10-18 | ? → ? → ◎ | 14 日 | 2026-11-01 | あと 3 日 | dict を 1 つにして、`s` は +1・`t` は -1 で数える形で書く。そのあと `collections.Counter` でも書いてみる |
+| [19. Remove Nth Node From End of List](problems/linked-list/0019-remove-nth-node-from-end-of-list) | 2026-10-29 | ◎ | 7 日 | 2026-11-05 | あと 7 日 | dict を使わず、2 つのポインタで 1 周で解く（追加の空間 O(1)。考え方は「学び」の節）<br>先頭の前にダミーのノードを置いて、「先頭を消す」場合分けをなくす |

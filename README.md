@@ -153,7 +153,7 @@ python scripts/update_index.py
 
 <!-- INDEX:START -->
 
-合計 45 問 / のべ 74 回
+合計 46 問 / のべ 75 回
 
 | # | 問題 | 難易度 | カテゴリ | 回数 | 最後に解いた日 |
 | --- | --- | --- | --- | --- | --- |
@@ -171,6 +171,7 @@ python scripts/update_index.py
 | 704 | [704. Binary Search](problems/binary-search/0704-binary-search) | easy | binary-search | 2 | 2026-06-24 |
 | 875 | [875. Koko Eating Bananas](problems/binary-search/0875-koko-eating-bananas) | medium | binary-search | 1 | 2026-06-27 |
 | 981 | [981. Time Based Key-Value Store](problems/binary-search/0981-time-based-key-value-store) | medium | binary-search | 1 | 2026-06-30 |
+| 19 | [19. Remove Nth Node From End of List](problems/linked-list/0019-remove-nth-node-from-end-of-list) | medium | linked-list | 1 | 2026-10-29 |
 | 21 | [21. Merge Two Sorted Lists](problems/linked-list/0021-merge-two-sorted-lists) | easy | linked-list | 1 | 2026-07-04 |
 | 141 | [141. Linked List Cycle](problems/linked-list/0141-linked-list-cycle) | easy | linked-list | 2 | 2026-07-10 |
 | 143 | [143. Reorder List](problems/linked-list/0143-reorder-list) | medium | linked-list | 2 | 2026-07-11 |

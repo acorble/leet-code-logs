@@ -3,9 +3,9 @@
 このファイルは `python scripts/update_progress.py` で自動生成される。**手で編集しない。**
 `problems/` に問題ディレクトリがあるものを「解いた」として集計している。
 
-## 全体: 44 / 150
+## 全体: 45 / 150
 
-`████████████░░░░░░░░░░░░░░░░░░░░░░░░░░░░` 29.3%
+`████████████░░░░░░░░░░░░░░░░░░░░░░░░░░░░` 30.0%
 
 | セクション | 進捗 | | 学習対象 |
 | --- | --- | --- | --- |
@@ -14,7 +14,7 @@
 | Sliding Window | 4 / 6 | `████████░░░░` | ◯ |
 | Stack | 6 / 6 | `████████████` | ◯ |
 | Binary Search | 5 / 7 | `█████████░░░` | ◯ |
-| Linked List | 4 / 11 | `████░░░░░░░░` | ◯ |
+| Linked List | 5 / 11 | `█████░░░░░░░` | ◯ |
 | Trees | 12 / 15 | `██████████░░` | ◯ |
 | Tries | 0 / 3 | `░░░░░░░░░░░░` |  |
 | Heap / Priority Queue | 0 / 7 | `░░░░░░░░░░░░` |  |
@@ -90,14 +90,14 @@
 | ✅ | 981 | [Time Based Key-Value Store](problems/binary-search/0981-time-based-key-value-store) | Medium | 1 | 2026-06-30 |
 | ⬜ | 4 | Median of Two Sorted Arrays | Hard | - | - |
 
-## Linked List — 4 / 11
+## Linked List — 5 / 11
 
 | | # | 問題 | 難易度 | 回数 | 最後に解いた日 |
 | --- | --- | --- | --- | --- | --- |
 | ✅ | 206 | [Reverse Linked List](problems/linked-list/0206-reverse-linked-list) | Easy | 4 | 2026-07-04 |
 | ✅ | 21 | [Merge Two Sorted Lists](problems/linked-list/0021-merge-two-sorted-lists) | Easy | 1 | 2026-07-04 |
 | ✅ | 143 | [Reorder List](problems/linked-list/0143-reorder-list) | Medium | 2 | 2026-07-11 |
-| ⬜ | 19 | Remove Nth Node From End of List | Medium | - | - |
+| ✅ | 19 | [Remove Nth Node From End of List](problems/linked-list/0019-remove-nth-node-from-end-of-list) | Medium | 1 | 2026-10-29 |
 | ⬜ | 138 | Copy List with Random Pointer | Medium | - | - |
 | ⬜ | 2 | Add Two Numbers | Medium | - | - |
 | ✅ | 141 | [Linked List Cycle](problems/linked-list/0141-linked-list-cycle) | Easy | 2 | 2026-07-10 |

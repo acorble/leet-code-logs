@@ -33,8 +33,13 @@
 | "I'll call this function twice: once for each child." | "two times twice" と重ねない | [226](../problems/trees/0226-invert-binary-tree/english/2026-09-19-mock.md) |
 | "Should I write it inside the Solution class, like on LeetCode?" | 関数のシグネチャの形を確認する | [226](../problems/trees/0226-invert-binary-tree/english/2026-09-19-mock.md) |
 | "I change the next pointer of the node right before the target." | 連結リストで書き換えるのは「次のノード」ではなく **next pointer**（参照） | [19](../problems/linked-list/0019-remove-nth-node-from-end-of-list/english/2026-10-31-solo.md) |
-| "I move fast n + 1 steps ahead." / "two nodes ahead of slow" | 位置関係は **steps ahead (of)** / **ahead of** | [19](../problems/linked-list/0019-remove-nth-node-from-end-of-list/english/2026-10-31-solo.md) |
-| "We exit the while loop." | exit は他動詞なので from は不要。while だけでなく while loop | [19](../problems/linked-list/0019-remove-nth-node-from-end-of-list/english/2026-10-31-solo.md) |
+| "I use a for loop to move fast n + 1 steps." / "I loop n + 1 times." | 「for 文」は **a for loop**、「while 文」は **a while loop**。「n 回回す」は **loop n times** | [19](../problems/linked-list/0019-remove-nth-node-from-end-of-list/english/2026-10-31-solo.md) |
+| "I move both pointers forward one step at a time." / "I advance fast by n + 1 steps." | 「（ポインタを）進める」は **move (forward)** か **advance**。「1 つずつ」は **one step at a time** | [19](../problems/linked-list/0019-remove-nth-node-from-end-of-list/english/2026-10-31-solo.md) |
+| "I move fast n + 1 steps ahead of slow." | 「〜より n 個先に」は **n steps ahead of** | [19](../problems/linked-list/0019-remove-nth-node-from-end-of-list/english/2026-10-31-solo.md) |
+| "slow.next.next is the node two steps ahead of slow." / "the node after next" | 「2 個先のノード」は **two nodes / two steps ahead of X**、または **the node after next** | [19](../problems/linked-list/0019-remove-nth-node-from-end-of-list/english/2026-10-31-solo.md) |
+| "When fast becomes None, we exit the while loop." / "The loop stops when fast reaches the end." | 「while 文を抜ける」は **exit the while loop**（from は不要）か、主語を loop にして **the loop stops / ends**。break 文で抜けるときは **break out of the loop** | [19](../problems/linked-list/0019-remove-nth-node-from-end-of-list/english/2026-10-31-solo.md) |
+| "At that point, slow points to the node right before the target." | 「そのとき〜を指している」は **at that point, X points to ...** | [19](../problems/linked-list/0019-remove-nth-node-from-end-of-list/english/2026-10-31-solo.md) |
+| "I update slow's next pointer to skip the target." / "I set slow.next to slow.next.next." / "I make slow point to the node two steps ahead." | 「next を変える・更新する」は **update X's next pointer** / **set X.next to Y** / **make X point to Y**。3 つとも同じ意味で使える | [19](../problems/linked-list/0019-remove-nth-node-from-end-of-list/english/2026-10-31-solo.md) |
 
 ## 4. 書いたコードを確かめる
 
@@ -51,6 +56,7 @@
 | "Space is O(h), where h is the height of the tree, because of the recursion stack. That's O(log n) for a balanced tree and O(n) in the worst case, when the tree is skewed like a linked list." | 再帰で木を降りる問題の空間計算量。**最初からこの形で一息に言う** | [226](../problems/trees/0226-invert-binary-tree/english/2026-09-19-mock.md) |
 | "Each call uses constant space, and there can be up to n calls on the stack at the same time." | 再帰の空間計算量の根拠 | [226](../problems/trees/0226-invert-binary-tree/english/2026-09-19-mock.md) |
 | "The recursion depth is n." | depth は単数。"the depths of the recursion is" としない | [226](../problems/trees/0226-invert-binary-tree/english/2026-09-19-mock.md) |
+| "The for loop runs n + 1 times, and the while loop runs at most L times, so the total is O(L)." | 「n 回の for 文が回るから」は **the loop runs n times** / **the loop iterates n times**。ループごとに回数を言って足す | [19](../problems/linked-list/0019-remove-nth-node-from-end-of-list/english/2026-10-31-solo.md) |
 | "Space is O(1), because I only use the dummy node and two pointers." | 空間 O(1) の根拠は「何を覚えているか」を挙げる。19 でできていた | [19](../problems/linked-list/0019-remove-nth-node-from-end-of-list/english/2026-10-31-solo.md) |
 
 ## 6. やりとり

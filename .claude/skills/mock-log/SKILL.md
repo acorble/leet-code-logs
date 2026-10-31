@@ -62,6 +62,10 @@ python scripts/new_english.py <番号> solo
    - 直すのは音声認識の誤りだけ。例: "mono tonic stack" → "monotonic stack"、"pop" が "Pope" になっている、など。
      問題とコードの内容から、明らかに聞き間違いと判断できるものに限る
    - 誤認識か本人の言い間違いか判断できない箇所は、元のまま残して `[?]` を付ける
+   - ボイスメモがよく聞き間違える語（本人に確認済み）は、`[?]` を付けずに直してよい:
+     problem → "program"、node → "note" / "north" / "nose"、n → "end" / "and" / "any"、
+     dummy node → "Domino" / "Demino"、linked list → "linguist" / "rank list"、slow → "throw" / "show"、
+     edge case → "HK" / "age case"、can → "can't"（意味が逆になるので、文脈で必ず確かめる）
    - 文の切れ目と段落は読みやすく整えてよい（句読点を足すのは可。単語は変えない）
    - mock: 話者を推測して `**Interviewer:**` / `**Candidate:**` に分ける。ボイスメモには話者の区別が無いので、
      前後の流れから判断したことを報告で伝え、確認してもらう

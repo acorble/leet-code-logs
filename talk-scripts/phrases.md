@@ -12,6 +12,7 @@
 | "The tree isn't necessarily balanced, so I'll assume it can be skewed." | 「〜とは限らない」は **not necessarily** | [226](../problems/trees/0226-invert-binary-tree/english/2026-09-19-mock.md) |
 | "I assume the values don't affect the result, so I'll just ..." | 質問で時間を使うより、**仮定を言い切って進む**。違っていれば面接官が止めてくれる | [226](../problems/trees/0226-invert-binary-tree/english/2026-09-19-mock.md) |
 | "I think I understand the problem now." | 確認を終える合図。"I can understand correctly the problem" としない | [226](../problems/trees/0226-invert-binary-tree/english/2026-09-19-mock.md) |
+| "n is between 1 and the length of the list. So if n is 1, ..., and if n equals the length, ..." | 制約を読み上げるだけでなく、**それが何を意味するか（境界ケース）**までつなげる。範囲は **between A and B** / **ranges from A to B** | [19](../problems/linked-list/0019-remove-nth-node-from-end-of-list/english/2026-10-31-solo.md) |
 
 ## 2. 方針を話す
 
@@ -20,6 +21,8 @@
 | "There are two approaches: X and Y. I'll go with X since ... Y would also work, but ..." | 選択肢を示し、**選んだ理由とトレードオフを 1 文で**添える | [226](../problems/trees/0226-invert-binary-tree/english/2026-09-19-mock.md) |
 | "I'll go with recursive DFS since it's the simplest to write. BFS with a queue would also work and avoids deep recursion." | 上の型の木の問題での例 | [226](../problems/trees/0226-invert-binary-tree/english/2026-09-19-mock.md) |
 | "Shall I go ahead and code it?" / "Can I move on to the implementation?" | 実装に入ってよいかの確認 | [226](../problems/trees/0226-invert-binary-tree/english/2026-09-19-mock.md) |
+| "A simple approach is ... That works, but it needs ... The follow-up asks for ..., so I'll use ..." | 素直な解き方 → その問題点 → 選ぶ解き方、の流れ。いきなり最適解に入らない | [19](../problems/linked-list/0019-remove-nth-node-from-end-of-list/english/2026-10-31-solo.md) |
+| "One idea that comes to mind is to ..." | アイデアを出すときの前置き。19 で自然に使えていた | [19](../problems/linked-list/0019-remove-nth-node-from-end-of-list/english/2026-10-31-solo.md) |
 
 ## 3. 書きながら話す
 
@@ -29,6 +32,9 @@
 | "If the root is None, these two lines would throw an error, so I need a base case." | ベースケースの理由。error は名詞なので "be error" ではなく **throw an error** / **would fail** | [226](../problems/trees/0226-invert-binary-tree/english/2026-09-19-mock.md) |
 | "I'll call this function twice: once for each child." | "two times twice" と重ねない | [226](../problems/trees/0226-invert-binary-tree/english/2026-09-19-mock.md) |
 | "Should I write it inside the Solution class, like on LeetCode?" | 関数のシグネチャの形を確認する | [226](../problems/trees/0226-invert-binary-tree/english/2026-09-19-mock.md) |
+| "I change the next pointer of the node right before the target." | 連結リストで書き換えるのは「次のノード」ではなく **next pointer**（参照） | [19](../problems/linked-list/0019-remove-nth-node-from-end-of-list/english/2026-10-31-solo.md) |
+| "I move fast n + 1 steps ahead." / "two nodes ahead of slow" | 位置関係は **steps ahead (of)** / **ahead of** | [19](../problems/linked-list/0019-remove-nth-node-from-end-of-list/english/2026-10-31-solo.md) |
+| "We exit the while loop." | exit は他動詞なので from は不要。while だけでなく while loop | [19](../problems/linked-list/0019-remove-nth-node-from-end-of-list/english/2026-10-31-solo.md) |
 
 ## 4. 書いたコードを確かめる
 
@@ -45,6 +51,7 @@
 | "Space is O(h), where h is the height of the tree, because of the recursion stack. That's O(log n) for a balanced tree and O(n) in the worst case, when the tree is skewed like a linked list." | 再帰で木を降りる問題の空間計算量。**最初からこの形で一息に言う** | [226](../problems/trees/0226-invert-binary-tree/english/2026-09-19-mock.md) |
 | "Each call uses constant space, and there can be up to n calls on the stack at the same time." | 再帰の空間計算量の根拠 | [226](../problems/trees/0226-invert-binary-tree/english/2026-09-19-mock.md) |
 | "The recursion depth is n." | depth は単数。"the depths of the recursion is" としない | [226](../problems/trees/0226-invert-binary-tree/english/2026-09-19-mock.md) |
+| "Space is O(1), because I only use the dummy node and two pointers." | 空間 O(1) の根拠は「何を覚えているか」を挙げる。19 でできていた | [19](../problems/linked-list/0019-remove-nth-node-from-end-of-list/english/2026-10-31-solo.md) |
 
 ## 6. やりとり
 
@@ -61,7 +68,8 @@
 
 | 癖 | 正しくは | 出典 |
 | --- | --- | --- |
-| problem を "program" と言う（または program に聞こえる） | problem /ˈprɑːbləm/。program /ˈproʊɡræm/ と区別する | [226](../problems/trees/0226-invert-binary-tree/english/2026-09-19-mock.md) |
-| 単数・複数、三人称単数（"3 case", "they has both child"） | three **cases** / it **has** both **children** | [226](../problems/trees/0226-invert-binary-tree/english/2026-09-19-mock.md) |
-| 文頭がほぼ毎回 "So, uh" | 黙って間を取るか "Let me think for a second." | [226](../problems/trees/0226-invert-binary-tree/english/2026-09-19-mock.md) |
+| problem を "program" と言う（または program に聞こえる） | problem /ˈprɑːbləm/。program /ˈproʊɡræm/ と区別する | [226](../problems/trees/0226-invert-binary-tree/english/2026-09-19-mock.md), [19](../problems/linked-list/0019-remove-nth-node-from-end-of-list/english/2026-10-31-solo.md) |
+| 単数・複数、三人称単数（"3 case", "they has both child"） | three **cases** / it **has** both **children** | [226](../problems/trees/0226-invert-binary-tree/english/2026-09-19-mock.md), [19](../problems/linked-list/0019-remove-nth-node-from-end-of-list/english/2026-10-31-solo.md) |
+| 文頭がほぼ毎回 "So, uh" | 黙って間を取るか "Let me think for a second." | [226](../problems/trees/0226-invert-binary-tree/english/2026-09-19-mock.md), [19](../problems/linked-list/0019-remove-nth-node-from-end-of-list/english/2026-10-31-solo.md) |
 | "binary" だけで名詞にする（"the given binary is not balanced"） | **binary tree** まで言う | [226](../problems/trees/0226-invert-binary-tree/english/2026-09-19-mock.md) |
+| コードを説明するとき、過去形と現在形が混ざる（"I initialized", "I moved" と "I make"） | 現在形にそろえる: "I create a dummy node", "I move fast ..." | [19](../problems/linked-list/0019-remove-nth-node-from-end-of-list/english/2026-10-31-solo.md) |

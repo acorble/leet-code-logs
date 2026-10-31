@@ -21,11 +21,14 @@
 
 <!-- 次に解き直すときに試したいこと。`- [ ] ...` の形で書き、済んだら行ごと消す。本人も Claude も書いてよい -->
 
-- [ ] 2 つのポインタ版を英語で説明してみる（なぜ n + 1 個ずらすのか、なぜ slow をダミーから出発させるのか）
+- [ ] 英語で説明するとき、2 つのポインタに入る前に素直な解き方（2 周 / 全ノードを覚える）と、なぜ 2 つのポインタかを言う（solo 10/31 の改善点 1）
+- [ ] n + 1 個ずらす理由を英語で 1 文で言う: "I keep a gap of n + 1, so when fast reaches None, slow is right before the node to remove."
 
 ## 英語での説明
 
 <!-- mock interview と一人での説明練習の記録 (english/)。scripts/new_english.py が行を足す -->
+
+- 2026-10-31 一人練習: [english/2026-10-31-solo.md](english/2026-10-31-solo.md)
 
 ## 問題の要約
 

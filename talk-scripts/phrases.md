@@ -21,7 +21,7 @@
 | "There are two approaches: X and Y. I'll go with X since ... Y would also work, but ..." | 選択肢を示し、**選んだ理由とトレードオフを 1 文で**添える | [226](../problems/trees/0226-invert-binary-tree/english/2026-09-19-mock.md) |
 | "I'll go with recursive DFS since it's the simplest to write. BFS with a queue would also work and avoids deep recursion." | 上の型の木の問題での例 | [226](../problems/trees/0226-invert-binary-tree/english/2026-09-19-mock.md) |
 | "Shall I go ahead and code it?" / "Can I move on to the implementation?" | 実装に入ってよいかの確認 | [226](../problems/trees/0226-invert-binary-tree/english/2026-09-19-mock.md) |
-| "A simple approach is ... That works, but it needs ... The follow-up asks for ..., so I'll use ..." | 素直な解き方 → その問題点 → 選ぶ解き方、の流れ。いきなり最適解に入らない | [19](../problems/linked-list/0019-remove-nth-node-from-end-of-list/english/2026-10-31-solo.md) |
+| "A simple approach is ... That works, but it needs ... The follow-up asks for ..., so I'll use ..." | 素直な解き方 → その問題点 → 選ぶ解き方、の流れ。いきなり最適解に入らない。**follow-up** は問題文の最後の追加の問い（面接官があとから足す条件も同じ呼び方）。**one pass** は「リストや配列を 1 回だけなめる」こと。2 回なら two passes | [19](../problems/linked-list/0019-remove-nth-node-from-end-of-list/english/2026-10-31-solo.md) |
 | "One idea that comes to mind is to ..." | アイデアを出すときの前置き。19 で自然に使えていた | [19](../problems/linked-list/0019-remove-nth-node-from-end-of-list/english/2026-10-31-solo.md) |
 | "... add a dummy node before the head. **That way**, we can use the same logic for any node, even the first one." | 工夫を言ったあと、その効果を続ける。"So that ..." の代わりに、文を短く切ったまま理由をつなげられる | [19](../problems/linked-list/0019-remove-nth-node-from-end-of-list/english/2026-10-31-solo.md) |
 
@@ -30,6 +30,7 @@
 | 言い回し | 使う場面・メモ | 出典 |
 | --- | --- | --- |
 | "Let me outline the structure first. First, the base case. Then, ... Finally, ..." | 各行に入る前に**骨組みを先に言う**。聞き手がどの行の話か追いやすくなる | [226](../problems/trees/0226-invert-binary-tree/english/2026-09-19-mock.md) |
+| "I put a gap of n + 1 between the two pointers." / "I keep a gap of n + 1 between slow and fast." | 2 つのポインタの間を空ける（**put a gap**）、空けたまま動かす（**keep a gap**）。間の大きさは **a gap of k** | [19](../problems/linked-list/0019-remove-nth-node-from-end-of-list/english/2026-10-31-solo.md) |
 | "If the root is None, these two lines would throw an error, so I need a base case." | ベースケースの理由。error は名詞なので "be error" ではなく **throw an error** / **would fail** | [226](../problems/trees/0226-invert-binary-tree/english/2026-09-19-mock.md) |
 | "I'll call this function twice: once for each child." | "two times twice" と重ねない | [226](../problems/trees/0226-invert-binary-tree/english/2026-09-19-mock.md) |
 | "Should I write it inside the Solution class, like on LeetCode?" | 関数のシグネチャの形を確認する | [226](../problems/trees/0226-invert-binary-tree/english/2026-09-19-mock.md) |

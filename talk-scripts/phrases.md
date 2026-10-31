@@ -23,6 +23,7 @@
 | "Shall I go ahead and code it?" / "Can I move on to the implementation?" | 実装に入ってよいかの確認 | [226](../problems/trees/0226-invert-binary-tree/english/2026-09-19-mock.md) |
 | "A simple approach is ... That works, but it needs ... The follow-up asks for ..., so I'll use ..." | 素直な解き方 → その問題点 → 選ぶ解き方、の流れ。いきなり最適解に入らない | [19](../problems/linked-list/0019-remove-nth-node-from-end-of-list/english/2026-10-31-solo.md) |
 | "One idea that comes to mind is to ..." | アイデアを出すときの前置き。19 で自然に使えていた | [19](../problems/linked-list/0019-remove-nth-node-from-end-of-list/english/2026-10-31-solo.md) |
+| "... add a dummy node before the head. **That way**, we can use the same logic for any node, even the first one." | 工夫を言ったあと、その効果を続ける。"So that ..." の代わりに、文を短く切ったまま理由をつなげられる | [19](../problems/linked-list/0019-remove-nth-node-from-end-of-list/english/2026-10-31-solo.md) |
 
 ## 3. 書きながら話す
 
@@ -39,7 +40,7 @@
 | "slow.next.next is the node two steps ahead of slow." / "the node after next" | 「2 個先のノード」は **two nodes / two steps ahead of X**、または **the node after next** | [19](../problems/linked-list/0019-remove-nth-node-from-end-of-list/english/2026-10-31-solo.md) |
 | "When fast becomes None, we exit the while loop." / "The loop stops when fast reaches the end." | 「while 文を抜ける」は **exit the while loop**（from は不要）か、主語を loop にして **the loop stops / ends**。break 文で抜けるときは **break out of the loop** | [19](../problems/linked-list/0019-remove-nth-node-from-end-of-list/english/2026-10-31-solo.md) |
 | "At that point, slow points to the node right before the target." | 「そのとき〜を指している」は **at that point, X points to ...** | [19](../problems/linked-list/0019-remove-nth-node-from-end-of-list/english/2026-10-31-solo.md) |
-| "I update slow's next pointer to skip the target." / "I set slow.next to slow.next.next." / "I make slow point to the node two steps ahead." | 「next を変える・更新する」は **update X's next pointer** / **set X.next to Y** / **make X point to Y**。3 つとも同じ意味で使える。意図で言うなら **make slow skip the next node** が一番短い | [19](../problems/linked-list/0019-remove-nth-node-from-end-of-list/english/2026-10-31-solo.md) |
+| "I update slow's next pointer to skip the target." / "I set slow.next to slow.next.next." / "I make slow point to the node two steps ahead." | 「next を変える・更新する」は **update X's next pointer** / **set X.next to Y** / **make X point to Y**。3 つとも同じ意味で使える。**change X to Y** も可（into にはしない。into は「別のものに姿を変える」）。意図で言うなら **make slow skip the next node** が一番短い | [19](../problems/linked-list/0019-remove-nth-node-from-end-of-list/english/2026-10-31-solo.md) |
 
 ## 4. 書いたコードを確かめる
 
